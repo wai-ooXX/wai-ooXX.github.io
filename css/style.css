@@ -1,0 +1,362 @@
+    body {
+      font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+    }
+
+    header,
+    footer {
+      background: #f0f0f0;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+
+
+
+    .hero {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 950 / 300;
+      overflow: hidden;
+      margin: 0 auto;
+      padding: 0;
+      background-color: #000;
+    }
+
+    /* .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        transition: opacity 1s ease-in-out;
+    } */
+
+    .hero img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .main-content {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .left {
+      flex: 4;
+      padding-right: 20px;
+    }
+
+    .right {
+      flex: 1;
+      max-width: 20%;
+    }
+
+    .important-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: nowrap;
+      /* justify-content: space-between; */
+      justify-content: center;
+    }
+
+    .important-item-links {
+      width: 48%;
+      background: #f8f8f8;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .important-item-links img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+
+
+    .important-item {
+      flex: 0 0 auto;
+      /* 子要素の幅を指定した通りに使うため（flex-shrink を無効）*/
+      width: 640px;
+      /* 本社：805の比率に合わせて */
+      background: #f8f8f8;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .important-item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      /* 枠内に自然にフィットさせて違和感を抑える */
+      image-rendering: auto;
+      /* ピクセルぼやけ軽減 */
+      /* 拡大時の画像の粗さ軽減（場合によって -webkit-optimize-contrast 等も有効） */
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    .important-item a {
+      display: block;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .important-item:nth-child(2) {
+      width: 360px;
+      /* 横浜：456に合わせて */
+      /* 2枚目だけ横幅を小さくするため */
+    }
+
+
+    .news iframe {
+      width: 100%;
+      border: none;
+    }
+
+
+
+    .small {
+      font-size: 12px;
+    }
+
+    .large {
+      font-size: 20px;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .highlight {
+      color: #0066cc;
+      font-weight: bold;
+    }
+
+
+
+
+
+
+
+
+
+    main {
+      margin-left: 40px;
+      /*← 削除！ */
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #0072c6;
+      margin-bottom: 20px;
+      border-left: 6px solid #0072c6;
+      padding-left: 12px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #005bac;
+    }
+
+
+
+    .history-entry {
+      background: #f9f9f9;
+      margin: 12px 0;
+      display: flex;
+      margin-bottom: 10px;
+      padding: 16px 20px;
+      border-left: 4px solid #0072c6;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .history-entry:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .history-entry .year {
+      width: 150px;
+      font-weight: bold;
+      color: #333;
+      display: inline-block;
+      min-width: 150px;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+
+    .history-entry .content {
+      flex-grow: 1;
+    }
+
+    .accordion {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+
+    .accordion summary {
+      background: #0072c6;
+      color: #fff;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      user-select: none;
+    }
+
+    .accordion summary:hover {
+      background: #005bac;
+    }
+
+    .accordion-content {
+      padding: 15px 25px;
+      background-color: #fff;
+      line-height: 1.7;
+    }
+
+    .accordion-content ul {
+      padding-left: 20px;
+    }
+
+    .accordion-content li {
+      margin-bottom: 10px;
+    }
+
+    .pdf-note {
+      font-size: 13px;
+      color: #a33;
+    }
+
+    a {
+      color: #0072c6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+
+
+
+
+
+
+    /* material-inventory専用 */
+    .material-inventory .important-links {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .material-inventory .important-item {
+      width: 100%;
+      margin-bottom: 20px;
+      background: #f8f8f8;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .material-inventory .important-item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .material-inventory .important-item a {
+      display: block;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .inventory-section {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #f8f8f8;
+      overflow: hidden;
+    }
+
+    .inventory-section summary {
+      background: #0072c6;
+      color: #fff;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
+    }
+
+    .inventory-section summary::marker {
+      display: none;
+      /* Firefox対策 */
+    }
+
+    .inventory-section summary::before {
+      content: '▶ ';
+      display: inline-block;
+      margin-right: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .inventory-section[open] summary::before {
+      transform: rotate(90deg);
+      /* 開いたときに▼っぽく */
+    }
+
+    .inventory-content {
+      padding: 15px 20px;
+    }
+
+    .inventory-content img {
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .spaced {
+      margin-left: 20px;
+    }

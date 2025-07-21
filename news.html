@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      font-size: clamp(12px, 1.5vw, 18px);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      border-bottom: 1px solid #ccc;
+      padding: 8px 10px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      display: flex;
+      align-items: flex-start;
+    }
+    .date {
+      min-width: 130px;
+      flex-shrink: 0;
+    }
+    .content {
+      flex: 1;
+    }
+    .new-label {
+      background: red;
+      color: white;
+      font-size: 10px;
+      padding: 2px 5px;
+      margin-left: 5px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+
+        <li>
+      <span class="date">2025/08/01<span class="new-label">NEW!</span></span>
+      <span class="content">サイトをリニューアルしました。</span>
+    </li>
+    <li>
+
+
+      <span class="date">2025/5</span>
+      <span class="content">テクノフロンティア2025展示会(東京ビックサイト7/23～7/25)に出展します。<br>
+ポニー電機 ブース番号 4-AA29となります。<br>
+詳細は<a href="https://www.jma.or.jp/tf/" target="_blank" rel="noopener noreferrer">テクノフロンティア2025展示会</a>をご覧ください。</span>
+    </li>
+    <li>
+      <span class="date">2024/9</span>
+      <span class="content">株式会社AZNICSと業務提携しました。東京大学の高宮先生の技術を基本としたスタートアップ会社です。ポニー電機でもカスタムアクティブゲートICを使用したパワエレ受託開発も、ご対応可能ですのでご相談ください。</span>
+    </li>
+    <li>
+      <span class="date">2024/2</span>
+      <span class="content">取材がありましたので内容を掲載します。モーニング娘初期メンバーの石黒さんが対応してくれました。 COMPANY TANK</span>
+    </li>
+    <li>
+      <span class="date">2024/1</span>
+      <span class="content">今年、ベトナム工場の設立が決まりました。トランス製造及びユニット製造を行う予定です。
+
+</span>
+    </li>
+   
+  </ul>
+
+ <script>
+  function sendHeight() {
+    window.parent.postMessage({
+      type: 'setHeight',
+      height: document.body.scrollHeight
+    }, '*');
+  }
+
+  window.onload = sendHeight;
+  window.onresize = sendHeight;
+</script>
+</body>
+</html>

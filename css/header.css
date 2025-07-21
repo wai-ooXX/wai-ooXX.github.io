@@ -1,0 +1,115 @@
+/* header.css */
+
+
+/* ロゴ */
+.logo img {
+    height: 60px;
+}
+
+/* HTMLの アンカータグ（<a>）に適用 */
+.contact a {
+    display: inline-block;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+    nav {
+      background: linear-gradient(to right, #0072c6, #3ca0f2);
+      padding: 12px 24px;
+    }
+
+    nav a,
+    .accordion-toggle {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      font-size: 1.1em;
+      padding: 6px 0;
+      font-family: inherit;
+    }
+
+    nav a:hover,
+    .accordion-toggle:hover {
+      text-decoration: underline;
+    }
+
+    .accordion-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      /*        overflow-x: auto; /* スクロールで対応 */
+
+
+      /* ↓これを確認・または追加 */
+      flex-wrap: nowrap;
+
+    }
+
+
+
+    /*	•	横幅が大きいと18px
+	•	横幅が狭くなると vw に従って自動縮小
+	•	最小でも12pxより小さくならない（可読性確保）*/
+
+    
+    .accordion-menu,
+    .accordion-menu a,
+    .accordion-toggle {
+      white-space: nowrap;
+      font-size: clamp(10px, 1.4vw, 18px);
+    }
+
+.accordion-menu li {
+    position: relative;
+}
+
+.accordion-menu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #0072c6;
+    min-width: 180px;
+          /* ← 横幅を広げる */
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.accordion-menu li:hover>.submenu {
+    display: block;
+}
+
+/* 親メニューのボタン風見た目 */
+.accordion-toggle {
+    all: unset;
+    cursor: pointer;
+    padding: 8px 16px;
+    display: block;
+    color: white;
+    font-weight: bold;
+    background: transparent;
+    pointer-events: none;
+}
+
+/* submenu内のリンク */
+.submenu li a {
+    display: block;
+    padding: 8px 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: #005b9e;
+}

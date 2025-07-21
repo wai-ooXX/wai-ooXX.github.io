@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>在庫情報 | ポニー電機株式会社</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bobin-style.css" />
+  <link rel="stylesheet" href="css/zaiko-style.css" />
+  <style>
+    .important-item ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .important-item ul li {
+      margin: 8px 0;
+      padding-left: 1em;
+      text-indent: -1em;
+    }
+
+    .important-item ul li::before {
+      content: "▶ ";
+      color: #0072c6;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <main class="main-content material-inventory">
+    <div class="left">
+      <h1>主要材料在庫情報</h1>
+      <p class="small">
+        ※こちらの在庫情報はトランス・リアクトルの製作を依頼されたときに、すばやく対応するための材料一覧です。<br>
+        ※原則として、材料のみの販売は行っておりません。<br>
+        ※在庫切れの場合もございますので、ご了承ください。
+      </p>
+
+      <div class="important-links">
+
+        <!-- コア在庫 -->
+        <details class="inventory-section">
+          <summary> コア在庫情報</summary>
+          <div class="inventory-content">
+            <p><a href="zaiko-koa.pdf" target="_blank">▶ コア在庫（PDF）</a></p>
+            <img src="image/pc40ee44.jpg" alt="コア画像">
+          </div>
+        </details>
+        <!-- ボビン在庫 -->
+        <details class="inventory-section">
+
+          <summary> ボビン在庫情報</summary>
+          <div class="inventory-content">
+            <div class="tab-container">
+              <div class="tabs">
+                <button class="tab-button active" data-tab="cutcore">カットコア</button>
+                <button class="tab-button" data-tab="ferrite">フェライト</button>
+                <button class="tab-button" data-tab="lowfreq">低周波</button>
+              </div>
+
+              <div class="tab-content active" id="cutcore"></div>
+              <div class="tab-content" id="ferrite"></div>
+              <div class="tab-content" id="lowfreq"></div>
+            </div>
+
+            <script src="js/bobin-data.js"></script>
+            <script src="js/bobin-render.js"></script>
+          </div>
+        </details>
+
+
+
+        <!-- その他部材 -->
+        <details class="inventory-section">
+          <summary> その他部材在庫情報</summary>
+          <div class="inventory-content">
+            <div class="tab-container">
+              <div class="tabs">
+                <button class="tab-button active" data-tab="rittusen">リッツ線</button>
+                <button class="tab-button" data-tab="tyubu">引出しチューブ</button>
+              </div>
+
+              <div class="tab-content active" id="rittusen"></div>
+              <div class="tab-content" id="tyubu"></div>
+            </div>
+
+            <!-- データ & スクリプト -->
+            <script src="js/rittusen-data.js"></script>
+            <script src="js/tyubu-data.js"></script>
+            <script src="js/zaiko-render.js"></script>
+          </div>
+        </details>
+
+
+        <p class="small" style="margin-top: 40px;">
+          <a href="index.html">← 戻る</a>　｜　
+          <a href="mailto:office@pony-e.jp">お問い合せ</a>
+        </p>
+      </div>
+
+
+  </main>
+
+  <div id="footer"></div>
+  <script src="js/common.js"></script>
+</body>
+
+</html>
