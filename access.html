@@ -2,59 +2,10 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>アクセス | ポニー電機株式会社</title>
+  <title>アクセス | ポニー電機株式会社（本社・横浜事業所）</title>
+  <meta name="description" content="ポニー電機株式会社の本社・横浜事業所へのアクセス方法。地図・電車・車での来社方法を詳しくご案内します。">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    .access-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      font-family: "Segoe UI", Meiryo, sans-serif;
-    }
-    .access-title {
-      text-align: center;
-      font-size: 28px;
-      margin-bottom: 40px;
-    }
-    .location-card {
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 40px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .location-info {
-      flex: 1;
-      padding: 20px;
-      background: #f9f9f9;
-    }
-    .location-info h3 {
-      margin-top: 0;
-      color: #005bac;
-    }
-    .location-info p {
-      margin: 8px 0;
-    }
-    .location-map {
-      flex: 1;
-      min-width: 300px;
-    }
-    .location-map iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-      min-height: 300px;
-    }
-
-    @media (max-width: 768px) {
-      .location-card {
-        flex-direction: column;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/access-style.css">
 </head>
 <body>
   
@@ -62,32 +13,43 @@
   <div id="header"></div>
   <!-- アコーディオンを編集するならここ -->
 
- <main class="access-container">
-  <h1 class="access-title">アクセス</h1>
+   <main class="access-container">
+    <h1 class="access-title">アクセス</h1>
 
-  <div class="location-card">
-    <div class="location-info">
-      <h3>本社・工場</h3>
-      <p>〒375-0003 群馬県藤岡市立石新田23番地</p>
-      <p>TEL: 0274-42-0911㈹</p>
-      <p>※「公正な研究活動」に関するお問い合わせもこちらで受け付けます。</p>
+    <div class="location-card">
+      <div class="location-info">
+        <h2>本社・工場</h2>
+        <p>〒375-0003 群馬県藤岡市立石新田23番地</p>
+        <p>TEL: 0274-42-0911㈹</p>
+        <div class="access-description">
+          <h3>電車でお越しの場合</h3>
+          <p>JR八高線「群馬藤岡駅」よりタクシーで約10分</p>
+          <h3>お車でお越しの場合</h3>
+          <p>上信越自動車道「藤岡IC」より約15分</p>
+        </div>
+      </div>
+      <div class="location-map">
+        <iframe src="https://www.google.com/maps/embed?pb=...（カスタムURL）" allowfullscreen loading="lazy"></iframe>
+      </div>
     </div>
-    <div class="location-map">
-      <iframe src="https://maps.google.co.jp/maps?&q=群馬県藤岡市立石新田23&z=14&output=embed"></iframe>
-    </div>
-  </div>
 
-  <div class="location-card">
-    <div class="location-info">
-      <h3>横浜事業所</h3>
-      <p>〒220-0004 神奈川県横浜市西区北幸2-8-4 横浜西口KNビル7F</p>
-      <p>TEL: 045-548-8412</p>
+    <div class="location-card">
+      <div class="location-info">
+        <h2>横浜事業所</h2>
+        <p>〒220-0004 神奈川県横浜市西区北幸2-8-4 横浜西口KNビル7F</p>
+        <p>TEL: 045-548-8412</p>
+        <div class="access-description">
+          <h3>電車でお越しの場合</h3>
+          <p>JR・東急・相鉄「横浜駅」より徒歩10分</p>
+          <h3>お車でお越しの場合</h3>
+          <p>首都高速神奈川2号三ツ沢線「横浜西口出口」より約5分</p>
+        </div>
+      </div>
+      <div class="location-map">
+        <iframe src="https://www.google.com/maps/embed?pb=...（カスタムURL）" allowfullscreen loading="lazy"></iframe>
+      </div>
     </div>
-    <div class="location-map">
-      <iframe src="https://maps.google.co.jp/maps?&q=横浜市西区北幸2-8-4&z=14&output=embed"></iframe>
-    </div>
-  </div>
-</main>
+  </main>
   <!-- footer部分を編集するならここ -->
   <div id="footer"></div>
 

@@ -1,0 +1,51 @@
+.access-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Meiryo, sans-serif;
+}
+
+.access-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.location-card {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.location-info {
+  flex: 1 1 300px;
+  padding: 24px;
+  background: #f9f9f9;
+}
+
+.location-map {
+  flex: 1 1 400px;
+  min-height: 300px;
+}
+
+.location-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.access-description h3 {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #005bac;
+}
+
+@media (max-width: 768px) {
+  .location-card {
+    flex-direction: column;
+  }
+}
