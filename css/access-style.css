@@ -16,15 +16,13 @@ body {
   padding: 40px 20px;
 }
 
-/* 見出し（h1 の style.css 影響を回避） */
+/* 見出し（divに変更） */
 .access-title {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
   color: #333;
   margin-bottom: 40px;
-  padding: 0;
-  border: none;
 }
 
 /* 拠点ブロック */
