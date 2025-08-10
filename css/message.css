@@ -1,0 +1,122 @@
+/* =========================================
+   代表挨拶ページ専用CSS（style.cssと干渉しないよう名前空間化）
+   すべて #greeting-page（= .gp）配下に限定
+   ========================================= */
+
+:root {
+  --gp-accent: #0072c6;
+  --gp-accent-weak: #e6f2fb;
+  --gp-text: #1a1a1a;
+  --gp-muted: #666;
+  --gp-border: #e5e7eb;
+  --gp-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  --gp-radius: 16px;
+}
+
+#greeting-page.gp {
+  font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", Meiryo, system-ui, -apple-system, sans-serif;
+  color: var(--gp-text);
+  line-height: 1.75;
+  background: #fff;
+}
+
+/* 中央カラム幅 */
+.gp { --gp-container: min(100% - 32px, 980px); }
+.gp section { width: var(--gp-container); margin-inline: auto; }
+
+/* タイトル */
+.gp-hero { padding: 48px 0 8px; text-align: center; }
+.gp-title { margin: 0; font-size: clamp(28px, 3.5vw, 40px); letter-spacing: 0.02em; font-weight: 700; }
+
+/* 写真 */
+.gp-photo { margin-top: 28px; text-align: center; }
+.gp-photo img {
+  display: block; margin-inline: auto;
+  max-width: 100%; width: auto; height: auto; /* 縮小はするが元サイズ以上に拡大しない */
+  border-radius: var(--gp-radius); box-shadow: var(--gp-shadow);
+}
+.gp-photo-caption { margin-top: 10px; font-size: 12px; color: var(--gp-muted); }
+
+/* 引用 */
+.gp-quote { margin-top: 36px; padding: 0 0 8px; }
+.gp-quote-body {
+  position: relative; margin: 0;
+  padding: clamp(16px, 3vw, 28px) clamp(18px, 3vw, 28px);
+  background: linear-gradient(0deg, #fff, #fff), var(--gp-accent-weak);
+  border-left: 6px solid var(--gp-accent);
+  border-radius: calc(var(--gp-radius) - 6px);
+  box-shadow: var(--gp-shadow);
+  font-size: clamp(16px, 2.2vw, 20px);
+}
+.gp-quote-body::before {
+  content: "“"; position: absolute; inset: -18px auto auto 12px;
+  font-size: 64px; line-height: 1; color: rgba(0,0,0,0.06); pointer-events: none;
+}
+.gp-sign { margin: 10px 6px 0; text-align: right; color: var(--gp-muted); font-size: 14px; }
+
+/* プロフィール */
+.gp-profile { margin-top: 36px; margin-bottom: 56px; }
+.gp-section-title {
+  margin: 0 0 12px; font-size: clamp(20px, 2.6vw, 24px);
+  font-weight: 700; border-bottom: 2px solid var(--gp-border); padding-bottom: 6px;
+}
+.gp-profile-list {
+  margin: 0; padding: 0; list-style: none; background: #fff;
+  border: 1px solid var(--gp-border); border-radius: var(--gp-radius); box-shadow: var(--gp-shadow);
+}
+/* 調整: プロフィール内のフォントサイズと行間 */
+.gp-profile-row {
+  font-size: 10px;       /* 好みで調整 */
+  line-height: 1.0;      /* 好みで調整 */
+}
+.gp-profile-row dt {
+  font-size: 15px;       /* または好みで */
+}
+.gp-profile-row dd {
+  font-size: 15px;
+}
+.gp-profile-row {
+  display: grid; grid-template-columns: 140px 1fr; gap: 16px;
+  padding: 14px 16px; align-items: start; border-top: 1px solid var(--gp-border);
+}
+.gp-profile-row:first-child { border-top: none; }
+.gp-profile-row dt { margin: 0; color: var(--gp-muted); font-weight: 600; word-break: keep-all; }
+.gp-profile-row dd { margin: 0; }
+@media (max-width: 560px) {
+  .gp-profile-row { grid-template-columns: 1fr; gap: 6px; }
+  .gp-profile-row dt { font-size: 13px; }
+}
+
+/* === ミッション・ビジョン === */
+.gp-mv { margin: 12px auto 72px; }
+.gp-mv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+@media (max-width: 820px) {
+  .gp-mv-grid { grid-template-columns: 1fr; }
+}
+
+.gp-mv-card {
+  background: #fff; border: 1px solid var(--gp-border);
+  border-radius: var(--gp-radius); box-shadow: var(--gp-shadow);
+  padding: clamp(16px, 2.4vw, 22px);
+  position: relative; overflow: hidden;
+}
+
+.gp-mission { border-left: 6px solid var(--gp-accent); }
+.gp-vision  { border-left: 6px solid #2ea24b; } /* アクセント色：必要に応じて調整 */
+
+.gp-mv-title { margin: 0 0 8px; font-size: clamp(18px, 2.4vw, 22px); font-weight: 700; }
+.gp-mv-lead { margin: 4px 0 10px; color: var(--gp-text); font-size: 16px; line-height: 1.8; }
+.gp-mv-points { margin: 8px 0 0 18px; padding: 0; }
+.gp-mv-points li { margin: 4px 0; }
+
+/* Values（任意） */
+.gp-mv-values { margin-top: 18px; }
+.gp-mv-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 0; padding: 0; list-style: none; }
+.gp-mv-tags li {
+  border: 1px solid var(--gp-border); padding: 6px 10px; border-radius: 999px; font-size: 13px;
+  background: #fff;
+}

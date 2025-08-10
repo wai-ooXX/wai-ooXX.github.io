@@ -1,0 +1,164 @@
+/* ===== e-prototype-order.css =====
+   このページ専用。全て .e-order 配下に限定して style.css と干渉しない。
+*/
+.e-order {
+  --accent-pink: #ff3366;
+  --accent-blue: #0b5bd3;
+  --ink: #1a1a1a;
+  --ink-weak: #555;
+  --line: #e9edf2;
+  --bg-card: #fff;
+  --btn-ghost: #3b82f6;
+  --btn-solid: #ff3366;
+  --btn-outline: #0b5bd3;
+
+  color: var(--ink);
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.e-order .container {
+  width: min(960px, 92vw);
+  margin: 40px auto;
+  padding: 0 4px;
+}
+
+.e-order .page-header .title,
+.e-order .section-header .title {
+  margin: 0;
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.e-order .title-accent {
+  height: 6px;
+  width: 140px;
+  border-radius: 999px;
+  margin-top: 10px;
+}
+.e-order .accent-pink { background: linear-gradient(90deg, var(--accent-pink), #ff7aa0); }
+.e-order .accent-blue { background: linear-gradient(90deg, var(--accent-blue), #5ca8ff); }
+
+.e-order .subheading {
+  margin: 28px 0 10px;
+  font-size: clamp(18px, 2.4vw, 22px);
+  font-weight: 700;
+}
+
+.e-order .card {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: clamp(16px, 2.4vw, 24px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.04);
+}
+
+.e-order .lead {
+  margin: 4px 0 12px;
+  font-size: 1.05rem;
+}
+
+.e-order .notes {
+  margin: 0 0 16px 0;
+  padding-left: 1.2em;
+}
+.e-order .notes li {
+  margin: 4px 0;
+}
+
+.e-order .contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0 6px;
+}
+.e-order .contact .label {
+  display: inline-block;
+  font-size: 0.86rem;
+  color: var(--ink-weak);
+  background: #f5f7fb;
+  border: 1px solid var(--line);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+.e-order .mailto {
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px dashed rgba(0,0,0,0.15);
+}
+.e-order .mailto:hover { opacity: 0.8; }
+
+.e-order .regno {
+  margin: 4px 0 0;
+  color: var(--ink-weak);
+  font-size: 0.95rem;
+}
+
+.e-order .desc {
+  margin: 0 0 12px;
+  color: var(--ink-weak);
+}
+
+.e-order .link-group {
+  border-top: 1px dashed var(--line);
+  padding-top: 16px;
+  margin-top: 16px;
+}
+.e-order .link-group:first-of-type {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+.e-order .group-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.e-order .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.e-order .buttons.center { justify-content: center; }
+.e-order .buttons.wrap { align-items: center; }
+
+.e-order .btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  transition: transform .08s ease, box-shadow .2s ease, opacity .2s ease;
+  white-space: nowrap;
+}
+.e-order .btn:hover { transform: translateY(-1px); }
+
+.e-order .btn.ghost {
+  background: #f5f8ff;
+  color: var(--btn-ghost);
+  border-color: #e0eaff;
+  box-shadow: 0 4px 12px rgba(59,130,246,0.08);
+}
+.e-order .btn.ghost:hover { box-shadow: 0 6px 18px rgba(59,130,246,0.15); }
+
+.e-order .btn.solid {
+  background: var(--btn-solid);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(255, 51, 102, 0.25);
+}
+.e-order .btn.solid:hover { opacity: .92; }
+
+.e-order .btn.outline {
+  color: var(--btn-outline);
+  background: #fff;
+  border-color: #cfe0ff;
+  box-shadow: 0 4px 12px rgba(11,91,211,0.08);
+}
+.e-order .btn.outline:hover { box-shadow: 0 6px 18px rgba(11,91,211,0.18); }
+
+@media (max-width: 640px) {
+  .e-order .buttons { gap: 8px; }
+  .e-order .btn { padding: 9px 12px; border-radius: 10px; }
+}

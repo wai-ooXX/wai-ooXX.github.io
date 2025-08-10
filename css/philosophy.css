@@ -1,0 +1,132 @@
+/* ========== Philosophy Page Scoped Styles ==========
+   すべて .ph-page 配下に限定して style.css の干渉を遮断
+   -------------------------------------------------- */
+
+.ph-page {
+  --ph-bg: #ffffff;
+  --ph-text: #1a1a1a;
+  --ph-muted: #556270;
+  --ph-accent: #0ea5e9;      /* コーポレート水色に合わせて */
+  --ph-accent-weak: #e6f6fd; /* ごく淡い水色の面 */
+  --ph-maxw: 1080px;
+
+  background: var(--ph-bg);
+  color: var(--ph-text);
+  font-family:
+    "Shippori Mincho B1",
+    "Noto Serif JP",
+    "Hiragino Mincho ProN",
+    "Yu Mincho",
+    serif;
+  line-height: 1.75;
+}
+
+/* 余白の基準 */
+.ph-page .ph-container {
+  max-width: var(--ph-maxw);
+  margin: 0 auto;
+  padding: clamp(20px, 4vw, 48px);
+}
+
+/* ヒーロー */
+.ph-page .ph-hero {
+  background:
+    radial-gradient(1200px 300px at 50% -50%, var(--ph-accent-weak), transparent 70%),
+    linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  border-bottom: 1px solid #eef3f7;
+}
+.ph-page .ph-hero-inner {
+  max-width: var(--ph-maxw);
+  margin: 0 auto;
+  padding: clamp(40px, 8vw, 96px) clamp(20px, 4vw, 48px);
+  text-align: center;
+}
+.ph-page .ph-title {
+  margin: 0 0 8px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  font-size: clamp(28px, 5vw, 44px);
+}
+.ph-page .ph-sub {
+  margin: 0;
+  color: var(--ph-muted);
+  font-weight: 600;
+  font-size: clamp(14px, 2.5vw, 18px);
+}
+
+/* セクション見出し */
+.ph-page .ph-heading {
+  margin: 0 0 .4em;
+  font-weight: 700;
+  font-size: clamp(20px, 3.2vw, 28px);
+  letter-spacing: .06em;
+}
+.ph-page .ph-lead {
+  margin: 0 0 1.6em;
+  color: var(--ph-muted);
+  font-size: clamp(14px, 2.6vw, 18px);
+}
+.ph-page .ph-br { display: none; }
+@media (max-width: 520px) {
+  .ph-page .ph-br { display: inline; }
+}
+
+/* カード群 */
+.ph-page .ph-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: clamp(14px, 2.6vw, 20px);
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 960px) {
+  .ph-page .ph-cards { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 620px) {
+  .ph-page .ph-cards { grid-template-columns: 1fr; }
+}
+
+.ph-page .ph-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #eaf1f6;
+  border-radius: 20px;
+  padding: clamp(18px, 3vw, 28px);
+  box-shadow:
+    0 8px 16px rgba(0,0,0,.03),
+    0 1px 0 rgba(0,0,0,.04) inset;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.ph-page .ph-card:hover {
+  transform: translateY(-2px);
+  border-color: #dceaf3;
+  box-shadow:
+    0 16px 28px rgba(0,0,0,.06),
+    0 1px 0 rgba(0,0,0,.05) inset;
+}
+.ph-page .ph-num {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: clamp(20px, 4vw, 28px);
+  font-weight: 700;
+  color: var(--ph-accent);
+  opacity: .2;
+  user-select: none;
+}
+.ph-page .ph-card-title {
+  margin: 0 0 .4em;
+  font-weight: 700;
+  font-size: clamp(18px, 3vw, 22px);
+  letter-spacing: .06em;
+}
+.ph-page .ph-card-text {
+  margin: 0;
+  color: var(--ph-muted);
+  font-size: clamp(14px, 2.4vw, 16px);
+}
+
+/* ユーティリティ（このページ内だけで効く） */
+.ph-page .u-center { text-align: center; }

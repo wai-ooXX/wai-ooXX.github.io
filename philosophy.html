@@ -1,33 +1,82 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>企業理念</title>
+
+  <!-- 既存の共通CSS（必要なら残す） -->
   <link rel="stylesheet" href="css/style.css">
 
-</head>
+  <!-- 明朝系の荘厳フォント（オンライン配信・不要なら削除可） -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
 
+  <!-- このページ専用CSS（必ず最後に） -->
+  <link rel="stylesheet" href="css/philosophy.css">
+</head>
 <body>
 
-
-  <!-- header部分を編集するならここ -->
+  <!-- 共通ヘッダー -->
   <div id="header"></div>
-  <!-- アコーディオンを編集するならここ -->
 
+  <!-- ページ本体（namespaceクラスでstyle.cssと干渉回避） -->
+  <main class="ph-page" role="main" aria-labelledby="ph-title">
+    <!-- ヒーロー -->
+    <section class="ph-hero">
+      <div class="ph-hero-inner">
+        <h1 id="ph-title" class="ph-title">企業理念</h1>
+        <p class="ph-sub">志を磨き、社会に尽くす。</p>
+      </div>
+    </section>
 
-  <h1>企業理念</h1>
+   <!--  <h1>企業理念</h1>
   <p>　 　１、お客様主義：品質、サービスによってお客様に満足を提供します。</p>
   <p>　 　２、社員主義：技術、精神を磨き能力アップに努めます。</p>
   <p>　 　３、社会満足：業務を通じ、世の中に良いことに挑戦します。</p>
+ -->
 
+    <!-- 本文 -->
+    <section class="ph-container">
+      <header class="ph-intro">
+        <h2 class="ph-heading">PONY ELECTRICの三つの信条</h2>
+        <p class="ph-lead">
+          私たちは品質・技術・誠実を礎に、<br class="ph-br">
+          お客様・社員・社会の三者がともに満足する循環をつくります。
+        </p>
+      </header>
 
-  <!-- footer部分を編集するならここ -->
+      <ol class="ph-cards" aria-label="企業理念 三か条">
+        <li class="ph-card">
+          <div class="ph-num">01</div>
+          <h3 class="ph-card-title">お客様主義</h3>
+          <p class="ph-card-text">
+            品質とサービスによってお客様に満足を提供します。
+          </p>
+        </li>
+
+        <li class="ph-card">
+          <div class="ph-num">02</div>
+          <h3 class="ph-card-title">社員主義</h3>
+          <p class="ph-card-text">
+            技術と精神を磨き、能力向上に努めます。
+          </p>
+        </li>
+
+        <li class="ph-card">
+          <div class="ph-num">03</div>
+          <h3 class="ph-card-title">社会満足</h3>
+          <p class="ph-card-text">
+            業務を通じて、世の中に良いことへ挑戦します。
+          </p>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- 共通フッター -->
   <div id="footer"></div>
 
-    <!-- 共通JSの読み込み（bodyの一番最後が推奨） -->
+  <!-- 共通JS（ヘッダー/フッター読み込みなど） -->
   <script src="js/common.js"></script>
-
 </body>
-
 </html>

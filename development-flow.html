@@ -1,30 +1,166 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <title>過去のニュース｜ポニー電機</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <title>開発の流れ｜ポニー電機</title>
 
+  <!-- 既存：共通スタイル（ヘッダー/フッター用）。必要なら残す -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- 追加：このページ専用CSS（必ず最後に読み込む） -->
+  <link rel="stylesheet" href="css/development-flow.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-
 <body>
 
-    <!-- header部分を編集するならここ -->
-    <div id="header"></div>
-    <!-- アコーディオンを編集するならここ -->
+  <!-- 共通ヘッダー -->
+  <div id="header"></div>
 
+  <!-- ページ本体はすべて .devflow-page の中に入れる（名前空間化） -->
+  <main class="devflow-page" aria-label="開発の流れ">
+    <!-- ヒーロー -->
+    <section class="df-hero">
+      <div class="df-hero__inner">
+        <h1 class="df-hero__title">開発の流れ</h1>
+        <p class="df-hero__lead">
+          一般的な開発フローをご紹介します。<br>ご要望やNDAの有無、仕様の確度に応じて柔軟にアレンジ可能です。
+        </p>
+      </div>
+    </section>
 
+    <!-- CTA（お問い合わせ） -->
+    <section class="df-cta" aria-label="お問い合わせ">
+      <div class="df-cta__card">
+        <p class="df-cta__msg">
+          まずはお気軽にご相談ください。オンライン打合せにも対応します。
+        </p><br>
+        <div class="df-cta__actions">
+          <a class="df-btn df-btn--primary" href="contact.html">お問い合わせフォーム</a>
+          <a class="df-btn df-btn--ghost" href="tel:045-548-8412">tel. 045-548-8412</a>
+        </div>
+      </div>
+    </section>
 
+    <!-- タイムライン -->
+    <section class="df-timeline" aria-label="工程タイムライン">
+      <ol class="df-steps">
 
+        <li class="df-step">
+          <div class="df-step__head">
+            <h2 class="df-step__title"><span class="df-step__num">1</span> お問い合わせ</h2>
+          </div>
+          <div class="df-step__body">
+            <p><a href="contact.html">お問い合わせフォーム</a>または <a href="tel:0258-94-5961">tel. 0258-94-5961</a> へご連絡ください。</p>
+          </div>
+        </li>
 
-    <!-- footer部分を編集するならここ -->
-    <div id="footer"></div>
+        <li class="df-step">
+          <div class="df-step__head">
+            <h2 class="df-step__title"><span class="df-step__num">2</span> 打ち合わせ</h2>
+          </div>
+          <div class="df-step__body">
+            <p>
+              要求仕様（サイズ・出力などの数値目標、制御性能、予算や納期の目安）をヒアリングします。<br>
+              NDA が必要な場合は雛形をご提示ください。<br>仕様が固まっていない段階でもOKです。
+            </p>
+          </div>
+        </li>
 
-    <!-- 共通JSの読み込み（bodyの一番最後が推奨） -->
-    <script src="js/common.js"></script>
+        <li class="df-step">
+          <div class="df-step__head">
+            <h2 class="df-step__title">
+              <span class="df-step__num">3</span> 仕様の決定
+              <span class="df-badge">見積準備</span>
+            </h2>
+          </div>
+          <div class="df-step__body">
+            <p>
+              打合せ内容をもとに購⼊仕様書（御見積条件）を作成しご確認いただきます。<br>
+              問題なければ御見積書を提示。<br>
+              契約書でのやり取りや貴社様式にも対応します。
+            </p>
+          </div>
+        </li>
 
+        <li class="df-step">
+          <div class="df-step__head">
+            <h2 class="df-step__title">
+              <span class="df-step__num">4</span> 設計
+              <span class="df-chip">目安 1〜2ヶ月</span>
+            </h2>
+          </div>
+          <div class="df-step__body">
+            <ul class="df-list">
+              <li>回路設計：電磁界解析モデル作成・出力特性解析</li>
+                            <li>基板設計：電磁界解析モデル作成・出力特性解析</li>
+              <li>機構設計：部品図・組立図の作成</li>
+              <li>制御設計：シミュレーションモデル作成・性能検証</li>
+            </ul>
+            <p>コントローラは基本標準品を使用しますが、ご要望に応じて検討可能です。</p>
+          </div>
+        </li>
 
+        <li class="df-step">
+          <div class="df-step__head">
+            <h2 class="df-step__title">
+              <span class="df-step__num">5</span> 試作
+              <span class="df-chip">目安 2〜3ヶ月</span>
+            </h2>
+          </div>
+          <div class="df-step__body">
+            <p>
+              ステータ／ロータ／磁石／ハウジング／シャフト等の製作と社内組立。<br>制御ソフトはシミュレーション同等に実装。<br>
+              ドライバは実装後、モータ接続前に RL 負荷で立上げ試験を実施します。
+            </p>
+          </div>
+        </li>
+
+        <li class="df-step">
+          <div class="df-step__head">
+            <h2 class="df-step__title">
+              <span class="df-step__num">6</span> 駆動・評価
+              <span class="df-chip">目安 2ヶ月</span>
+            </h2>
+          </div>
+          <div class="df-step__body">
+            <p>
+              動作波形・効率等を測定。指定評価項目がある場合は事前にご提示ください。<br>
+              設計結果との比較検討や次期試作に向けた課題抽出も行います。
+            </p>
+          </div>
+        </li>
+
+        <li class="df-step">
+          <div class="df-step__head">
+            <h2 class="df-step__title"><span class="df-step__num">7</span> 納品</h2>
+          </div>
+          <div class="df-step__body">
+            <p>
+              報告書は印刷物＋PDF（CD-R）でご送付。試作品は立会試験でご説明後に梱包・配送します。<br>
+              ベンチや制御盤は建物入口までの荷降ろしまでが基本です（搬入はお客様手配）。
+            </p>
+          </div>
+        </li>
+
+      </ol>
+    </section>
+
+    <!-- 補足：柔軟対応 -->
+    <section class="df-note" aria-label="柔軟なアレンジ">
+      <div class="df-note__box">
+        <h3>フローは柔軟にアレンジ可能</h3>
+        <p>
+          研究段階のPoCから量産に向けた最適化、解析のみのスポット支援まで状況に合わせて対応します。
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 共通フッター -->
+  <div id="footer"></div>
+
+  <!-- 共通JS（ヘッダー/フッター読込など） -->
+  <script src="js/common.js"></script>
 </body>
-
 </html>

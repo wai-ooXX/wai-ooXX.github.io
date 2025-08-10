@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <title>過去のニュース｜ポニー電機</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <title>品質方針 | ポニー電機</title>
 
+  <!-- 共通CSS（既存） -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- 荘厳な明朝系フォント（通信NG環境なら削除OK） -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- 専用CSS（いちばん最後） -->
+  <link rel="stylesheet" href="css/quality-policy.css">
 </head>
-
 <body>
 
-    <!-- header部分を編集するならここ -->
-    <div id="header"></div>
-    <!-- アコーディオンを編集するならここ -->
+  <!-- 共通ヘッダー -->
+  <div id="header"></div>
 
+  <!-- ページ本体（namespaceでstyle.cssと干渉回避） -->
+  <main class="qp-page" role="main" aria-labelledby="qp-title">
+    <!-- ヒーロー -->
+    <section class="qp-hero">
+      <div class="qp-hero-inner">
+        <h1 id="qp-title" class="qp-title">品質方針</h1>
+        <p class="qp-sub">Quality Policy</p>
+        <p class="qp-year" aria-label="制定年度">（2020）</p>
+      </div>
+    </section>
 
-<div id="hinnshituhoushinn">
-<dd>品質方針(2020)</dd>
-</div>
-<HR width="950" size="5"  color="#FFD700" align="center" >
-</div>
-<div class="kaisyagaiyo-first-title">
-　　１.お客様が満足する製品を提供する為、100％良品を目標とし、品質マネジメントシステムに基づく品質保証活動を理解し、<br> <span>
+    <!-- 　　１.お客様が満足する製品を提供する為、100％良品を目標とし、品質マネジメントシステムに基づく品質保証活動を理解し、<br> <span>
 　　　</span>その達成状況を管理する。<br><br>
 
 　　２.品質保証活動において「品質第一」に徹し、原価低減を充分考慮した上で、品質の維持、向上を行う。<br><br>
@@ -29,17 +38,59 @@
 　　３.営業、管理、資材、技術、製造、検査にいたるすべての活動にあたり、納期厳守する為、情報伝達、部署間連携、社員の能力及び<br>
 　　　お客様満足の向上に努める。<br><br>
 
-　　４.品質目標を達成する為に、全社員で品質マネジメントシステムの有効性、妥当性を見直し継続的に向上する。<br><br>
-</div>
+　　４.品質目標を達成する為に、全社員で品質マネジメントシステムの有効性、妥当性を見直し継続的に向上する。<br><br> -->
 
+    <!-- 本文 -->
+    <section class="qp-container">
+      <header class="qp-intro">
+        <h2 class="qp-heading">私たちの品質への約束</h2>
+        <p class="qp-lead">品質マネジメントシステムに基づき、全社一丸で継続的改善を推進します。</p>
+      </header>
 
-    <!-- footer部分を編集するならここ -->
-    <div id="footer"></div>
+      <ol class="qp-list" aria-label="品質方針の項目">
+        <li class="qp-item">
+          <div class="qp-num">01</div>
+          <h3 class="qp-item-title">お客様満足と100％良品の追求</h3>
+          <p class="qp-item-text">
+            お客様が満足する製品を提供するため、<strong>100％良品</strong>を目標とし、
+            品質マネジメントシステムに基づく品質保証活動を理解し、その達成状況を管理する。
+          </p>
+        </li>
 
-    <!-- 共通JSの読み込み（bodyの一番最後が推奨） -->
-    <script src="js/common.js"></script>
+        <li class="qp-item">
+          <div class="qp-num">02</div>
+          <h3 class="qp-item-title">品質第一と原価の最適化</h3>
+          <p class="qp-item-text">
+            品質保証活動において<strong>品質第一</strong>に徹し、原価低減を十分考慮した上で、
+            品質の維持・向上を行う。
+          </p>
+        </li>
 
+        <li class="qp-item">
+          <div class="qp-num">03</div>
+          <h3 class="qp-item-title">納期厳守と連携・能力向上</h3>
+          <p class="qp-item-text">
+            営業・管理・資材・技術・製造・検査のすべての活動において<strong>納期厳守</strong>のため、
+            情報伝達・部署間連携を強化し、社員の能力およびお客様満足の向上に努める。
+          </p>
+        </li>
 
+        <li class="qp-item">
+          <div class="qp-num">04</div>
+          <h3 class="qp-item-title">品質目標と継続的改善</h3>
+          <p class="qp-item-text">
+            品質目標の達成に向け、全社員で品質マネジメントシステムの<strong>有効性・妥当性</strong>を見直し、
+            継続的に向上させる。
+          </p>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- 共通フッター -->
+  <div id="footer"></div>
+
+  <!-- 共通JS -->
+  <script src="js/common.js"></script>
 </body>
-
 </html>

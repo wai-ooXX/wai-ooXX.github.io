@@ -1,32 +1,131 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>代表挨拶</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>代表挨拶 | PONY ELECTRIC CO.,LTD</title>
+
+  <!-- 既存の全体CSS（必要なら） -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- このページ専用CSS：必ず後ろで読み込む -->
+  <link rel="stylesheet" href="css/message.css">
 </head>
 <body>
 
+  <!-- ヘッダー共通化しているならここで include -->
+<div id="header"></div>
 
-    <!-- header部分を編集するならここ -->
-    <div id="header"></div>
     <!-- アコーディオンを編集するならここ -->
-
-
- <h1>代表挨拶</h1>
-  <p>代表者からのご挨拶やメッセージを記載します。</p>
 
     <!-- https://wm.openhouse-group.com/column/%E3%82%AA%E3%83%BC%E3%83%8A%E3%83%BC%E6%A7%98%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%93%E3%83%A5%E3%83%BC-voice70-%E4%BC%9A%E7%A4%BE%E7%B5%8C%E5%96%B6-sn%E6%A7%98-2020%E5%B9%B4%E8%B3%BC%E5%85%A5 -->
 
+  <main id="greeting-page" class="gp">
+    <section class="gp-hero">
+      <h1 class="gp-title">代表挨拶</h1>
+      <!-- <p class="gp-subtitle">Our Message</p> -->
+    </section>
+
+    <section class="gp-photo" aria-label="代表写真">
+      <!-- ▼代表写真 -->
+      <img src="img/ceo_sample.jpg" alt="代表の写真">
+      <!-- <figcaption class="gp-photo-caption">撮影：〇〇スタジオ / 2025年5月</figcaption> -->
+    </section>
+
+    <section class="gp-quote" aria-label="代表からの言葉">
+      <!-- ▼代表からの言葉 -->
+      <blockquote class="gp-quote-body">
+        ここに代表の言葉を入れる。<br>
+        ーーーーーーーーーーー
+      </blockquote>
+      <p class="gp-sign">ポニー電機株式会社　代表取締役　長井 真一郎</p>
+    </section>
+
+    <section class="gp-profile" aria-labelledby="gp-profile-title">
+      <h2 id="gp-profile-title" class="gp-section-title">プロフィール</h2>
+      <dl class="gp-profile-list">
+        <div class="gp-profile-row">
+          <dt>氏名</dt>
+          <dd>長井 真一郎</dd>
+        </div>
+        <div class="gp-profile-row">
+          <dt>生年</dt>
+          <dd>1972年07月10日</dd>
+        </div>
+        <div class="gp-profile-row">
+          <dt>経歴</dt>
+          <dd>20----------------------<br>2020年 代表取締役就任</dd>
+        </div>
+        <div class="gp-profile-row">
+          <dt>専門</dt>
+                    <dd>------------</dd>
+              <!-- <dd>トランス・リアクトル、パワエレ全般</dd> -->
+        </div>
+        <div class="gp-profile-row">
+          <dt>メッセージ</dt>
+                              <dd>------------</dd>
+              <!-- <dd>お客様とともに次の50年へ。誠実なものづくりを。</dd> -->
+        </div>
+      </dl>
+    </section>
+
+    <!-- ▼▼ ミッション・ビジョン：ここから ▼▼ -->
+    <section class="gp-mv" aria-labelledby="gp-mv-title">
+      <h2 id="gp-mv-title" class="gp-section-title">ミッション・ビジョン</h2>
+
+      <div class="gp-mv-grid">
+        <!-- Mission -->
+        <article class="gp-mv-card gp-mission" aria-labelledby="gp-mission-title">
+          <!-- アイコン画像があれば <img class="gp-mv-icon" src="img/icon-mission.svg" alt=""> -->
+          <h3 id="gp-mission-title" class="gp-mv-title">Mission（存在意義）</h3>
+          <p class="gp-mv-lead">
+            <!-- ▼ここにミッションを1〜3文で入れてください -->
+            社会と産業の信頼を支える電源コア技術で、安心と効率を提供する。
+          </p>
+          <ul class="gp-mv-points">
+            <!-- 箇条書きで補足（増減OK） -->
+            <li><!-- 例： -->高信頼のものづくりを継続</li>
+            <li>お客様課題の迅速解決</li>
+            <li>地域・地球環境への配慮</li>
+          </ul>
+        </article>
+
+        <!-- Vision -->
+        <article class="gp-mv-card gp-vision" aria-labelledby="gp-vision-title">
+          <!-- アイコン画像があれば <img class="gp-mv-icon" src="img/icon-vision.svg" alt=""> -->
+          <h3 id="gp-vision-title" class="gp-mv-title">Vision（将来像）</h3>
+          <p class="gp-mv-lead">
+            <!-- ▼ここにビジョンを1〜3文で入れてください -->
+            パワーエレクトロニクスの中核企業として、次世代の省エネ社会を牽引する。
+          </p>
+          <ul class="gp-mv-points">
+            <li>次世代材料・設計のリーディング</li>
+            <li>データ活用による開発高度化</li>
+            <li>グローバル品質の実現</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Values（必要ならONに） -->
+      <!--
+      <div class="gp-mv-values">
+        <h3 class="gp-mv-title">Values（大切にする価値観）</h3>
+        <ul class="gp-mv-tags">
+          <li>誠実</li><li>挑戦</li><li>共創</li><li>品質</li><li>スピード</li>
+        </ul>
+      </div>
+      -->
+    </section>
+    <!-- ▲▲ ミッション・ビジョン：ここまで ▲▲ -->
+
+  </main>
 
 
-    <!-- footer部分を編集するならここ -->
+      <!-- footer部分を編集するならここ -->
     <div id="footer"></div>
 
     <!-- 共通JSの読み込み（bodyの一番最後が推奨） -->
     <script src="js/common.js"></script>
-
-
 
 </body>
 </html>

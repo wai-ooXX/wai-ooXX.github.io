@@ -1,0 +1,167 @@
+/* 名前空間 co-page 内で限定 */
+.co-page {
+  --co-accent: #0072c6;
+  --co-accent-2: #ff6b00;
+  --co-text: #333;
+  --co-muted: #f0f4f8;
+  --co-card: #fff;
+  --co-card-extra: 0px; /* 画像枠の追加幅（画像幅に足すx px） */
+
+  /* 画像間ギャップ（0px / 8px / 24px ...） */
+  --co-img-gap: 16px;
+
+  font-family: "Segoe UI","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+  color: var(--co-text);
+  padding: 24px 16px;
+}
+
+.co-container { max-width: 1280px; margin: 0 auto; }
+
+.co-hero img {
+  display: block;
+  margin: 0 auto 20px;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* 本社・横浜 */
+.co-important-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--co-img-gap) !important;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 640px) {
+  .co-important-links { justify-content: center; }
+  .co-important-item { width: 100% !important; }
+  .co-img-box { height: clamp(200px, 50vw, 360px); }
+}
+
+.co-important-links figure,
+.co-important-item {
+  margin: 0 !important;
+  width: auto !important;       /* コンテンツ幅に合わせる */
+  max-width: none !important;
+  justify-self: auto;
+  flex: 0 0 auto;               /* 伸び縮みせず並ぶ */
+}
+
+.co-important-item {
+  background: var(--co-card);
+  border-radius: 12px;
+  padding: 0 !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 高さ揃え（ノークロップ、比率維持） */
+.co-img-box {
+  width: 100%;
+  height: clamp(240px, 30vw, 420px); /* 高さ可変範囲（デフォ大きめ） */
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.co-img-box img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.co-important-item figcaption { padding: 12px; text-align: center; }
+
+/* ボタン */
+.co-btn {
+  display: inline-block;
+  background: var(--co-accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: transform .06s ease, background .3s ease;
+}
+.co-btn:hover { background: #005fa3; }
+.co-btn:active { transform: translateY(1px); }
+
+/* 見出し */
+.co-company-info h2,
+.co-business-days h2,
+.co-access-link h2 {
+  font-size: 1.5rem;
+  margin: 28px 0 12px;
+  border-bottom: 2px solid var(--co-accent);
+  padding-bottom: 6px;
+  color: var(--co-accent);
+}
+
+/* 表 */
+.co-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--co-card);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+.co-table th, .co-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e6e6e6;
+  vertical-align: top;
+  line-height: 1.8;
+  font-size: 15px;
+}
+.co-table th {
+  width: 10em;
+  background: var(--co-muted);
+  color: var(--co-text);
+  text-align: left;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.co-table tr:last-child th,
+.co-table tr:last-child td { border-bottom: none; }
+.co-table a { color: var(--co-accent); text-decoration: underline; }
+
+/* 営業日 */
+.co-pdf-link {
+  display: inline-block;
+  background: var(--co-accent-2);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  transition: background .3s ease, transform .06s ease;
+}
+.co-pdf-link:hover { background: #e55f00; }
+.co-pdf-link:active { transform: translateY(1px); }
+
+/* アクセス誘導 */
+.co-access-link {
+  background: var(--co-card);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  margin: 28px 0;
+}
+.co-access-link p { line-height: 1.8; }
+
+/* スマホ調整 */
+@media (max-width: 480px) {
+  .co-table th, .co-table td { padding: 10px 12px; }
+  .co-btn, .co-pdf-link { padding: 9px 14px; }
+  .co-img-box { height: 180px; }
+}

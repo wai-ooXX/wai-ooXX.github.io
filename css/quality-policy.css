@@ -1,0 +1,134 @@
+/* ========== Quality Policy Page (scoped) ==========
+   すべて .qp-page 配下に限定。style.css と干渉しない。
+   -------------------------------------------------- */
+
+.qp-page {
+  --qp-bg: #ffffff;
+  --qp-text: #161616;
+  --qp-muted: #586270;
+  --qp-accent: #0ea5e9;        /* コーポレート水色 */
+  --qp-accent-weak: #e6f6fd;   /* ごく淡い水色 */
+  --qp-maxw: 1080px;
+
+  background: var(--qp-bg);
+  color: var(--qp-text);
+  font-family:
+    "Shippori Mincho B1",
+    "Noto Serif JP",
+    "Hiragino Mincho ProN",
+    "Yu Mincho",
+    serif;
+  line-height: 1.8;
+}
+
+/* コンテナ */
+.qp-page .qp-container {
+  max-width: var(--qp-maxw);
+  margin: 0 auto;
+  padding: clamp(20px, 4vw, 48px);
+}
+
+/* ヒーロー */
+.qp-page .qp-hero {
+  background:
+    radial-gradient(1200px 300px at 50% -50%, var(--qp-accent-weak), transparent 70%),
+    linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  border-bottom: 1px solid #eef3f7;
+}
+.qp-page .qp-hero-inner {
+  max-width: var(--qp-maxw);
+  margin: 0 auto;
+  padding: clamp(44px, 8vw, 96px) clamp(20px, 4vw, 48px);
+  text-align: center;
+}
+.qp-page .qp-title {
+  margin: 0 0 6px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  font-size: clamp(28px, 5vw, 44px);
+}
+.qp-page .qp-sub {
+  margin: 0;
+  color: var(--qp-muted);
+  font-weight: 600;
+  font-size: clamp(12px, 2.2vw, 16px);
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+.qp-page .qp-year {
+  margin: .4em 0 0;
+  color: var(--qp-muted);
+  font-size: clamp(12px, 2.2vw, 15px);
+}
+
+/* 見出し */
+.qp-page .qp-heading {
+  margin: 0 0 .4em;
+  font-weight: 700;
+  font-size: clamp(20px, 3.2vw, 28px);
+  letter-spacing: .06em;
+}
+.qp-page .qp-lead {
+  margin: 0 0 1.6em;
+  color: var(--qp-muted);
+  font-size: clamp(14px, 2.6vw, 18px);
+}
+
+/* 方針リスト（カード風） */
+.qp-page .qp-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: clamp(14px, 2.6vw, 20px);
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 760px) {
+  .qp-page .qp-list { grid-template-columns: 1fr; }
+}
+
+.qp-page .qp-item {
+  position: relative;
+  background: #fff;
+  border: 1px solid #eaf1f6;
+  border-radius: 20px;
+  padding: clamp(18px, 3vw, 28px);
+  box-shadow:
+    0 8px 16px rgba(0,0,0,.03),
+    0 1px 0 rgba(0,0,0,.04) inset;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.qp-page .qp-item:hover {
+  transform: translateY(-2px);
+  border-color: #dceaf3;
+  box-shadow:
+    0 16px 28px rgba(0,0,0,.06),
+    0 1px 0 rgba(0,0,0,.05) inset;
+}
+
+.qp-page .qp-num {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: clamp(20px, 4vw, 28px);
+  font-weight: 700;
+  color: var(--qp-accent);
+  opacity: .22;
+  user-select: none;
+}
+
+.qp-page .qp-item-title {
+  margin: 0 0 .4em;
+  font-weight: 700;
+  font-size: clamp(17px, 2.8vw, 21px);
+  letter-spacing: .06em;
+}
+.qp-page .qp-item-text {
+  margin: 0;
+  color: var(--qp-muted);
+  font-size: clamp(14px, 2.4vw, 16px);
+}
+
+/* このページ内だけで効くユーティリティ */
+.qp-page .u-center { text-align: center; }

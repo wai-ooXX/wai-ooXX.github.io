@@ -1,0 +1,294 @@
+/* ===========================
+   product-introduction.css
+   すべて .pi-* 名前空間で衝突回避
+   =========================== */
+
+.pi-page {
+  --pi-accent: #2e9ae6;        /* コーポレート系の水色 */
+  --pi-accent-weak: #e8f4fd;   /* 淡い水色 */
+  --pi-text: #222;
+  --pi-muted: #666;
+  --pi-bg: #fff;
+  --pi-card: #fff;
+  --pi-border: #e5e7eb;
+  background: var(--pi-bg);
+  color: var(--pi-text);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Hero */
+.pi-hero {
+  background: linear-gradient(135deg, var(--pi-accent), #72c6ff);
+  color: #fff;
+  padding: clamp(32px, 6vw, 64px) 16px;
+}
+.pi-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.pi-title {
+  margin: 0 0 6px;
+  font-size: clamp(24px, 4.5vw, 40px);
+  letter-spacing: .02em;
+}
+.pi-subtitle {
+  margin: 0;
+  opacity: .9;
+}
+
+/* Info banner */
+.pi-banner {
+  background: var(--pi-accent-weak);
+  border-block: 1px solid var(--pi-border);
+}
+.pi-banner-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+  color: #0f3b59;
+}
+.pi-badge {
+  font-size: 12px;
+  background: #fff;
+  border: 1px solid var(--pi-border);
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+/* Tabs */
+.pi-tabs {
+  max-width: 1100px;
+  margin: 20px auto 0;
+  padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.pi-tab {
+  appearance: none;
+  border: 1px solid var(--pi-border);
+  background: #fff;
+  color: var(--pi-text);
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background .2s, color .2s, border-color .2s, transform .05s;
+}
+.pi-tab:hover { background: #fafafa; }
+.pi-tab.is-active {
+  background: var(--pi-accent);
+  color: #fff;
+  border-color: var(--pi-accent);
+}
+
+/* Panels */
+.pi-panel {
+  display: none;
+  max-width: 1100px;
+  margin: 16px auto 48px;
+  padding: 0 8px;
+}
+.pi-panel.is-active { display: block; }
+
+/* Grid */
+.pi-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 16px;
+}
+@media (min-width: 560px) {
+  .pi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 900px) {
+  .pi-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* Card */
+.pi-card {
+  display: block;
+  background: var(--pi-card);
+  border: 1px solid var(--pi-border);
+  border-radius: 14px;
+  overflow: clip;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 1px 0 rgba(0,0,0,.02);
+  transition: transform .06s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.pi-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(17,24,39,.08);
+  border-color: #dbe0e6;
+}
+.pi-thumb {
+  aspect-ratio: 4/3;
+  margin: 0;
+  background: #f6f8fb;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.pi-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pi-card-title {
+  font-size: 16px;
+  margin: 12px 14px 4px;
+  color: #0f172a;
+}
+.pi-card-desc {
+  margin: 0 14px 12px;
+  color: var(--pi-muted);
+  font-size: 14px;
+}
+.pi-linkhint {
+  display: inline-block;
+  margin: 0 14px 14px;
+  font-size: 12px;
+  color: #0b63a2;
+  background: #eef7ff;
+  border: 1px solid #d3eaff;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+.pi-dotlink {
+  display: inline-block;
+  border-bottom: 1px dotted currentColor;
+}
+
+/* ユーザーがキーボードで操作したときの見やすいフォーカス */
+.pi-tab:focus-visible,
+.pi-card:focus-visible {
+  outline: 2px solid var(--pi-accent);
+  outline-offset: 2px;
+  border-radius: 12px;
+}
+
+/* スクロールテキスト */
+.pi-scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: pi-scroll-left 15s linear infinite;
+  font-weight: 500;
+}
+
+@keyframes pi-scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* ===== Banner scrolling (badge + text together) ===== */
+.pi-banner-inner {
+  overflow: hidden;   /* はみ出しを隠す */
+  position: relative;
+}
+
+/* バッジ＋本文を一緒にスクロール */
+.pi-scroll-wrap {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;           /* 右端の外から入ってくるように */
+  animation: pi-scroll-left 15s linear infinite;
+  font-weight: 500;
+}
+
+/* 速度は 15s を短くすると速くなります */
+@keyframes pi-scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* ===== Catalog-like whites and layout ===== */
+/* Hero clean white */
+.pi-hero {
+  background: #fff !important;
+  color: #0f172a;
+  border-bottom: 1px solid var(--pi-border);
+}
+.pi-title { color: #0f3b59; }
+.pi-subtitle { color: #406b8c; opacity: 1; }
+
+/* Tabs on a white card */
+.pi-tabs {
+  max-width: 1100px;
+  margin: 16px auto 0;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid var(--pi-border);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.pi-tabs-left {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.pi-tab {
+  appearance: none;
+  border: 1px solid var(--pi-border);
+  background: #fff;
+  color: var(--pi-text);
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background .2s, color .2s, border-color .2s, transform .05s;
+}
+.pi-tab:hover { background: #fafafa; }
+/* アクティブは catalog-e-products と同系の青グラデ */
+.pi-tab.is-active {
+  background: linear-gradient(to right, #0072c6, #3ca0f2);
+  color: #fff;
+  border-color: transparent;
+}
+
+/* Search box (right) */
+.pi-search {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.pi-search input[type="search"] {
+  width: min(42vw, 280px);
+  padding: 8px 28px 8px 10px;
+  border: 1px solid var(--pi-border);
+  border-radius: 999px;
+  font-size: 14px;
+  outline: none;
+}
+.pi-search input[type="search"]:focus {
+  border-color: #c4d9f7;
+  box-shadow: 0 0 0 3px #e9f2ff;
+}
+.pi-search button#pi-search-clear {
+  border: 1px solid var(--pi-border);
+  background: #fff;
+  border-radius: 999px;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Panels on white background */
+.pi-panel {
+  background: #fff;
+  border: 1px solid var(--pi-border);
+  border-radius: 12px;
+  padding-top: 12px;
+}

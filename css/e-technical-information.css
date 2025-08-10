@@ -1,0 +1,218 @@
+/* すべて #eti-page 配下に限定して style.css と干渉させない */
+#eti-page {
+  --eti-bg: #ffffff;
+  --eti-fg: #1f2937;        /* 濃いグレー */
+  --eti-accent: #0ea5e9;    /* アクセント（明るい青） */
+  --eti-accent-2: #0369a1;  /* 濃い青 */
+  --eti-muted: #6b7280;     /* 中間グレー */
+  --eti-border: #e5e7eb;    /* 薄いグレー */
+  --eti-card-bg: #ffffff;
+  --eti-radius: 16px;
+  --eti-shadow: 0 6px 20px rgba(2, 6, 23, 0.08);
+  color: var(--eti-fg);
+  background: var(--eti-bg);
+  font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+/* ヒーロー */
+#eti-page .eti-hero {
+  position: relative;
+  padding: clamp(32px, 8vw, 72px) 20px;
+  background:
+    radial-gradient(1200px 200px at 20% 0%, rgba(14,165,233,0.10), transparent 60%),
+    linear-gradient(180deg, #f8fafc 0%, #fff 60%);
+  border-bottom: 1px solid var(--eti-border);
+}
+#eti-page .eti-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+#eti-page .eti-badge {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: .08em;
+  color: var(--eti-accent-2);
+  background: rgba(14,165,233,.12);
+  border: 1px solid rgba(14,165,233,.25);
+  padding: 6px 10px;
+  border-radius: 999px;
+  margin: 0 0 10px 0;
+}
+#eti-page .eti-title {
+  font-size: clamp(22px, 4.5vw, 36px);
+  line-height: 1.2;
+  margin: 0 0 8px 0;
+}
+#eti-page .eti-lead {
+  color: var(--eti-muted);
+  font-size: clamp(14px, 2.5vw, 16px);
+  margin: 0;
+}
+
+/* セクション */
+#eti-page .eti-section {
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 0 20px;
+}
+#eti-page .eti-section-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 8px 0 16px;
+  padding-left: 12px;
+  border-left: 4px solid var(--eti-accent);
+}
+
+/* 共通ボタン/リンク */
+#eti-page .eti-btn,
+#eti-page .eti-btn.ghost,
+#eti-page .eti-link {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  transition: transform .08s ease, box-shadow .2s ease, background .2s ease;
+  will-change: transform;
+}
+#eti-page .eti-btn {
+  background: var(--eti-accent);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(14,165,233,0.25);
+}
+#eti-page .eti-btn:hover { transform: translateY(-1px); }
+#eti-page .eti-btn:active { transform: translateY(0); }
+
+#eti-page .eti-btn.ghost {
+  background: #fff;
+  color: var(--eti-accent-2);
+  border: 1px solid var(--eti-border);
+}
+#eti-page .eti-btn.ghost:hover { box-shadow: var(--eti-shadow); }
+
+#eti-page .eti-link {
+  color: var(--eti-accent-2);
+  border: 1px dashed rgba(3, 105, 161, .35);
+  background: rgba(14,165,233,.05);
+  margin-right: 8px;
+}
+#eti-page .eti-link:hover { background: rgba(14,165,233,.12); }
+
+/* 設計支援カード */
+#eti-page .eti-cards {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+#eti-page .eti-card {
+  grid-column: span 12;
+  background: var(--eti-card-bg);
+  border: 1px solid var(--eti-border);
+  border-radius: var(--eti-radius);
+  box-shadow: var(--eti-shadow);
+  padding: 16px;
+}
+@media (min-width: 720px) {
+  #eti-page .eti-card { grid-column: span 6; }
+}
+@media (min-width: 1040px) {
+  #eti-page .eti-card { grid-column: span 4; }
+}
+#eti-page .eti-card-header h3 {
+  font-size: 18px;
+  margin: 4px 0 8px;
+}
+#eti-page .eti-card-body { color: var(--eti-muted); }
+#eti-page .eti-note { color: #dc267f; margin-top: 6px; font-size: 13px; }
+#eti-page .eti-card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+#eti-page .eti-comingsoon {
+  font-size: 12px; color: var(--eti-muted);
+}
+
+/* カタログ風グリッド */
+#eti-page .eti-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+#eti-page .eti-item {
+  grid-column: span 12;
+  border: 1px solid var(--eti-border);
+  border-radius: var(--eti-radius);
+  background: var(--eti-card-bg);
+  box-shadow: var(--eti-shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 720px) {
+  #eti-page .eti-item { grid-column: span 6; }
+}
+@media (min-width: 1040px) {
+  #eti-page .eti-item { grid-column: span 4; }
+}
+
+/* サムネイル */
+#eti-page .eti-item-media {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 3;
+  background: #f3f4f6;
+  overflow: hidden;
+}
+#eti-page .eti-item-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .3s ease;
+}
+#eti-page .eti-item:hover .eti-item-media img {
+  transform: scale(1.04);
+}
+
+/* PDFバッジ */
+#eti-page .eti-pdf-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ef4444;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(239, 68, 68, .25);
+}
+
+/* 本文 */
+#eti-page .eti-item-body {
+  padding: 14px 16px 16px;
+  display: grid;
+  gap: 8px;
+}
+#eti-page .eti-item-title {
+  font-size: 16px;
+  line-height: 1.35;
+  margin: 0;
+}
+#eti-page .eti-item-desc {
+  color: var(--eti-muted);
+  font-size: 14px;
+  margin: 0;
+}
+#eti-page .eti-item-tags {
+  display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px;
+}
+#eti-page .eti-item-tags span {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--eti-accent-2);
+  background: rgba(14,165,233,.08);
+  border: 1px solid rgba(14,165,233,.22);
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+/* 小さなユーティリティ */
+#eti-page .eti-list { margin: 0; padding-left: 1.2em; }
+#eti-page .eti-list li { margin: .2em 0; }

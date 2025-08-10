@@ -1,40 +1,92 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <title>ＩＳＯ認証</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <title>ISO認証 | ポニー電機</title>
 
+  <!-- 共通CSS（既存） -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- 明朝系フォント（通信NGなら削除可） -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- 専用CSS（最後に読み込み） -->
+  <link rel="stylesheet" href="css/iso.css">
 </head>
-
 <body>
 
-    <!-- header部分を編集するならここ -->
-    <div id="header"></div>
-    <!-- アコーディオンを編集するならここ -->
-    <br>
-    <div id="isoninnsyou">
-        <dd>ＩＳＯ認証</dd>
-    </div>
-    <HR width="950" size="5" color="##9ACD32" align="center">
-    </div>
-    <div class="kaisyagaiyo-first-title">
-        　　ＩＳＯ認証<br>
-        　　　ISO9001：認証 (Registration No.QAIC/JP/0742)<br>
-        　　　審査機関 　QA INTERNATIONAL CERTIFICATION LIMITED　(QAIC)
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </div>
+  <!-- 共通ヘッダー -->
+  <div id="header"></div>
 
+  <!-- 本文（namespaceでstyle.cssと干渉回避） -->
+  <main class="iso-page" role="main" aria-labelledby="iso-title">
+    <!-- ヒーロー -->
+    <section class="iso-hero">
+      <div class="iso-hero-inner">
+        <h1 id="iso-title" class="iso-title">ISO認証</h1>
+        <p class="iso-sub">ISO 9001 Certification</p>
+      </div>
+    </section>
 
+    <!-- 概要 -->
+    <section class="iso-container">
+      <header class="iso-intro">
+        <h2 class="iso-heading">品質マネジメントシステムの認証</h2>
+        <p class="iso-lead">
+          当社は品質マネジメントシステムに関する国際規格 <strong>ISO 9001</strong> の認証を取得しています。
+        </p>
+      </header>
 
-    <!-- footer部分を編集するならここ -->
-    <div id="footer"></div>
+      <!-- 認証情報（カード） -->
+      <div class="iso-grid" aria-label="認証情報">
+        <article class="iso-card">
+          <h3 class="iso-card-title">規格</h3>
+          <p class="iso-card-text">ISO 9001（品質マネジメントシステム）</p>
+        </article>
 
-    <!-- 共通JSの読み込み（bodyの一番最後が推奨） -->
-    <script src="js/common.js"></script>
+        <article class="iso-card">
+          <h3 class="iso-card-title">登録番号</h3>
+          <p class="iso-card-text">QAIC/JP/0742</p>
+        </article>
 
+        <article class="iso-card">
+          <h3 class="iso-card-title">審査機関</h3>
+          <p class="iso-card-text">QA INTERNATIONAL CERTIFICATION LIMITED（QAIC）</p>
+        </article>
+      </div>
 
+      <!-- 証明書・添付（任意の差し替え想定） -->
+      <section class="iso-cert">
+        <h3 class="iso-block-title">証明書</h3>
+        <div class="iso-cert-area">
+          <!-- 証明書画像を用意できる場合は下のsrcを差し替え -->
+          <!-- <img src="img/iso9001-certificate.jpg" alt="ISO9001 認証証明書" class="iso-cert-img"> -->
+
+          <div class="iso-cert-note">
+            証明書PDFや画像をお持ちの場合は、<code>img/</code> 配下に配置し、
+            上記コメントアウトを外して <code>src</code> を差し替えてください。<br>
+            PDFを公開する場合は：<br>
+            <a class="iso-button" href="docs/iso9001-certificate.pdf" target="_blank" rel="noopener">証明書PDFを開く</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 追記事項（任意） -->
+      <section class="iso-notes">
+        <h3 class="iso-block-title">運用について</h3>
+        <ul class="iso-notes-list">
+          <li>品質マネジメントシステムの有効性・妥当性を定期的に見直し、継続的改善を図ります。</li>
+          <li>関連する法規制・要求事項を順守します。</li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <!-- 共通フッター -->
+  <div id="footer"></div>
+
+  <!-- 共通JS -->
+  <script src="js/common.js"></script>
 </body>
-
 </html>

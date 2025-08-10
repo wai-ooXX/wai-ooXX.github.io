@@ -1,0 +1,107 @@
+/* =========================================
+   設備情報ページ専用CSS（style.cssと干渉しないよう名前空間化）
+   すべて #facility-page.fi 配下に限定
+   ========================================= */
+:root {
+  --fi-accent: #0072c6;
+  --fi-muted: #6b7280;
+  --fi-border: #e5e7eb;
+  --fi-shadow: 0 6px 20px rgba(0,0,0,.06);
+  --fi-radius: 16px;
+}
+
+/* ページ全体 */
+#facility-page.fi {
+  font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", Meiryo, system-ui, -apple-system, sans-serif;
+  color: #111827;
+  line-height: 1.75;
+  background: #fff;
+
+  /* 固定ヘッダぶんのオフセット。必要なら数値調整 */
+  padding-top: clamp(80px, 9vw, 120px);
+}
+
+/* 中央幅 */
+#facility-page.fi { --fi-container: min(100% - 32px, 1040px); }
+#facility-page.fi section { width: var(--fi-container); margin-inline: auto; }
+
+/* ヒーロー */
+.fi-hero { padding: 8px 0 14px; }
+.fi-title {
+  margin: 0 0 8px 0;
+  font-weight: 800;
+  font-size: clamp(26px, 3.2vw, 36px);
+  letter-spacing: .01em;
+  color: #1f2937;
+  border-left: 6px solid var(--fi-accent);
+  padding-left: 12px;
+}
+.fi-sub { margin: 0; color: var(--fi-muted); }
+
+/* リスト全体 */
+.fi-list { display: grid; gap: 18px; margin: 10px auto 72px; }
+
+/* カード1件 */
+.fi-item {
+  display: grid;
+  grid-template-columns: 360px 1fr;  /* 左写真 / 右情報 */
+  gap: 18px;
+  background: #fff;
+  border: 1px solid var(--fi-border);
+  border-radius: var(--fi-radius);
+  box-shadow: var(--fi-shadow);
+  padding: clamp(12px, 2.2vw, 18px);
+}
+@media (max-width: 900px) {
+  .fi-item { grid-template-columns: 1fr; } /* スマホは縦積み */
+}
+
+/* 写真 */
+.fi-photo { margin: 0; }
+.fi-photo img {
+  display: block;
+  width: 100%;
+  height: auto;        /* 比率維持 */
+  max-width: 100%;     /* 元画像より拡大しない（ブラウザ拡大時は容器幅で止まる） */
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,.04);
+}
+.fi-cap { margin-top: 6px; font-size: 12px; color: var(--fi-muted); }
+
+/* 情報エリア */
+.fi-info { align-self: start; }
+.fi-name {
+  margin: 2px 0 8px;
+  font-size: clamp(18px, 2.4vw, 22px);
+  font-weight: 700;
+}
+
+/* メタ情報（見出し:dt / 内容:dd） */
+.fi-meta { margin: 0; padding: 0; }
+.fi-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 14px;
+  padding: 12px 0;
+  border-top: 1px solid var(--fi-border);
+}
+.fi-row:first-child { border-top: none; }
+
+.fi-row dt {
+  margin: 0;
+  font-weight: 600;
+  color: var(--fi-muted);
+  white-space: nowrap;
+}
+.fi-row dd {
+  margin: 0;
+}
+
+/* 文字の調整（質問の件：フォントサイズ・行間） */
+.fi-row { font-size: 15px; line-height: 1.7; } /* ←お好みで数値変更OK */
+.fi-row dt { font-size: 14px; }
+.fi-row dd { font-size: 15px; }
+
+/* 余白の最終調整 */
+.fi-list > .fi-item:last-child { margin-bottom: 8px; }

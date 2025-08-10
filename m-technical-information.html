@@ -1,95 +1,273 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <title>過去のニュース｜ポニー電機</title>
-    <link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8" />
+  <title>技術支援・パワエレ技術情報｜ポニー電機</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- 既存の全体スタイル -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- このページ専用（style.cssと干渉しないよう #mti-page 配下に限定） -->
+  <link rel="stylesheet" href="css/m-technical-information.css" />
 </head>
-
 <body>
+  <!-- 共通ヘッダー -->
+  <div id="header"></div>
 
-    <!-- header部分を編集するならここ -->
-    <div id="header"></div>
-    <!-- アコーディオンを編集するならここ -->
+  <main id="mti-page">
+    <!-- 上部：ヒーロー -->
+    <section class="mti-hero">
+      <div class="mti-hero-inner">
+        <p class="mti-badge">設計支援</p>
+        <h1 class="mti-title">技術支援メニュー &amp; パワエレ技術情報</h1>
+        <p class="mti-lead">
+          フライバックからLLC・DABまで、設計・シミュレーション・試作・評価をワンストップで。<br>
+          高周波化・高効率化・並列運転・デジタル制御もお任せください。
+        </p>
+      </div>
+    </section>
 
+    <!-- 設計支援：カードリスト -->
+    <section class="mti-section">
+      <h2 class="mti-section-title">設計支援メニュー</h2>
 
-<div id="gijyutusien-subtitle">
-<p>&nbsp;</p>
-<dd>-設計支援-</dd>
-</div>
-<HR width="900" size="5"  color="#808080" align="center" >
+      <div class="mti-cards">
+        <!-- フライバック設計&シミュレーション -->
+        <article class="mti-card">
+          <header class="mti-card-header">
+            <h3>フライバックトランス設計＆シミュレーションサービス</h3>
+          </header>
+          <div class="mti-card-body">
+            <p>
+              購入仕様書・設計仕様書・シミュレーション報告書・設計書・試験報告書まで一括提供。<br>
+              フルブリッジ／DAB／LLC用トランスも順次公開予定。
+            </p>
+          </div>
+          <footer class="mti-card-footer">
+            <a class="mti-btn" href="https://www.pony-e.jp/P007-201 仕様書＆設計＆シミュレーション Ver1.0.lzh">設計シミュレーション例（LZH）</a>
+          </footer>
+        </article>
 
-<div class="gijyutusien-main">
-<p>&nbsp;</p>
+        <!-- トランスシミュレータ -->
+        <article class="mti-card">
+          <header class="mti-card-header">
+            <h3>トランスシミュレータ</h3>
+          </header>
+          <div class="mti-card-body">
+            <p>フライバック用トランス設計ツール（無料）。電圧・電流波形のシミュレーションに対応。</p>
+            <p class="mti-note">コア種類を拡充。フルブリッジ・リアクトル用は近日公開。</p>
+          </div>
+          <footer class="mti-card-footer">
+            <a class="mti-btn" href="https://www.pony-e.jp/フライバックトランス設計ver2.42.lzh">フライバック設計（LZH）</a>
+            <span class="mti-comingsoon">フルブリッジ／リアクトル：近日公開</span>
+          </footer>
+        </article>
 
-<dd><フライバックトランス設計＆シミュレーションサービス></dd>
-</div>
-<div class="gijyutusien-sub">
-<p>★フライバックトランス購入仕様書、設計仕様書、シミュレーション報告書、トランス設計書、試験報告書を提供するサービスです。<br>
-フルブリッジ用トランス、DAB用トランス、LLC用トランスも近日公開予定。→　<a href="https://www.pony-e.jp/P007-201 仕様書＆設計＆シミュレーション Ver1.0.lzh">「トランス設計シミュレーション例」</a>からダウンロードできます。</p>
-</div>
+        <!-- その他シミュレーター（差動アンプ） -->
+        <article class="mti-card">
+          <header class="mti-card-header">
+            <h3>その他シミュレーター</h3>
+          </header>
+          <div class="mti-card-body">
+            <p>差動アンプシミュレーターを公開中。</p>
+          </div>
+          <footer class="mti-card-footer">
+            <a class="mti-link" href="https://www.pony-e.jp/opsub-ver1.2.lzh">差動アンプシミュレーター（LZH）</a>
+          </footer>
+        </article>
 
-<div class="gijyutusien-main">
-<p>&nbsp;</p>
-<dd><トランスシミュレータ></dd>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;トランス設計ツールを無料提供しております。よろしければお試しください。</p>
-</div>
-<div class="gijyutusien-sub">
-<p>★フライバックコンバータ用トランスシミュレーター　→　<a href="https://www.pony-e.jp/フライバックトランス設計ver2.42.lzh">「フライバックトランス設計」</a>からダウンロードできます。</p>
-<p align="center" ><font color="#FF6699">(スイッチとダイオード電圧電流波形のシミュレーションが可能です。コア種類が増えました)</font></p>
-</div>
-<div class="gijyutusien-sub">
-<p>★フルブリッジコンバータ用トランスシミュレーター　→　近日公開予定</p>
-</div>
-<div class="gijyutusien-sub">
-<p>★スイッチングリアクトル用シミュレーター　　　　　→　近日公開予定</p>
-</div>
+        <!-- 受託カスタム電源設計 -->
+        <article class="mti-card">
+          <header class="mti-card-header">
+            <h3>受託カスタム電源設計</h3>
+          </header>
+          <div class="mti-card-body">
+            <ul class="mti-list">
+              <li>電源・インバータ・充電器の開発（カスタム対応）</li>
+              <li>ソフトスイッチング導入で高能率化</li>
+              <li>損失・ノイズ低減の最適化提案</li>
+              <li>デジタル制御にも対応</li>
+            </ul>
+          </div>
+          <footer class="mti-card-footer">
+            <a class="mti-link" target="_blank" href="https://www.pony-e.jp/zyutzkukzihatuzigyouannnaiver1.1.pdf">開発例（PDF）</a>
+            <a class="mti-link" target="_blank" href="https://www.pony-e.jp/seihinsiryou-sofutosuittinngugizyutu1.0.pdf">ソフトスイッチング（PDF）</a>
+            <a class="mti-link" target="_blank" href="https://www.pony-e.jp/annnai-p.7-8.pdf">会社案内（PDF）</a>
+          </footer>
+        </article>
 
-<div class="gijyutusien-main">
-<p>&nbsp;</p>
+        <!-- スイッチングリアクトル設計 -->
+        <article class="mti-card">
+          <header class="mti-card-header">
+            <h3>スイッチングリアクトル設計</h3>
+          </header>
+          <div class="mti-card-body">
+            <p>高周波リアクトルの設計試作（直流重畳特性は 1000A まで測定可能）。</p>
+          </div>
+          <footer class="mti-card-footer">
+            <a class="mti-link" target="_blank" href="https://www.pony-e.jp/zyutzkukzihatuzigyouannnaiver1.1.pdf">開発例（PDF）</a>
+          </footer>
+        </article>
 
-<dd><その他シミュレーター></dd>
-</div>
-<div class="gijyutusien-sub">
-<p>★差動アンプシミュレーター　→　<a href="https://www.pony-e.jp/opsub-ver1.2.lzh">「差動アンプシミュレーター」</a>からダウンロードできます。</p>
-</div>
-<div class="gijyutusien-main">
-<p>&nbsp;</p>
-<dd><受託カスタム電源設計></dd>
-</div>
-<div class="gijyutusien-sub">
-<p>★カスタムにて、電源・インバータ・充電器を開発いたします。　→<a target="_blank" href="https://www.pony-e.jp/zyutzkukzihatuzigyouannnaiver1.1.pdf">開発例はこちらをご参照ください。</a></p>
-<p>★高能率化のためにソフトスイッチング技術を導入いたします。　→<a target="_blank" href="https://www.pony-e.jp/seihinsiryou-sofutosuittinngugizyutu1.0.pdf">ソフトスイッチング技術のご紹介</a></p>
-<p>★スイッチング技術にて損失やノイズを改善します。　　　　　　→<a target="_blank" href="https://www.pony-e.jp/annnai-p.7-8.pdf">弊社の会社案内をご参照ください。</a></p>
-<p>★デジタル制御にてコンバータをコントロールします。　　　　　→<a target="_blank" href="https://www.pony-e.jp/annnai-p.7-8.pdf">弊社の会社案内をご参照ください。</a></p>
-</div>
-<div class="gijyutusien-main">
-<p>&nbsp;</p>
-<dd><スイッチングリアクトル設計></dd>
-</div>
-<div class="gijyutusien-sub">
-<p>★高周波リアクトルの設計試作を行います。（直流重畳特性は1000Aまで計れます）　→
-<a target="_blank" href="https://www.pony-e.jp/zyutzkukzihatuzigyouannnaiver1.1.pdf" >開発例はこちらをご参照ください。</a></p>
-</div>
-<div class="gijyutusien-main">
-<p>&nbsp;</p>
-<dd><トランス設計></dd>
-</div>
-<div class="gijyutusien-sub">
-<p>★弊社ではトランス設計支援を行っております。コンバータの入出力スペックよりトランスの設計を行っております。</p>
-<p>★<a target="_blank" href="https://www.pony-e.jp/sekkeisienn-rei.pdf">添付ファイルはフライバックコンバータトランスの設計例</a>です。</p>
-</div>
+        <!-- トランス設計 -->
+        <article class="mti-card">
+          <header class="mti-card-header">
+            <h3>トランス設計</h3>
+          </header>
+          <div class="mti-card-body">
+            <p>入出力スペックから最適なトランスを設計。フライバック設計例を公開中。</p>
+          </div>
+          <footer class="mti-card-footer">
+            <a class="mti-link" target="_blank" href="https://www.pony-e.jp/sekkeisienn-rei.pdf">設計例（PDF）</a>
+          </footer>
+        </article>
 
+        <!-- 研究レポート -->
+        <article class="mti-card">
+          <header class="mti-card-header">
+            <h3>研究レポート</h3>
+          </header>
+          <div class="mti-card-body">
+            <p>弊社エンジニアによる研究レポートを公開。</p>
+          </div>
+          <footer class="mti-card-footer">
+            <a class="mti-btn ghost" target="_blank" href="https://www.pony-e.jp/drronbun.pdf">研究レポート（PDF）</a>
+          </footer>
+        </article>
+      </div>
+    </section>
 
-    <!-- footer部分を編集するならここ -->
-    <div id="footer"></div>
+    <!-- 下部：パワエレ技術情報（カタログ風カードグリッド） -->
+    <section class="mti-section">
+      <h2 class="mti-section-title">パワエレ技術情報</h2>
 
-    <!-- 共通JSの読み込み（bodyの一番最後が推奨） -->
-    <script src="js/common.js"></script>
+      <div class="mti-grid">
+        <!-- 1 -->
+        <article class="mti-item">
+          <a class="mti-item-media" target="_blank" href="https://pony-e.jp/LLC400kHz.pdf" aria-label="PDFを開く">
+            <span class="mti-pdf-badge">PDF</span>
+            <img src="https://www.pony-e.jp/LLC400kHz.jpg" alt="LLCタイプDC-DCコンバータ(2200W,800V,400kHz)">
+          </a>
+          <div class="mti-item-body">
+            <h3 class="mti-item-title">LLCタイプDC-DCコンバータ（2200W / 800V / 400kHz）</h3>
+            <p class="mti-item-desc">
+              約400kHzでLLCをソフトスイッチング化し小型・高効率化。MHz帯もご相談ください。
+            </p>
+            <div class="mti-item-tags"><span>高周波対応</span></div>
+          </div>
+        </article>
 
+        <!-- 2 -->
+        <article class="mti-item">
+          <a class="mti-item-media" target="_blank" href="https://pony-e.jp/High_efficiency_bi-directional_insulated_DCDCconverter.pdf" aria-label="PDFを開く">
+            <span class="mti-pdf-badge">PDF</span>
+            <img src="https://www.pony-e.jp/High_efficiency_bi-directional_insulated_DCDCconverter.jpg" alt="双方向DC-DCコンバータのソフトスイッチング方式">
+          </a>
+          <div class="mti-item-body">
+            <h3 class="mti-item-title">双方向DC-DCコンバータのソフトスイッチング方式</h3>
+            <p class="mti-item-desc">
+              リカバリ電流低減などで高効率化。高周波動作に適した方式です。
+            </p>
+            <div class="mti-item-tags"><span>電気学会 全国大会発表</span></div>
+          </div>
+        </article>
 
+        <!-- 3 -->
+        <article class="mti-item">
+          <a class="mti-item-media" target="_blank" href="https://pony-e.jp/K1572_H1-151012-1_ver1.1.pdf" aria-label="PDFを開く">
+            <span class="mti-pdf-badge">PDF</span>
+            <img src="https://www.pony-e.jp/CVCFHEIRETU.jpg" alt="インバータの並列技術">
+          </a>
+          <div class="mti-item-body">
+            <h3 class="mti-item-title">インバータの並列技術</h3>
+            <p class="mti-item-desc">
+              スタンドアローン方式で並列運転を実現。冗長構成に有効。
+            </p>
+            <div class="mti-item-tags"><span>―</span></div>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="mti-item">
+          <a class="mti-item-media" target="_blank" href="https://pony-e.jp/BrigeLessPFC.pdf" aria-label="PDFを開く">
+            <span class="mti-pdf-badge">PDF</span>
+            <img src="https://www.pony-e.jp/BrigeLessPFC.jpg" alt="ブリッジレスインターリーブPFC">
+          </a>
+          <div class="mti-item-body">
+            <h3 class="mti-item-title">ブリッジレス・インターリーブPFC</h3>
+            <p class="mti-item-desc">
+              力率改善用コンバータをブリッジレス＋インターリーブで高効率化。量産対応も可能。
+            </p>
+            <div class="mti-item-tags"><span>量産対応可</span></div>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="mti-item">
+          <a class="mti-item-media" target="_blank" href="https://pony-e.jp/PCIM2017_DCDC.pdf" aria-label="PDFを開く">
+            <span class="mti-pdf-badge">PDF</span>
+            <img src="https://www.pony-e.jp/Trns_HiFreacency.jpg" alt="トランス高周波化（マイクロインバータ）">
+          </a>
+          <div class="mti-item-body">
+            <h3 class="mti-item-title">トランス高周波化（マイクロインバータ）</h3>
+            <p class="mti-item-desc">
+              高周波化による小型・高効率化。リッツ線素線の影響など実務ノウハウを蓄積。
+            </p>
+            <div class="mti-item-tags"><span>量産アシスト</span></div>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="mti-item">
+          <a class="mti-item-media" target="_blank" href="https://pony-e.jp/6phaseDCDC.pdf" aria-label="PDFを開く">
+            <span class="mti-pdf-badge">PDF</span>
+            <img src="https://www.pony-e.jp/6phaseDCDC.jpg" alt="6相インターリーブ型DC-DC">
+          </a>
+          <div class="mti-item-body">
+            <h3 class="mti-item-title">6相インターリーブ型DC-DCコンバータ方式</h3>
+            <p class="mti-item-desc">
+              双方向チョッパを6相インターリーブ。駆動・冷却・設計の勘所も支援。
+            </p>
+            <div class="mti-item-tags"><span>―</span></div>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="mti-item">
+          <a class="mti-item-media" target="_blank" href="https://pony-e.jp/DAB偏磁補償.pdf" aria-label="PDFを開く">
+            <span class="mti-pdf-badge">PDF</span>
+            <img src="https://www.pony-e.jp/DAB偏磁補償.jpg" alt="DABの偏磁補償">
+          </a>
+          <div class="mti-item-body">
+            <h3 class="mti-item-title">DABの偏磁補償</h3>
+            <p class="mti-item-desc">
+              DABの偏磁課題を補償する技術。トランスの偏磁対策に有効。
+            </p>
+            <div class="mti-item-tags"><span>―</span></div>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="mti-item">
+          <a class="mti-item-media" target="_blank" href="https://pony-e.jp/EVCHGkairo.pdf" aria-label="PDFを開く">
+            <span class="mti-pdf-badge">PDF</span>
+            <img src="https://www.pony-e.jp/EVCHGkairo.jpg" alt="EV用急速充電器回路">
+          </a>
+          <div class="mti-item-body">
+            <h3 class="mti-item-title">EV用急速充電器回路</h3>
+            <p class="mti-item-desc">
+              仕様に応じ最適方式をご提案。CHAdeMO/CAN/並列運転に対応、試作も可能。
+            </p>
+            <div class="mti-item-tags"><span>CHAdeMO</span><span>CAN</span><span>並列運転</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- 共通フッター -->
+  <div id="footer"></div>
+
+  <!-- 共通JS（header/footer読込み等） -->
+  <script src="js/common.js"></script>
 </body>
-
 </html>

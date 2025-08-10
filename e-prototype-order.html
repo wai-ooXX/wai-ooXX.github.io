@@ -1,125 +1,93 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <title>過去のニュース｜ポニー電機</title>
-    <link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8" />
+  <title>ご注文に際して｜ポニー電機</title>
+  <link rel="stylesheet" href="css/style.css"><!-- 既存の全体CSS -->
+  <link rel="stylesheet" href="css/e-prototype-order.css"><!-- このページ専用CSS（新規） -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
+  <!-- header -->
+  <div id="header"></div>
 
-    <!-- header部分を編集するならここ -->
-    <div id="header"></div>
-    <!-- アコーディオンを編集するならここ -->
+  <main class="e-order">
+    <section class="container">
+      <header class="page-header">
+        <h1 class="title">ご注文に際して</h1>
+        <div class="title-accent accent-pink"></div>
+      </header>
 
+      <div class="card">
+        <p class="lead">下記リンクより注文票をダウンロードし記入の上，メールで送付ください。受信後，早急に納期・見積の回答をいたします。</p>
+        <ul class="notes">
+          <li>御社の <strong>電話番号・メールアドレス</strong> は必ずご記入ください。</li>
+          <li>お支払いは <strong>ご注文前に条件合意</strong> いただくか，サンプル到着後 <strong>1週間以内</strong> に銀行振込または現金書留でお願いします。</li>
+        </ul>
+        <div class="contact">
+          <span class="label">Mail</span>
+          <a class="mailto" href="mailto:office@pony-e.jp">office@pony-e.jp</a>
+        </div>
+        <p class="regno">適格請求書発行事業者登録番号：<strong>T5-0700-0101-2636</strong></p>
+      </div>
+    </section>
 
-            <div class="shisakuchumon-title" >
-                <br>
-                <dd><sp2>ご注文に際して</sp2></dd>
-                <HR width="900" size="5"  color="#FF3366" align="center" >
-            </div>
+    <section class="container">
+      <header class="section-header">
+        <h2 class="title">試作可能製品の種類</h2>
+        <div class="title-accent accent-blue"></div>
+      </header>
 
-            <div class="shisakuchumon-comment" id="chumonback">
-                <sp3>下記リンクより注文票をダウンロードし記入の上，メールで送付ください。</sp3><br>
-                <sp3>受信後早急に納期・見積りの回答をいたします。</sp3><br>
-                <sp3>※御社の電話番号・メールアドレスは必ず御記入願います。</sp3><br>
-                <br>
-                <sp3>mail：office@pony-e.jp</sp3><br>      
-                <br><br>
-                <sp3>お支払いにつきましてはご注文前に条件を決めるか、サンプル到着後１週間以内に銀行振込か現金書留でお願いします。</sp3>
-                <br>
-                <sp3>適格請求書発行事業者登録番号：T5-0700-0101-2636</sp3><br>
-                <br>
-            </div>
+      <h3 class="subheading">各種トランス</h3>
+      <div class="card">
+        <p class="desc">詳細な仕様をご記入される場合は以下のフォームをご利用ください（メールまたはFAX）。</p>
 
-            <div class="shisakuchumon-second-title" id="chumonback" >
-                <p>&nbsp;</p>
-                <dd><sp2>試作可能製品の種類</sp2></dd>
-                <HR width="900" size="5"  color="#0000CC" align="center" >
-            </div>
-
-            <div class="shisakuchumon-subtitle" id="chumonback">
-                <dd><sp2>各種トランス</sp2></dd>
-            </div>
-
-            <div class="shisakuchumon-second-comment" id="chumonback">
-                <sp3>詳細注文書:</sp3><br>
-                <sp2><sp2>詳細な仕様をご記入される場合はこちらのフォーマットをご利用ください。（メールまたはFAXにて送信をお願いします）</sp2></sp2><br>
-            </div>
-
-            <div class="shisakuchumon-list" id="chumonback">
-                <table border=0 width=900 >
-                <tr align=left>
-                    <th><sp2><sp2>高周波:</sp2></sp2></th>
-                    <th><a href="https://www.pony-e.jp/kou-fowa-do1.2.doc">フォワードトランス</a></th>
-                    <th><a href="https://www.pony-e.jp/kou-furaibakku1.1.doc">フライバックトランス</a></th>
-                    <th><a href="https://www.pony-e.jp/kou-furuburizzi1.1.doc">フルブリッジトランス</a></th>
-                    <th><a href="https://www.pony-e.jp/kou-riakutoru1.0.doc">リアクトル</a></a></th>
-                </tr>
-                </table>
-            </div>
-            <br>
-
-            <div class="shisakuchumon-second-comment" id="chumonback">
-            </div>
-            <div class="shisakuchumon-list" id="chumonback">
-                <table border=0 width=900>
-                <tr align=left>
-                    <th><sp2><sp2>低周波:</sp2></sp2></th>
-                    <th><a href="https://www.pony-e.jp/tei-toransu1.0.doc">トランス</a></th>
-                    <th><a href="https://www.pony-e.jp/tei-riakutoru1.0.doc">リアクトル</a></th>
-                    </tr> 
-                </table>
-            </div>
-            <br>
-
-            <div class="shisakuchumon-second-comment" id="chumonback">
-                <sp3>汎用注文書:</sp3><br>
-                <sp2><sp2>ご指定の注文書がない場合に下記「汎用注文書」をダウンロードのうえご利用ください。（メールまたはFAXにて送信をお願いします）</sp2></sp2>
-                <br>
-            </div>
-
-            <div class="shisakuchumon-list" id="chumonback">
-                <table border=0 width=900 align=center>
-                    <tr align=center>
-                    <th><a  href="https://www.pony-e.jp/tyuumonnsyo.XLS">汎用注文書</a></th>
-                    </tr> 
-                </table>
-            </div>
-            <br>
-            <br>
-
-            <div class="shisakuchumon-subtitle" id="chumonback">
-                <dd><sp2>カスタム電源</sp2></dd>
-            </div>
-            <br>
-
-            <div class="shisakuchumon-second-comment" id="chumonback">
-                <sp3>カスタム電源開発の御見積もいたします。こちらのフォーマットをご利用ください。（メールまたはFAXにて送信をお願いします）</sp3>
-                <br>
-            </div>
-
-            <div class="shisakuchumon-list" id="chumonback">
-                <table border=0 width=900 align=center>
-                    <tr align=center>
-                    <th><a target="_blank" href="https://www.pony-e.jp/kasutamu.pdf">カスタム電源開発</a></th>
-                    <th><a href="https://www.pony-e.jp/suittinngudenngenn-ver1.0.doc">購入仕様書</a></th>
-                    </tr>
-                </table>
-            </div>
-
+        <!-- 高周波 -->
+        <div class="link-group">
+          <div class="group-title">高周波</div>
+          <div class="buttons">
+            <a class="btn ghost" href="https://www.pony-e.jp/kou-fowa-do1.2.doc">フォワードトランス</a>
+            <a class="btn ghost" href="https://www.pony-e.jp/kou-furaibakku1.1.doc">フライバックトランス</a>
+            <a class="btn ghost" href="https://www.pony-e.jp/kou-furuburizzi1.1.doc">フルブリッジトランス</a>
+            <a class="btn ghost" href="https://www.pony-e.jp/kou-riakutoru1.0.doc">リアクトル</a>
+          </div>
         </div>
 
+        <!-- 低周波 -->
+        <div class="link-group">
+          <div class="group-title">低周波</div>
+          <div class="buttons">
+            <a class="btn ghost" href="https://www.pony-e.jp/tei-toransu1.0.doc">トランス</a>
+            <a class="btn ghost" href="https://www.pony-e.jp/tei-riakutoru1.0.doc">リアクトル</a>
+          </div>
+        </div>
 
-    <!-- footer部分を編集するならここ -->
-    <div id="footer"></div>
+        <!-- 汎用注文書 -->
+        <div class="link-group generic">
+          <div class="group-title">汎用注文書</div>
+          <p class="desc">指定の注文書がない場合は「汎用注文書」をダウンロードしてご利用ください（メールまたはFAX）。</p>
+          <div class="buttons center">
+            <a class="btn solid" href="https://www.pony-e.jp/tyuumonnsyo.XLS">汎用注文書（XLS）</a>
+          </div>
+        </div>
+      </div>
 
-    <!-- 共通JSの読み込み（bodyの一番最後が推奨） -->
-    <script src="js/common.js"></script>
+      <h3 class="subheading">カスタム電源</h3>
+      <div class="card">
+        <p class="desc">カスタム電源開発のお見積もりも承ります。以下のフォームをご利用ください（メールまたはFAX）。</p>
+        <div class="buttons wrap">
+          <a class="btn outline" target="_blank" href="https://www.pony-e.jp/kasutamu.pdf">カスタム電源開発（PDF）</a>
+          <a class="btn outline" href="https://www.pony-e.jp/suittinngudenngenn-ver1.0.doc">購入仕様書（DOC）</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <!-- footer -->
+  <div id="footer"></div>
 
+  <!-- 共通JS -->
+  <script src="js/common.js"></script>
 </body>
-
 </html>

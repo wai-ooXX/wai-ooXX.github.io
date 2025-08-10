@@ -1,0 +1,118 @@
+/* すべて #mti-page 配下に限定して style.css と干渉させない */
+#mti-page {
+  --mti-bg: #ffffff;
+  --mti-fg: #1f2937;
+  --mti-accent: #0ea5e9;
+  --mti-accent-2: #0369a1;
+  --mti-muted: #6b7280;
+  --mti-border: #e5e7eb;
+  --mti-card-bg: #ffffff;
+  --mti-radius: 16px;
+  --mti-shadow: 0 6px 20px rgba(2, 6, 23, 0.08);
+  color: var(--mti-fg);
+  background: var(--mti-bg);
+  font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+/* ヒーロー */
+#mti-page .mti-hero {
+  position: relative;
+  padding: clamp(32px, 8vw, 72px) 20px;
+  background:
+    radial-gradient(1200px 200px at 20% 0%, rgba(14,165,233,0.10), transparent 60%),
+    linear-gradient(180deg, #f8fafc 0%, #fff 60%);
+  border-bottom: 1px solid var(--mti-border);
+}
+#mti-page .mti-hero-inner { max-width: 1100px; margin: 0 auto; }
+#mti-page .mti-badge {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: .08em;
+  color: var(--mti-accent-2);
+  background: rgba(14,165,233,.12);
+  border: 1px solid rgba(14,165,233,.25);
+  padding: 6px 10px;
+  border-radius: 999px;
+  margin: 0 0 10px 0;
+}
+#mti-page .mti-title { font-size: clamp(22px, 4.5vw, 36px); line-height: 1.2; margin: 0 0 8px; }
+#mti-page .mti-lead { color: var(--mti-muted); font-size: clamp(14px, 2.5vw, 16px); margin: 0; }
+
+/* セクション */
+#mti-page .mti-section { max-width: 1100px; margin: 32px auto; padding: 0 20px; }
+#mti-page .mti-section-title {
+  font-size: 20px; font-weight: 700; margin: 8px 0 16px;
+  padding-left: 12px; border-left: 4px solid var(--mti-accent);
+}
+
+/* ボタン・リンク */
+#mti-page .mti-btn,
+#mti-page .mti-btn.ghost,
+#mti-page .mti-link {
+  display: inline-block; text-decoration: none; border-radius: 10px; padding: 10px 14px;
+  transition: transform .08s ease, box-shadow .2s ease, background .2s ease; will-change: transform;
+}
+#mti-page .mti-btn { background: var(--mti-accent); color: #fff; box-shadow: 0 4px 14px rgba(14,165,233,0.25); }
+#mti-page .mti-btn:hover { transform: translateY(-1px); }
+#mti-page .mti-btn:active { transform: translateY(0); }
+#mti-page .mti-btn.ghost { background: #fff; color: var(--mti-accent-2); border: 1px solid var(--mti-border); }
+#mti-page .mti-btn.ghost:hover { box-shadow: var(--mti-shadow); }
+#mti-page .mti-link { color: var(--mti-accent-2); border: 1px dashed rgba(3,105,161,.35); background: rgba(14,165,233,.05); margin-right: 8px; }
+#mti-page .mti-link:hover { background: rgba(14,165,233,.12); }
+
+/* 設計支援カード */
+#mti-page .mti-cards {
+  display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px;
+}
+#mti-page .mti-card {
+  grid-column: span 12; background: var(--mti-card-bg); border: 1px solid var(--mti-border);
+  border-radius: var(--mti-radius); box-shadow: var(--mti-shadow); padding: 16px;
+}
+@media (min-width: 720px) { #mti-page .mti-card { grid-column: span 6; } }
+@media (min-width: 1040px) { #mti-page .mti-card { grid-column: span 4; } }
+#mti-page .mti-card-header h3 { font-size: 18px; margin: 4px 0 8px; }
+#mti-page .mti-card-body { color: var(--mti-muted); }
+#mti-page .mti-note { color: #dc267f; margin-top: 6px; font-size: 13px; }
+#mti-page .mti-card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+#mti-page .mti-comingsoon { font-size: 12px; color: var(--mti-muted); }
+
+/* カタログ風グリッド */
+#mti-page .mti-grid {
+  display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px;
+}
+#mti-page .mti-item {
+  grid-column: span 12; border: 1px solid var(--mti-border); border-radius: var(--mti-radius);
+  background: var(--mti-card-bg); box-shadow: var(--mti-shadow); overflow: hidden; display: flex; flex-direction: column;
+}
+@media (min-width: 720px) { #mti-page .mti-item { grid-column: span 6; } }
+@media (min-width: 1040px) { #mti-page .mti-item { grid-column: span 4; } }
+
+/* サムネイル */
+#mti-page .mti-item-media {
+  position: relative; display: block; aspect-ratio: 4 / 3; background: #f3f4f6; overflow: hidden;
+}
+#mti-page .mti-item-media img {
+  width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s ease;
+}
+#mti-page .mti-item:hover .mti-item-media img { transform: scale(1.04); }
+
+/* PDFバッジ */
+#mti-page .mti-pdf-badge {
+  position: absolute; top: 10px; left: 10px;
+  background: #ef4444; color: #fff; font-size: 12px; font-weight: 700;
+  padding: 6px 10px; border-radius: 999px; box-shadow: 0 6px 16px rgba(239,68,68,.25);
+}
+
+/* 本文 */
+#mti-page .mti-item-body { padding: 14px 16px 16px; display: grid; gap: 8px; }
+#mti-page .mti-item-title { font-size: 16px; line-height: 1.35; margin: 0; }
+#mti-page .mti-item-desc { color: var(--mti-muted); font-size: 14px; margin: 0; }
+#mti-page .mti-item-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+#mti-page .mti-item-tags span {
+  display: inline-block; font-size: 12px; color: var(--mti-accent-2);
+  background: rgba(14,165,233,.08); border: 1px solid rgba(14,165,233,.22); padding: 4px 8px; border-radius: 999px;
+}
+
+/* 小さなユーティリティ */
+#mti-page .mti-list { margin: 0; padding-left: 1.2em; }
+#mti-page .mti-list li { margin: .2em 0; }

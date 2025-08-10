@@ -1,0 +1,199 @@
+/*
+  development-flow.css
+  このページ専用。すべて .devflow-page 配下でスコープ。
+  既存の style.css とはセレクタが衝突しないように設計。
+*/
+
+:root {
+  --df-bg: #0b1220;
+  --df-surface: #0f172a;
+  --df-surface-2: #111827;
+  --df-text: #1e293b;
+  --df-text-dim: #475569;
+  --df-accent: #3b82f6;
+  --df-accent-2: #34d399;
+  --df-border: #1f2937;
+  --df-ring: #3b82f6;
+  --df-maxw: 1080px;
+}
+
+/* 名前空間のベース（他CSSの影響を打ち消し） */
+.devflow-page {
+  box-sizing: border-box;
+  color: var(--df-text);
+  background: #fff;
+  min-height: 100dvh;
+  font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", Meiryo, system-ui, -apple-system, sans-serif;
+  line-height: 1.75;
+  padding: clamp(16px, 2.5vw, 28px);
+}
+
+/* 既存のグローバル img, a, p などの上書きを回避するため、必ず .devflow-page を前置 */
+.devflow-page * { box-sizing: inherit; }
+.devflow-page a { color: var(--df-accent); text-decoration: none; }
+.devflow-page a:hover { text-decoration: underline; }
+.devflow-page p { margin: 0; }
+
+/* セクション共通 */
+.devflow-page section {
+  margin-inline: auto;
+  max-width: var(--df-maxw);
+}
+
+/* ヒーロー */
+.df-hero {
+  position: relative;
+  padding: clamp(24px, 5vw, 48px) 0;
+}
+.df-hero__inner {
+  display: grid;
+  gap: 12px;
+}
+.df-hero__title {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  letter-spacing: .02em;
+}
+.df-hero__lead {
+  color: var(--df-text-dim);
+  font-size: clamp(14px, 1.8vw, 18px);
+  max-width: 72ch;
+}
+
+/* CTA */
+.df-cta { margin-top: 8px; margin-bottom: 24px; }
+.df-cta__card {
+  background: linear-gradient(180deg, rgba(59,130,246,.08), rgba(59,130,246,.02));
+  border: 1px solid var(--df-border);
+  border-radius: 16px;
+  padding: clamp(16px, 3vw, 24px);
+  display: grid;
+  gap: 12px;
+}
+.df-cta__msg {
+  font-weight: 600;
+  color: var(--df-text);
+}
+.df-cta__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.df-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  transition: transform .06s ease, box-shadow .2s ease, background .2s ease;
+}
+.df-btn:active { transform: translateY(1px); }
+.df-btn--primary {
+  background: transparent;
+  color: var(--df-text);
+  border-color: var(--df-border);
+}
+.df-btn--primary:hover { box-shadow: 0 8px 24px rgba(59,130,246,.35); }
+.df-btn--ghost {
+  background: transparent;
+  color: var(--df-text);
+  border-color: var(--df-border);
+}
+.df-btn--ghost:hover { border-color: var(--df-ring); }
+
+/* タイムライン */
+.df-timeline { margin-top: 12px; }
+.df-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 2px solid rgba(148,163,184,.25);
+  counter-reset: df-step;
+}
+.df-step {
+  position: relative;
+  padding-left: 22px;
+  padding-bottom: 28px;
+}
+.df-step:last-child { padding-bottom: 0; }
+.df-step::before {
+  /* ノード */
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 6px;
+  width: 12px; height: 12px;
+  background: radial-gradient(circle at 30% 30%, #fff, #bfdbfe 40%, #3b82f6 70%);
+  border: 2px solid #0b1220;
+  border-radius: 9999px;
+  box-shadow: 0 0 0 3px rgba(59,130,246,.25);
+}
+.df-step__head { margin-bottom: 8px; }
+.df-step__title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: clamp(18px, 2.6vw, 22px);
+  font-weight: 800;
+  letter-spacing: .01em;
+}
+.df-step__num {
+  display: inline-grid;
+  place-items: center;
+  width: 28px; height: 28px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #93c5fd, #3b82f6);
+  color: #0b1220;
+  font-weight: 900;
+  line-height: 1;
+}
+.df-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: rgba(52,211,153,.15);
+  color: #86efac;
+  border: 1px solid rgba(52,211,153,.35);
+}
+.df-chip {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: rgba(96,165,250,.15);
+  color: #bfdbfe;
+  border: 1px solid rgba(96,165,250,.35);
+}
+.df-step__body {
+  color: var(--df-text-dim);
+  background: linear-gradient(180deg, rgba(59,130,246,.1), rgba(59,130,246,.05));
+  border: 1px solid rgba(59,130,246,.3);
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+.df-list {
+  margin: 0 0 8px 1.2em;
+  padding: 0;
+}
+.df-list li { margin: 2px 0; }
+
+/* 補足ボックス */
+.df-note { margin-top: 28px; }
+.df-note__box {
+  border: 1px dashed rgba(59,130,246,.35);
+  background: linear-gradient(180deg, rgba(219,234,254,.6), rgba(219,234,254,.35));
+  border-radius: 14px;
+  padding: 16px;
+}
+.df-note__box h3 {
+  margin: 0 0 6px;
+  font-size: clamp(16px, 2.4vw, 20px);
+}
+
+/* レスポンシブ微調整 */
+@media (min-width: 720px) {
+  .df-cta__card { grid-template-columns: 1fr auto; align-items: center; }
+}

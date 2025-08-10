@@ -1,185 +1,266 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <title>過去のニュース｜ポニー電機</title>
-    <link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8" />
+  <title>技術支援・パワエレ技術情報｜ポニー電機</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- 既存の全体スタイル -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- このページ専用（style.cssと干渉しないよう #eti-page 配下に限定） -->
+  <link rel="stylesheet" href="css/e-technical-information.css" />
 </head>
-
 <body>
+  <!-- 共通ヘッダー -->
+  <div id="header"></div>
 
-    <!-- header部分を編集するならここ -->
-    <div id="header"></div>
-    <!-- アコーディオンを編集するならここ -->
+  <main id="eti-page">
+    <!-- 上部：ヒーロー -->
+    <section class="eti-hero">
+      <div class="eti-hero-inner">
+        <p class="eti-badge">設計支援</p>
+        <h1 class="eti-title">技術支援メニュー &amp; パワエレ技術情報</h1>
+        <p class="eti-lead">
+          トランス設計・シミュレーション、カスタム電源開発、研究レポートなど。<br>
+          高周波化・高効率化・デジタル制御まで包括的にサポートします。
+        </p>
+      </div>
+    </section>
 
+    <!-- 設計支援：カードリスト -->
+    <section class="eti-section">
+      <h2 class="eti-section-title">設計支援メニュー</h2>
 
-<div id="gijyutusien-subtitle">
-<p>&nbsp;</p>
-<dd>-設計支援-</dd>
-</div>
-<HR width="900" size="5"  color="#808080" align="center" >
+      <div class="eti-cards">
+        <!-- フライバック設計&シミュレーション -->
+        <article class="eti-card">
+          <header class="eti-card-header">
+            <h3>フライバックトランス設計＆シミュレーションサービス</h3>
+          </header>
+          <div class="eti-card-body">
+            <p>
+              フライバックトランス購入仕様書、設計仕様書、シミュレーション報告書、トランス設計書、試験報告書を提供するサービスです。<br>
+              フルブリッジ用／DAB用／LLC用トランスも近日公開予定。
+            </p>
+          </div>
+          <footer class="eti-card-footer">
+            <a class="eti-btn" href="https://www.pony-e.jp/P007-201 仕様書＆設計＆シミュレーション Ver1.0.lzh">
+              トランス設計シミュレーション例（LZH）
+            </a>
+          </footer>
+        </article>
 
-<div class="gijyutusien-main">
-<p>&nbsp;</p>
+        <!-- トランスシミュレータ -->
+        <article class="eti-card">
+          <header class="eti-card-header">
+            <h3>トランスシミュレータ</h3>
+          </header>
+          <div class="eti-card-body">
+            <p>トランス設計ツールを無料提供しております。よろしければお試しください。</p>
+            <p class="eti-note">(スイッチ/ダイオードの電圧・電流波形シミュレーションに対応。コア種類も拡充)</p>
+          </div>
+          <footer class="eti-card-footer">
+            <a class="eti-btn" href="https://www.pony-e.jp/フライバックトランス設計ver2.42.lzh">
+              フライバック用トランス設計（LZH）
+            </a>
+            <span class="eti-comingsoon">フルブリッジ・リアクトル用：近日公開</span>
+          </footer>
+        </article>
 
-<dd><フライバックトランス設計＆シミュレーションサービス></dd>
-</div>
-<div class="gijyutusien-sub">
-<p>★フライバックトランス購入仕様書、設計仕様書、シミュレーション報告書、トランス設計書、試験報告書を提供するサービスです。<br>
-フルブリッジ用トランス、DAB用トランス、LLC用トランスも近日公開予定。→　<a href="https://www.pony-e.jp/P007-201 仕様書＆設計＆シミュレーション Ver1.0.lzh">「トランス設計シミュレーション例」</a>からダウンロードできます。</p>
-</div>
+        <!-- 受託カスタム電源設計 -->
+        <article class="eti-card">
+          <header class="eti-card-header">
+            <h3>受託カスタム電源設計</h3>
+          </header>
+          <div class="eti-card-body">
+            <ul class="eti-list">
+              <li>電源・インバータ・充電器の開発（カスタム対応）</li>
+              <li>ソフトスイッチング技術の導入で高能率化</li>
+              <li>スイッチング技術で損失・ノイズ改善</li>
+              <li>デジタル制御にも対応</li>
+            </ul>
+          </div>
+          <footer class="eti-card-footer">
+            <a class="eti-link" target="_blank" href="https://www.pony-e.jp/zyutzkukzihatuzigyouannnaiver1.1.pdf">開発例（PDF）</a>
+            <a class="eti-link" target="_blank" href="https://www.pony-e.jp/seihinsiryou-sofutosuittinngugizyutu1.0.pdf">ソフトスイッチング技術（PDF）</a>
+            <a class="eti-link" target="_blank" href="https://www.pony-e.jp/annnai-p.7-8.pdf">会社案内（PDF）</a>
+          </footer>
+        </article>
 
-<div class="gijyutusien-main">
-<p>&nbsp;</p>
-<dd><トランスシミュレータ></dd>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;トランス設計ツールを無料提供しております。よろしければお試しください。</p>
-</div>
-<div class="gijyutusien-sub">
-<p>★フライバックコンバータ用トランスシミュレーター　→　<a href="https://www.pony-e.jp/フライバックトランス設計ver2.42.lzh">「フライバックトランス設計」</a>からダウンロードできます。</p>
-<p align="center" ><font color="#FF6699">(スイッチとダイオード電圧電流波形のシミュレーションが可能です。コア種類が増えました)</font></p>
-</div>
-<div class="gijyutusien-sub">
-<p>★フルブリッジコンバータ用トランスシミュレーター　→　近日公開予定</p>
-</div>
-<div class="gijyutusien-sub">
-<p>★スイッチングリアクトル用シミュレーター　　　　　→　近日公開予定</p>
-</div>
+        <!-- スイッチングリアクトル設計 -->
+        <article class="eti-card">
+          <header class="eti-card-header">
+            <h3>スイッチングリアクトル設計</h3>
+          </header>
+          <div class="eti-card-body">
+            <p>
+              高周波リアクトルの設計試作に対応（直流重畳特性は 1000A まで計測可能）。
+            </p>
+          </div>
+          <footer class="eti-card-footer">
+            <a class="eti-link" target="_blank" href="https://www.pony-e.jp/zyutzkukzihatuzigyouannnaiver1.1.pdf">開発例（PDF）</a>
+          </footer>
+        </article>
 
-<div class="gijyutusien-main">
-<p>&nbsp;</p>
+        <!-- トランス設計 -->
+        <article class="eti-card">
+          <header class="eti-card-header">
+            <h3>トランス設計</h3>
+          </header>
+          <div class="eti-card-body">
+            <p>入出力スペックから最適なトランス設計を実施します。</p>
+          </div>
+          <footer class="eti-card-footer">
+            <a class="eti-link" target="_blank" href="https://www.pony-e.jp/sekkeisienn-rei.pdf">設計例（PDF）</a>
+          </footer>
+        </article>
 
-<dd><その他シミュレーター></dd>
-</div>
-<div class="gijyutusien-sub">
-<p>★差動アンプシミュレーター　→　<a href="https://www.pony-e.jp/opsub-ver1.2.lzh">「差動アンプシミュレーター」</a>からダウンロードできます。</p>
-</div>
-<div class="gijyutusien-main">
-<p>&nbsp;</p>
-<dd><受託カスタム電源設計></dd>
-</div>
-<div class="gijyutusien-sub">
-<p>★カスタムにて、電源・インバータ・充電器を開発いたします。　→<a target="_blank" href="https://www.pony-e.jp/zyutzkukzihatuzigyouannnaiver1.1.pdf">開発例はこちらをご参照ください。</a></p>
-<p>★高能率化のためにソフトスイッチング技術を導入いたします。　→<a target="_blank" href="https://www.pony-e.jp/seihinsiryou-sofutosuittinngugizyutu1.0.pdf">ソフトスイッチング技術のご紹介</a></p>
-<p>★スイッチング技術にて損失やノイズを改善します。　　　　　　→<a target="_blank" href="https://www.pony-e.jp/annnai-p.7-8.pdf">弊社の会社案内をご参照ください。</a></p>
-<p>★デジタル制御にてコンバータをコントロールします。　　　　　→<a target="_blank" href="https://www.pony-e.jp/annnai-p.7-8.pdf">弊社の会社案内をご参照ください。</a></p>
-</div>
-<div class="gijyutusien-main">
-<p>&nbsp;</p>
-<dd><スイッチングリアクトル設計></dd>
-</div>
-<div class="gijyutusien-sub">
-<p>★高周波リアクトルの設計試作を行います。（直流重畳特性は1000Aまで計れます）　→
-<a target="_blank" href="https://www.pony-e.jp/zyutzkukzihatuzigyouannnaiver1.1.pdf" >開発例はこちらをご参照ください。</a></p>
-</div>
-<div class="gijyutusien-main">
-<p>&nbsp;</p>
-<dd><トランス設計></dd>
-</div>
-<div class="gijyutusien-sub">
-<p>★弊社ではトランス設計支援を行っております。コンバータの入出力スペックよりトランスの設計を行っております。</p>
-<p>★<a target="_blank" href="https://www.pony-e.jp/sekkeisienn-rei.pdf">添付ファイルはフライバックコンバータトランスの設計例</a>です。</p>
-</div>
-<div id="header-gra">
-<div class="gijyutusien-main">
-<p>&nbsp;</p>
-<dd><研究レポート></dd>
-</div>
-<div class="gijyutusien-sub">
-<p>★<a target="_blank" href="https://www.pony-e.jp/drronbun.pdf">弊社の社員による研究レポート</a>です。ご参照下さい。</p>
-</div>
-<div id="gijyutusien-subtitle">
-<p>&nbsp;</p>
+        <!-- 研究レポート -->
+        <article class="eti-card">
+          <header class="eti-card-header">
+            <h3>研究レポート</h3>
+          </header>
+          <div class="eti-card-body">
+            <p>弊社エンジニアによる研究レポートをご覧いただけます。</p>
+          </div>
+          <footer class="eti-card-footer">
+            <a class="eti-btn ghost" target="_blank" href="https://www.pony-e.jp/drronbun.pdf">研究レポート（PDF）</a>
+          </footer>
+        </article>
+      </div>
+    </section>
 
-</div>
+    <!-- 下部：パワエレ技術情報（カタログ風カードグリッド） -->
+    <section class="eti-section">
+      <h2 class="eti-section-title">パワエレ技術情報</h2>
 
+      <div class="eti-grid">
+        <!-- 1 -->
+        <article class="eti-item">
+          <a class="eti-item-media" target="_blank" href="https://pony-e.jp/LLC400kHz.pdf" aria-label="PDFを開く">
+            <span class="eti-pdf-badge">PDF</span>
+            <img src="https://www.pony-e.jp/LLC400kHz.jpg" alt="LLCタイプDC-DCコンバータ(2200W,800V,400kHz)">
+          </a>
+          <div class="eti-item-body">
+            <h3 class="eti-item-title">LLCタイプDC-DCコンバータ（2200W / 800V / 400kHz）</h3>
+            <p class="eti-item-desc">
+              約400kHzでLLC回路をソフトスイッチング化し、小型・高効率を実現。MHz帯対応もご相談ください。
+            </p>
+            <div class="eti-item-tags"><span>高周波対応</span></div>
+          </div>
+        </article>
 
-<div id="peoem" name='pawaele'>
-<dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-パワエレ技術情報-</dd>
-<HR width="900" size="5" color="#808080" align="center" >
-<table border=1>
-  <tr>
-    <th height="50" width="50" >PDF</th>
-    <th>写真</th>
-    <th>技術名称</th>
-	<th>内容</th>
-	<th>備考</th>
-  </tr>
- 
-<tr>
-    <td align="center" height="50" width="50"><a target="_blank" href="https://pony-e.jp/LLC400kHz.pdf" ><img src="https://www.pony-e.jp/PDFfile.jpg" alt="PDFファイル" height="30" width="30" /></a></td>
-    <td align="center" width="150" height="150"><img src="https://www.pony-e.jp/LLC400kHz.jpg" alt="カタログ写真" height="85" width="140" /></td>
-    <td align="center"width="230" height="50">LLCタイプDC-DCコンバータ<br>(2200W,800V,400kHz)</td>
-    <td width="400" height="50">400kHz程度にて2200W,800V系のLLC回路にてソフトスイッチングを行い小型化高効率化を行った。高周波化であればお任せください。MHz対応も可能です。</td>
-    <td align="center"width="120" height="50">高周波対応</td>
-  </tr>
+        <!-- 2 -->
+        <article class="eti-item">
+          <a class="eti-item-media" target="_blank" href="https://pony-e.jp/High_efficiency_bi-directional_insulated_DCDCconverter.pdf" aria-label="PDFを開く">
+            <span class="eti-pdf-badge">PDF</span>
+            <img src="https://www.pony-e.jp/High_efficiency_bi-directional_insulated_DCDCconverter.jpg" alt="双方向DC-DCコンバータのソフトスイッチング方式">
+          </a>
+          <div class="eti-item-body">
+            <h3 class="eti-item-title">双方向DC-DCコンバータのソフトスイッチング方式</h3>
+            <p class="eti-item-desc">
+              リカバリ電流低減の対策により高効率化。高周波動作に適した方式です。
+            </p>
+            <div class="eti-item-tags"><span>電気学会 全国大会発表</span></div>
+          </div>
+        </article>
 
- <tr>
-    <td align="center" height="50" width="50"><a target="_blank" href="https://pony-e.jp/High_efficiency_bi-directional_insulated_DCDCconverter.pdf" ><img src="https://www.pony-e.jp/PDFfile.jpg" alt="PDFファイル" height="30" width="30" /></a></td>
-    <td align="center" width="150" height="150"><img src="https://www.pony-e.jp/High_efficiency_bi-directional_insulated_DCDCconverter.jpg" alt="カタログ写真" height="85" width="140" /></td>
-    <td align="center"width="230" height="50">双方向DC-DCコンバータの<br>ソフトスイッチング方式</td>
-    <td width="400" height="50">双方向DC-DCコンバータを高周波にするために、ソフトスイッチング化しました。SJ-MOSFETのリカバリ電流を減らす対策とも言えます。お蔭様で高効率になりました。
-</td>
-    <td align="center"width="120" height="50">電気学会<br>全国大会発表</td>
-  <tr>
- 
-   <td align="center" height="50" width="50"><a target="_blank" href="https://pony-e.jp/K1572_H1-151012-1_ver1.1.pdf" ><img src="https://www.pony-e.jp/PDFfile.jpg" alt="PDFファイル" height="30" width="30" /></a></td>
-    <td align="center" width="150" height="150"><img src="https://www.pony-e.jp/CVCFHEIRETU.jpg" alt="カタログ写真" height="85" width="140" /></td>
-    <td align="center"width="230" height="50">インバータの並列技術</td>
-    <td width="400" height="50">正弦波インバータを並列させる場合マスタースレーブ方式が一般的です。我々はスタンドアローン方式にて並列することができました。通信線もなく冗長のための並列運転を行うことができました。
-</td>
-    <td align="center"width="120" height="50">―</td>
-  </tr>
-<tr>
-    <td align="center" height="50" width="50"><a target="_blank" href="https://pony-e.jp/BrigeLessPFC.pdf" ><img src="https://www.pony-e.jp/PDFfile.jpg" alt="PDFファイル" height="30" width="30" /></a></td>
-    <td align="center" width="150" height="150"><img src="https://www.pony-e.jp/BrigeLessPFC.jpg" alt="カタログ写真" height="85" width="140" /></td>
-    <td align="center"width="230" height="50">ブリッジレスインターリーブ</td>
-    <td width="400" height="50">力率改善用コンバータにて、高効率のブリッジレスコンバータにさらにインターリーブ技術を搭載したコンバータです。カスタムにて御社スペックに合わせてご提案可能です。マイコン制御にて量産も可能です。
-</td>
-    <td align="center"width="120" height="50">量産タイプも<br>可能</td>
-  </tr>
-<tr>
-    <td align="center" height="50" width="50"><a target="_blank" href="https://pony-e.jp/PCIM2017_DCDC.pdf" ><img src="https://www.pony-e.jp/PDFfile.jpg" alt="PDFファイル" height="30" width="30" /></a></td>
-    <td align="center" width="150" height="150"><img src="https://www.pony-e.jp/Trns_HiFreacency.jpg" alt="カタログ写真" height="85" width="140" /></td>
-    <td align="center"width="230" height="50">トランス高周波化<br>(マイクロインバータ)</td>
-    <td width="400" height="50">マイクロインバータにてトランスの高周波化を行いましたが、リッツ線の素線による影響を確認しました。単純に高周波化しても問題が大きいのでいくつかの改善を行います。太陽光用のマイクロインバータの開発も行っています。</td>
-    <td align="center"width="120" height="50">御社量産<br>アシストします</td>
-  </tr>
+        <!-- 3 -->
+        <article class="eti-item">
+          <a class="eti-item-media" target="_blank" href="https://pony-e.jp/K1572_H1-151012-1_ver1.1.pdf" aria-label="PDFを開く">
+            <span class="eti-pdf-badge">PDF</span>
+            <img src="https://www.pony-e.jp/CVCFHEIRETU.jpg" alt="インバータの並列技術">
+          </a>
+          <div class="eti-item-body">
+            <h3 class="eti-item-title">インバータの並列技術</h3>
+            <p class="eti-item-desc">
+              スタンドアローン方式で並列運転を実現。冗長構成に有効です。
+            </p>
+            <div class="eti-item-tags"><span>―</span></div>
+          </div>
+        </article>
 
-<tr>
-    <td align="center" height="50" width="50"><a target="_blank" href="https://pony-e.jp/6phaseDCDC.pdf" ><img src="https://www.pony-e.jp/PDFfile.jpg" alt="PDFファイル" height="30" width="30" /></a></td>
-    <td align="center" width="150" height="150"><img src="https://www.pony-e.jp/6phaseDCDC.jpg" alt="カタログ写真" height="85" width="140" /></td>
-    <td align="center"width="230" height="50">6相インターリーブ型<br>DC-DCコンバータ方式</td>
-    <td width="400" height="50">双方向チョッパを6相インターリーブしました。<br>実験波形は載せられないのですが、難しいポイントや駆動方法、水冷方法、落とし穴などをお話できると思います。</td>
-    <td align="center"width="120" height="50">―</td>
-  </tr>
+        <!-- 4 -->
+        <article class="eti-item">
+          <a class="eti-item-media" target="_blank" href="https://pony-e.jp/BrigeLessPFC.pdf" aria-label="PDFを開く">
+            <span class="eti-pdf-badge">PDF</span>
+            <img src="https://www.pony-e.jp/BrigeLessPFC.jpg" alt="ブリッジレスインターリーブPFC">
+          </a>
+          <div class="eti-item-body">
+            <h3 class="eti-item-title">ブリッジレス・インターリーブPFC</h3>
+            <p class="eti-item-desc">
+              力率改善用コンバータをブリッジレス＋インターリーブで高効率化。量産対応も可能です。
+            </p>
+            <div class="eti-item-tags"><span>量産対応可</span></div>
+          </div>
+        </article>
 
-<tr>
-    <td align="center" height="50" width="50"><a target="_blank" href="https://pony-e.jp/DAB偏磁補償.pdf" ><img src="https://www.pony-e.jp/PDFfile.jpg" alt="PDFファイル" height="30" width="30" /></a></td>
-    <td align="center" width="150" height="150"><img src="https://www.pony-e.jp/DAB偏磁補償.jpg" alt="カタログ写真" height="85" width="140" /></td>
-    <td align="center"width="230" height="50">DABの偏磁補償</td>
-    <td width="400" height="50">DABコンバータの偏磁補償を行いました。<br>トランスの偏磁などが気になる方は偏磁補償を行った方がよいと思います。<br>このような技術も持ち合わせています。</td>
-    <td align="center"width="120" height="50">―</td>
-  </tr>
+        <!-- 5 -->
+        <article class="eti-item">
+          <a class="eti-item-media" target="_blank" href="https://pony-e.jp/PCIM2017_DCDC.pdf" aria-label="PDFを開く">
+            <span class="eti-pdf-badge">PDF</span>
+            <img src="https://www.pony-e.jp/Trns_HiFreacency.jpg" alt="トランス高周波化（マイクロインバータ）">
+          </a>
+          <div class="eti-item-body">
+            <h3 class="eti-item-title">トランス高周波化（マイクロインバータ）</h3>
+            <p class="eti-item-desc">
+              高周波化で小型・高効率に。リッツ線の素線影響など実務ノウハウを蓄積しています。
+            </p>
+            <div class="eti-item-tags"><span>量産アシスト</span></div>
+          </div>
+        </article>
 
-<tr>
-    <td align="center" height="50" width="50"><a target="_blank" href="https://pony-e.jp/EVCHGkairo.pdf" ><img src="https://www.pony-e.jp/PDFfile.jpg" alt="PDFファイル" height="30" width="30" /></a></td>
-    <td align="center" width="150" height="150"><img src="https://www.pony-e.jp/EVCHGkairo.jpg" alt="カタログ写真" height="85" width="140" /></td>
-    <td align="center"width="230" height="50">EV用急速充電器回路</td>
-    <td width="400" height="50">EV用急速充電器の回路がいくつかあるが仕様によって最も良い回路方式を提案する。<br>スイッチやトランスのイメージ、外形、効率など含めてご提案可能です。もちろん試作可能です。</td>
-    <td align="center"width="120" height="50">CHAdeMO,CAN,並列運転対応</td>
-  </tr>
-</table>
-</div>
+        <!-- 6 -->
+        <article class="eti-item">
+          <a class="eti-item-media" target="_blank" href="https://pony-e.jp/6phaseDCDC.pdf" aria-label="PDFを開く">
+            <span class="eti-pdf-badge">PDF</span>
+            <img src="https://www.pony-e.jp/6phaseDCDC.jpg" alt="6相インターリーブ型DC-DC">
+          </a>
+          <div class="eti-item-body">
+            <h3 class="eti-item-title">6相インターリーブ型DC-DCコンバータ方式</h3>
+            <p class="eti-item-desc">
+              双方向チョッパを6相でインターリーブ。駆動・冷却・設計の勘所まで支援します。
+            </p>
+            <div class="eti-item-tags"><span>―</span></div>
+          </div>
+        </article>
 
-    <!-- footer部分を編集するならここ -->
-    <div id="footer"></div>
+        <!-- 7 -->
+        <article class="eti-item">
+          <a class="eti-item-media" target="_blank" href="https://pony-e.jp/DAB偏磁補償.pdf" aria-label="PDFを開く">
+            <span class="eti-pdf-badge">PDF</span>
+            <img src="https://www.pony-e.jp/DAB偏磁補償.jpg" alt="DABの偏磁補償">
+          </a>
+          <div class="eti-item-body">
+            <h3 class="eti-item-title">DABの偏磁補償</h3>
+            <p class="eti-item-desc">
+              DABコンバータの偏磁補償技術。トランスの偏磁課題に有効です。
+            </p>
+            <div class="eti-item-tags"><span>―</span></div>
+          </div>
+        </article>
 
-    <!-- 共通JSの読み込み（bodyの一番最後が推奨） -->
-    <script src="js/common.js"></script>
+        <!-- 8 -->
+        <article class="eti-item">
+          <a class="eti-item-media" target="_blank" href="https://pony-e.jp/EVCHGkairo.pdf" aria-label="PDFを開く">
+            <span class="eti-pdf-badge">PDF</span>
+            <img src="https://www.pony-e.jp/EVCHGkairo.jpg" alt="EV用急速充電器回路">
+          </a>
+          <div class="eti-item-body">
+            <h3 class="eti-item-title">EV用急速充電器回路</h3>
+            <p class="eti-item-desc">
+              仕様に応じて最適な方式をご提案。CHAdeMO / CAN / 並列運転にも対応します。
+            </p>
+            <div class="eti-item-tags"><span>CHAdeMO</span><span>CAN</span><span>並列運転</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
+  <!-- 共通フッター -->
+  <div id="footer"></div>
 
+  <!-- 共通JS（header/footer読込み等） -->
+  <script src="js/common.js"></script>
 </body>
-
 </html>

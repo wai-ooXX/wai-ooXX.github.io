@@ -1,30 +1,77 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <title>過去のニュース｜ポニー電機</title>
-    <link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>設備情報｜ポニー電機</title>
+  <!-- 既存の全体CSS（他ページと同様） -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- このページ専用CSS（干渉防止のため必ず後で読み込む） -->
+  <link rel="stylesheet" href="css/facility.css">
 </head>
-
 <body>
+  <!-- ヘッダー共通化しているならここで include -->
+  <div id="header"></div>
 
-    <!-- header部分を編集するならここ -->
-    <div id="header"></div>
-    <!-- アコーディオンを編集するならここ -->
+  <!-- ページ本体。名前空間: #facility-page.fi 配下のみCSS適用 -->
+  <main id="facility-page" class="fi">
+    <!-- ページタイトル -->
+    <section class="fi-hero">
+      <h1 class="fi-title">設備情報</h1>
+      <!-- 必要ならサブタイトル
+      <p class="fi-sub">Production Facilities</p>
+      -->
+    </section>
 
+    <!-- 設備カード一覧（10件以下想定。静的HTMLでOK／JSON化は後述） -->
+    <section class="fi-list" aria-label="設備一覧">
 
+      <!-- ▼設備カード：必要な数だけ article を複製してください -->
+      <article class="fi-item">
+        <figure class="fi-photo">
+          <!-- ▼写真差し替え。元サイズ以上には拡大しません -->
+          <img src="img/facility/sample1.jpg" alt="設備名（例：コア研磨機）">
+          <figcaption class="fi-cap">設備写真の説明（任意）</figcaption>
+        </figure>
+        <div class="fi-info">
+          <h3 class="fi-name">コア研磨機</h3>
+          <dl class="fi-meta">
+            <div class="fi-row"><dt>型式</dt><dd>ABC-123</dd></div>
+            <div class="fi-row"><dt>能力</dt><dd>最大径 200mm / 厚さ 80mm</dd></div>
+            <div class="fi-row"><dt>メーカー</dt><dd>〇〇工機</dd></div>
+            <div class="fi-row"><dt>台数</dt><dd>2台</dd></div>
+            <div class="fi-row"><dt>備考</dt><dd>微細加工対応</dd></div>
+          </dl>
+        </div>
+      </article>
+      <!-- ▲設備カードここまで -->
 
+      <article class="fi-item">
+        <figure class="fi-photo">
+          <img src="img/facility/sample2.jpg" alt="設備名（例：含浸装置）">
+          <figcaption class="fi-cap">必要に応じて説明</figcaption>
+        </figure>
+        <div class="fi-info">
+          <h3 class="fi-name">含浸装置</h3>
+          <dl class="fi-meta">
+            <div class="fi-row"><dt>型式</dt><dd>IV-500</dd></div>
+            <div class="fi-row"><dt>能力</dt><dd>タンク 500L / 真空 10Pa</dd></div>
+            <div class="fi-row"><dt>メーカー</dt><dd>△△テック</dd></div>
+            <div class="fi-row"><dt>台数</dt><dd>1台</dd></div>
+            <div class="fi-row"><dt>備考</dt><dd>低臭気樹脂対応</dd></div>
+          </dl>
+        </div>
+      </article>
 
+      <!-- 以降、同様に追加。10件以下なら静的HTMLの方が管理が楽です -->
 
-    <!-- footer部分を編集するならここ -->
-    <div id="footer"></div>
+    </section>
+  </main>
 
-    <!-- 共通JSの読み込み（bodyの一番最後が推奨） -->
-    <script src="js/common.js"></script>
+  <!-- フッター共通化しているならここで include -->
+  <div id="footer"></div>
 
-
+  <!-- 共通JSの読み込み（bodyの一番最後が推奨） -->
+  <script src="js/common.js"></script>
 </body>
-
 </html>

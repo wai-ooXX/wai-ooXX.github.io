@@ -1,88 +1,42 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <title>過去のニュース｜ポニー電機</title>
-    <link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8" />
+  <title>開発事例｜ポニー電機</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- 既存の全体スタイル -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- このページ専用スタイル -->
+  <link rel="stylesheet" href="css/dev-examples-style.css" />
 </head>
-
 <body>
+  <!-- header -->
+  <div id="header"></div>
 
-    <!-- header部分を編集するならここ -->
-    <div id="header"></div>
-    <!-- アコーディオンを編集するならここ -->
+  <main class="dev-examples">
+    <h1 class="dev-examples__title">開発事例</h1>
 
-<div id="peoem" name='pawaele'>
-<dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-パワーエレクトロニクス製品の受託開発-</dd>
-</div>
+    <!-- フィルタ & 検索 -->
+    <section class="dev-examples__controls">
+      <div class="dev-examples__filters" id="filters"></div>
+      <div class="dev-examples__search">
+        <input id="search" type="search" placeholder="名称・キーワード・カテゴリで検索" />
+      </div>
+    </section>
 
-<HR width="900" size="5" color="#808080" align="center" >
-<ul class="thumbnail clearFix"　style="height: 600px;">	<!– ８枠分全体の高さを調整できる。 height: 280px; –>
+    <!-- カード一覧 -->
+    <section class="dev-examples__grid" id="card-grid" aria-live="polite"></section>
 
+    <p class="dev-examples__hint">※ 画像またはPDFアイコンをクリックすると新しいタブで開きます。</p>
+  </main>
 
-<li style="height: 280px;"><dl>
-<dt><a target="_blank" href="https://pony-e.jp/PE-Doc/3PHI-ACswitchingFilter.png" 
-rel=”shadowbox”><img src="https://www.pony-e.jp/PE-Doc/3PHI-ACswitchingFilter.png" alt="Photo" width="200" height="150"></a></dt>
-<dd><strong><a target="_blank" href="https://www.pony-e.jp/PE-Doc/3PHI-ACswitchingFilter.pdf">三相交流スイッチングフィルタ</a></strong><br>
-三相PWMインバータ向けの三相LCLフィルタです。正弦波インバータや系統連系等カスタム対応可能です。</dd>
-</dl></li>
+  <!-- footer -->
+  <div id="footer"></div>
 
-<li style="height: 280px;"><dl>	<!– １枠の高さを調整できる。８枠ともに同じ値にすること height: 280px; –>
-<dt><a target="_blank" href="https://pony-e.jp/image/双方向電流共振型絶縁DCDCコンバータ.jpg" rel=”shadowbox”><img src="https://www.pony-e.jp/image/双方向電流共振型絶縁DCDCコンバータ.jpg" alt="Photo" width="200" height="150"></a></dt>
-<dd><strong><a target="_blank" href="https://www.pony-e.jp/image/双方向電流共振型絶縁DCDCコンバータ.pdf">双方向電流共振型絶縁DCDCコンバータ</a></strong><br>
-高効率の絶縁DCDCコンバータです。電力変換器の絶縁化にご活用下さい。ご希望の仕様にカスタマイズできます。</dd>
-</dl></li>
-
-<li style="height: 280px;"><dl>
-<dt><a target="_blank" href="https://pony-e.jp/image/SIP_高周波インバータ.jpg" rel=”shadowbox”><img src="https://www.pony-e.jp/image/SIP_高周波インバータ.jpg" alt="Photo" width="200" height="150"></a></dt>
-<dd><strong><a target="_blank" href="https://www.pony-e.jp/SIP_高周波インバータ.pdf">非接触給電向け高周波インバータ(開発中)</a></strong><br>
-最新部品や文献技術を含めた開発，設計も大歓迎！！</dd>
-</dl></li>
-
-<li style="height: 280px;"><dl>
-<dt><a target="_blank" href="https://pony-e.jp/image/ソフトスイッチング.png" rel=”shadowbox”><img src="https://www.pony-e.jp/image/ソフトスイッチング.png" alt="Photo" width="200" height="150"></a></dt>
-<dd><strong><a target="_blank" href="https://www.pony-e.jp/ソフトスイッチングイン.pdf">ソフトスイッチングインターリーブ 双方向DCDCｺﾝﾊﾞｰﾀ</a></strong><br>
-インターリーブとソフトスイッチング技術により高効率化が可能となりました。</dd>
-</dl></li>
-
-<li style="height: 280px;"><dl>
-<dt><a target="_blank" href="https://pony-e.jp/image/マイクロインバータ.jpg" rel=”shadowbox”><img src="https://www.pony-e.jp/image/マイクロインバータ.jpg" alt="Photo" width="200" height="150"></a></dt>
-<dd><strong><a target="_blank" href="https://www.pony-e.jp/マイクロインバータ.pdf">太陽光発電向けマイクロインバータ</a></strong><br>
-お客様のご要望に合わせて設計，試作，実証試験まで弊社で実施します。</dd>
-</dl></li>
-
-<li style="height: 280px;"><dl>
-<dt><a target="_blank" href="https://pony-e.jp/image/PV監視写真.jpg" rel=”shadowbox”><img src="https://www.pony-e.jp/image/PV監視写真.jpg" alt="Photo" width="200" height="150"></a></dt>
-<dd><strong><a target="_blank" href="https://www.pony-e.jp/PV監視.pdf">研究開発品の実証試験</a></strong><br>
-装置の各種データをオンラインで遠隔監視できます。試作品のデバッグや実証実験のデータ集計などにご活用ください。</dd>
-</dl></li>
-
-
-<li style="height: 280px;"><dl>
-<dt><a target="_blank" href="https://pony-e.jp/image/set.png" rel=”shadowbox”><img src="https://www.pony-e.jp/image/set.png" alt="Photo" width="200" height="150"></a></dt>
-<dd><strong><a target="_blank" href="https://www.pony-e.jp/set sale.pdf">ポニー電機製品のセット提供</a></strong><br>
-パワエレ機器の”制御ソフトの入った制御基板”と”トランスやリアクトル”をセットにて提供可能です。</dd>
-</dl></li>
-
-
-
-<li style="height: 280px;"><dl>
-<dt><a target="_blank" href="https://pony-e.jp/image/Regenerative.png" rel=”shadowbox”><img src="https://www.pony-e.jp/image/Regenerative.png" alt="Photo" width="200" height="150"></a></dt>
-<dd><strong><a target="_blank" href="https://www.pony-e.jp/Regenerative Load.pdf">電力回生負荷</a></strong><br>
-省エネ目的で抵抗負荷などの消費から三相回生への置き換え可能です。</dd>
-</dl></li>
-
-
-
-    <!-- footer部分を編集するならここ -->
-    <div id="footer"></div>
-
-    <!-- 共通JSの読み込み（bodyの一番最後が推奨） -->
-    <script src="js/common.js"></script>
-
-
+  <!-- 共通JS（ヘッダー／フッター読込など） -->
+  <script src="js/common.js"></script>
+  <!-- このページのデータと描画 -->
+  <script src="js/dev-examples-data.js"></script>
+  <script src="js/render-dev-examples.js"></script>
 </body>
-
 </html>
