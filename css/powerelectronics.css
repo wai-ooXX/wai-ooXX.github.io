@@ -1,0 +1,172 @@
+/* ===========================
+   powerelectronics.css (page-scope)
+   命名は .pe- で統一
+   =========================== */
+
+/* 可変余白などのページ内変数 */
+.pe-page {
+  --pe-maxw: 1200px;
+  --pe-pad-x: clamp(16px, 3vw, 32px);
+  --pe-hero-min-h: min(56vh, 560px);
+  --pe-radius: 16px;
+  --pe-shadow: 0 8px 24px rgba(0,0,0,.12);
+  --pe-border: 1px solid rgba(0,0,0,.08);
+  --pe-ink: #0f172a;         /* 文字基調（暗めの紺） */
+  --pe-ink-muted: #475569;   /* 補助文字 */
+  --pe-accent: #0ea5e9;      /* コーポレート系の水色寄り */
+}
+
+/* レイアウトのベース幅 */
+.pe-page {
+  color: var(--pe-ink);
+}
+
+/* ===== ヒーロー ===== */
+.pe-hero {
+  position: relative;
+  display: inline-block;      /* 画像に合わせて枠の大きさを自動調整 */
+  isolation: isolate;
+  overflow: hidden;           /* 画像外は隠す（必要に応じて） */
+  border-radius: 0;
+  max-width: 100%;            /* 横幅はウィンドウに収める */
+}
+
+/* 画像は幅いっぱい、高さは比率維持で縮小 */
+.pe-hero > img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;        /* 全体を表示 */
+  object-position: center;
+  display: block;
+  max-width: 100%;
+}
+
+/* 暗めのグラデ被せ（可読性UP） */
+.pe-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,.15) 0%,
+    rgba(0,0,0,.35) 60%,
+    rgba(0,0,0,.55) 100%
+  );
+  z-index: 1;
+}
+
+/* テキストオーバーレイ */
+.pe-hero-overlay {
+  position: absolute;
+  inset-inline: var(--pe-pad-x);
+  bottom: clamp(16px, 6vh, 64px);
+  z-index: 2; /* グラデの上 */
+  max-width: min(var(--pe-maxw), 92vw);
+  margin-inline: auto;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,.4);
+}
+
+.pe-hero-title {
+  font-size: clamp(28px, 4.8vw, 52px);
+  line-height: 1.1;
+  margin: 0 0 .25em;
+  font-weight: 800;
+  letter-spacing: .01em;
+}
+
+.pe-hero-sub {
+  font-size: clamp(14px, 2.2vw, 18px);
+  line-height: 1.6;
+  margin: 0;
+  opacity: .95;
+}
+
+/* ===== リンクカードのグリッド ===== */
+.pe-link-grid {
+  max-width: min(var(--pe-maxw), 92vw);
+  margin: clamp(20px, 4vh, 40px) auto 72px;
+  padding-inline: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: clamp(12px, 2.4vw, 20px);
+}
+
+.pe-link-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 6px;
+  padding: 18px 16px;
+  border-radius: var(--pe-radius);
+  border: var(--pe-border);
+  background: #fff;
+  box-shadow: var(--pe-shadow);
+  text-decoration: none;
+  color: inherit;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.pe-link-card:hover,
+.pe-link-card:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.16);
+  outline: none;
+  border-color: rgba(14,165,233,.35); /* アクセント色の淡い枠 */
+}
+
+.pe-link-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.pe-link-desc {
+  font-size: 13px;
+  color: var(--pe-ink-muted);
+  line-height: 1.6;
+}
+
+/* ===== 細かなレスポンシブ調整 ===== */
+@media (max-width: 480px) {
+  .pe-hero-overlay {
+    bottom: clamp(12px, 5vh, 36px);
+  }
+  .pe-link-card {
+    padding: 16px 14px;
+  }
+}
+
+
+/* === Hero title adjustments (no blue line) === */
+.pe-hero-title {
+  text-decoration: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  background: none !important;
+  color: #fff; /* ensure white text over hero */
+}
+
+/* Japanese main title */
+.pe-hero-title--ja {
+  /* keep size inherited from .pe-hero-title; ensure no underline */
+}
+
+/* English subtitle: smaller */
+.pe-hero-title--en {
+  font-size: clamp(16px, 2.6vw, 28px);
+  font-weight: 700;
+  opacity: .95;
+}
+
+/* Larger sublines */
+
+.pe-sub--xl {
+  font-size: clamp(18px, 2.8vw, 24px);
+  font-weight: 800;
+  letter-spacing: .01em;
+}
+
+/* Emphasis colors (no void effect) */
+.pe-color-yellow { color: #fde047; } /* amber-300 */
+.pe-color-red { color: #ef4444; } /* red-500 */
+.pe-color-blue { color: #3b82f6; } /* blue-500 */
