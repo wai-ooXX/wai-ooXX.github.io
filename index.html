@@ -4,7 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <title>ポニー電機株式会社ホームページ</title>
+
+  <!-- 既存の全体スタイル：共通スタイル（ヘッダー/フッター用）。必要なら残す -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- 追加：このページ専用スタイル（必ず最後に読み込む） -->
+
 
 </head>
 
@@ -12,14 +17,14 @@
 
   <!-- header部分を編集するならここ -->
   <div id="header"></div>
+
   <!-- アコーディオンを編集するならここ -->
 
-      <div class="hero">
-      <img src="img/picture1.jpg" style="opacity: 1;">
-      <img src="img/picture2.jpg" style="opacity: 0;">
-      <img src="img/picture4.png" style="opacity: 0;">
-    </div>
-    
+  <div class="hero">
+    <img src="img/picture1.jpg" style="opacity: 1;">
+    <img src="img/picture2.jpg" style="opacity: 0;">
+    <img src="img/picture4.png" style="opacity: 0;">
+  </div>
 
   <main>
 
@@ -37,25 +42,28 @@
         </section>
 
         <section class="news">
-          <h2>最新ニュース</h2>
+          <h4>最新ニュース</h4>
           <iframe id="news-frame" src="news.html"></iframe>
         </section>
       </div>
 
       <div class="right">
         <h2>リンク</h2>
-        <a href="recruit.php">
+        <a href="catalog-m-products.html">
           <img src="img/top/side-bnr001.png" alt="カタログ製品バナー" style="width:100%;">
         </a>
-        <a href="https://www.youtube.com" target="_blank">
+        <a href="material-inventory-information.html" target="_blank">
           <img src="img/top/side-bnr002.png" alt="材料在庫バナー" style="width:100%;">
         </a>
-        <a href="https://www.youtube.com" target="_blank">
+        <a href="outline-drawing-information.html" target="_blank">
           <img src="img/top/side-bnr003.png" alt="外形図情報バナー" style="width:100%;">
         </a>
-        <a href="recruit.php">
+        <a href="recruit.html">
           <img src="img/top/side-bnr004.png" alt="採用情報バナー" style="width:100%;">
         </a>
+
+        <br>
+        <br>
 
         <h2>ポニーグループ</h2>
         <a href="https://www.npe.co.jp/">
@@ -71,6 +79,9 @@
           <img src="img/top/MAI_logo2.jpg" alt="MAIバナー" style="width:100%;">
         </a>
 
+        <br>
+        <br>
+        
         <h2>ポニー電機紹介</h2>
         <a href="https://www.youtube.com/watch?v=gCjj2TqTB2c&ab_channel=%E7%BE%A4%E9%A6%AC%E3%83%86%E3%83%AC%E3%83%93%E3%83%BB%E3%81%90%E3%82%93%E3%83%86%E3%83%AC"
           target="_blank">
@@ -84,7 +95,7 @@
           target="_blank">
           <img src="img/top/group_syoukai.png" alt="動画バナー" style="width:100%;">
         </a>
-        <a href="INTERVIEW.php">
+        <a href="pdf/INTERVIEW.pdf">
           <img src="img/top/jyutakusyoukai.png" alt="インタビューバナー" style="width:100%;">
         </a>
       </div>
@@ -96,6 +107,7 @@
 
   <!-- 共通JSの読み込み（bodyの一番最後が推奨） -->
   <script src="js/common.js"></script>
+
 </body>
 
 </html>

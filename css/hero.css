@@ -1,0 +1,70 @@
+/* css/hero.css */
+.c-hero{
+  --hero-grad-start: #09abf6;       /* グラデ開始色 */
+  --hero-grad-end:   #fefeff;       /* グラデ終了色 */
+  --hero-bg: linear-gradient(135deg,var(--hero-grad-start),var(--hero-grad-end));
+  --hero-text: #fff;                /* 文字色 */
+  --badge-bg: rgba(255,255,255,.18);
+  --badge-text:#fff;
+  --title-fs: clamp(22px, 4vw, 40px);
+  --lead-fs:  clamp(14px, 2.2vw, 18px);
+  --hero-pad-y: clamp(48px, 8vw, 96px);
+  --hero-maxw: 1100px;
+
+  color: var(--hero-text);
+  background: var(--hero-bg);
+  padding: var(--hero-pad-y) 20px;
+}
+
+.c-hero__inner{
+  max-width: var(--hero-maxw);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.c-hero__badge{
+  display: inline-block;
+  padding: .35em .8em;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: .08em;
+  background: var(--badge-bg);
+  color: var(--badge-text);
+  backdrop-filter: blur(4px);
+}
+
+.c-hero__title{
+  margin: .6em 0 .3em;
+  font-weight: 700;
+  font-size: var(--title-fs);
+  line-height: 1.25;
+}
+
+.c-hero__lead{
+  margin: 0 auto;
+  max-width: 900px;
+  font-size: var(--lead-fs);
+  line-height: 1.8;
+  opacity: .95;
+}
+
+/* 画像型ヒーロー（必要なページだけ）：背景画像の上にグラデのベール */
+.c-hero--image{
+  position: relative;
+  background: none;
+  isolation: isolate;
+}
+.c-hero--image::before{
+  content:"";
+  position: absolute; inset:0;
+  background: var(--hero-bg);
+  opacity:.85;                /* 画像をうっすら見せたい時は下げる */
+  z-index:-1;
+}
+.c-hero--image > .c-hero__bg{
+  position:absolute; inset:0; z-index:-2; overflow:hidden;
+}
+.c-hero--image > .c-hero__bg img{
+  width:100%; height:100%; object-fit:cover;
+  filter: saturate(1.1);
+}

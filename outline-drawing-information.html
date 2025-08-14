@@ -2,55 +2,74 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <title>過去のニュース｜ポニー電機</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>外形図情報｜ポニー電機</title>
+  <link rel="stylesheet" href="css/style.css">
 
+    <!-- 追加：このページ専用スタイル（必ず最後に読み込む） -->
+  <link rel="stylesheet" href="css/outline-drawing-information.css"> <!-- 追加 -->
 </head>
 
 <body>
 
-    <!-- header部分を編集するならここ -->
-    <div id="header"></div>
-    <!-- アコーディオンを編集するならここ -->
+  <!-- header部分を編集するならここ -->
+  <div id="header"></div>
+  <!-- アコーディオンを編集するならここ -->
 
-<DIV><BR>
-　<FONT size="+2" color="#ff0000" face="HGP創英角ﾎﾟｯﾌﾟ体">カットコアシリーズ外形図情報</FONT><BR>
-<BR>
-<BR>
-<B>
-　　<IMG src="p005lis.gif" width="16" height="16" border="0"><FONT size="+1" face="HGSｺﾞｼｯｸE" color="#0000ff"><A href="ptcstatevr1.2.pdf" target="_blank">タテ型ＰＴＬシリーズ外形図</A><BR>
-</FONT>
-<BR>
-<BR>
-　　<IMG src="p003lis.gif" width="16" height="16" border="0"><FONT size="+1" face="HGSｺﾞｼｯｸE" color="#0000ff"><A href="ptcsyoko.pdf" target="_blank">ヨコ型ＰＹＬシリーズ外形図</A><BR></FONT>
-<BR>
-<BR>
-　　<IMG src="p005lis.gif" width="16" height="16" border="0"><FONT size="+1" face="HGSｺﾞｼｯｸE" color="#0000ff"><A href="pfl-gaikeizu.pdf" target="_blank">伏せ形ＰＦＬシリーズ外形図<BR></A></FONT>
-<BR>
-<BR>
-　　<IMG src="p003lis.gif" width="16" height="16" border="0"><FONT size="+1" face="HGSｺﾞｼｯｸE" color="#0000ff"><A href="pce-gaikeizu.pdf" target="_blank">三相ＣＥシリーズ外形図<BR></A></FONT>
-<BR>
-<BR>
-</B>
-</DIV>
-<P><IMG src="logo3.gif" width="226" height="47" border="0" alt="外形図情報"><BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-　　</P>
+  <!-- page body (scoped) -->
+  <main class="odi-page">
+    <section class="odi-hero" aria-label="外形図情報ヒーロー">
+      <div class="odi-hero-inner">
+        <h1 class="odi-title">外形図情報</h1>
+        <p class="odi-subtitle">カットコアシリーズの外形図（PDF）をダウンロードできます</p>
+      </div>
+    </section>
 
+    <div class="odi-container">
+      <section class="odi-card" aria-label="カットコアシリーズ 外形図">
+        <h2><span class="odi-pill">Cut Core</span> カットコアシリーズ 外形図</h2>
+        <ul class="odi-list">
+          <li class="odi-item">
+            <span class="odi-icon">PDF</span>
+            <div class="odi-text">
+              <a href="ptcstatevr1.2.pdf" target="_blank" rel="noopener">タテ型 PTL シリーズ 外形図</a>
+              <small class="odi-meta">新しいタブで開きます</small>
+            </div>
+          </li>
+          <li class="odi-item">
+            <span class="odi-icon">PDF</span>
+            <div class="odi-text">
+              <a href="ptcsyoko.pdf" target="_blank" rel="noopener">ヨコ型 PYL シリーズ 外形図</a>
+              <small class="odi-meta">新しいタブで開きます</small>
+            </div>
+          </li>
+          <li class="odi-item">
+            <span class="odi-icon">PDF</span>
+            <div class="odi-text">
+              <a href="pfl-gaikeizu.pdf" target="_blank" rel="noopener">伏せ形 PFL シリーズ 外形図</a>
+              <small class="odi-meta">新しいタブで開きます</small>
+            </div>
+          </li>
+          <li class="odi-item">
+            <span class="odi-icon">PDF</span>
+            <div class="odi-text">
+              <a href="pce-gaikeizu.pdf" target="_blank" rel="noopener">三相 CE シリーズ 外形図</a>
+              <small class="odi-meta">新しいタブで開きます</small>
+            </div>
+          </li>
+        </ul>
+      </section>
 
+      <div class="odi-gap"></div>
+    </div>
+  </main>
 
-    <!-- footer部分を編集するならここ -->
-    <div id="footer"></div>
+  <!-- footer部分を編集するならここ -->
+  <div id="footer"></div>
 
-    <!-- 共通JSの読み込み（bodyの一番最後が推奨） -->
-    <script src="js/common.js"></script>
-
+  <!-- 共通JSの読み込み（bodyの一番最後が推奨） -->
+  <script src="js/common.js"></script>
 
 </body>
-
 </html>

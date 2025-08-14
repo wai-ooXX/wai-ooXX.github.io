@@ -9,29 +9,29 @@ const catalogData = {
       "インダクタンス": "3.18mH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P006-112E.pdf"
+      "リンク": "PDF/transformer-reactor/P006-112E.pdf"
     },
     {
-      "図番": "P006-121A (LC63AM-501U15A",
-      "型番": "",
+      "図番": "P006-121A",
+      "型番": "LC63AM-501U15A",
       "名称": "リアクトル",
       "定格電流": "15A",
       "ピーク電流": "25A",
       "インダクタンス": "500μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P006-121A(LC63AM-501U15A).pdf"
+      "リンク": "PDF/transformer-reactor/P006-121A(LC63AM-501U15A).pdf"
     },
     {
-      "図番": "P006-122A (LC32AM-1M50A",
-      "型番": "",
+      "図番": "P006-122A",
+      "型番": "LC32AM-1M50A",
       "名称": "リアクトル",
       "定格電流": "50A",
       "ピーク電流": "70A",
       "インダクタンス": "1mH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P006-122A(LC32AM-1M50A).pdf"
+      "リンク": "PDF/transformer-reactor/P006-122A(LC32AM-1M50A).pdf"
     },
     {
       "図番": "P006-123A",
@@ -42,7 +42,7 @@ const catalogData = {
       "インダクタンス": "2.5mH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P006-123A(_LC32AM-2.5M28A)_.pdf"
+      "リンク": "PDF/transformer-reactor/P006-123A(_LC32AM-2.5M28A)_.pdf"
     },
     {
       "図番": "P006-124A",
@@ -53,7 +53,7 @@ const catalogData = {
       "インダクタンス": "2.1mH",
       "コア材": "薄型珪素鋼板",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P006-124A(LCT9GT-2M15A).pdf"
+      "リンク": "PDF/transformer-reactor/P006-124A(LCT9GT-2M15A).pdf"
     },
     {
       "図番": "P006-128A",
@@ -64,7 +64,7 @@ const catalogData = {
       "インダクタンス": "400μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P006128Avr1.pdf"
+      "リンク": "PDF/transformer-reactor/P006-128A_v1.pdf"
     },
     {
       "図番": "P006-129A",
@@ -75,7 +75,7 @@ const catalogData = {
       "インダクタンス": "500μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P006129Avr2.pdf"
+      "リンク": "PDF/transformer-reactor/P006-129A_v2.pdf"
     },
     {
       "図番": "P006-150",
@@ -86,29 +86,29 @@ const catalogData = {
       "インダクタンス": "660μH",
       "コア材": "スーパーEXコア",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P006-150(LC63SE-660U28A).pdf"
+      "リンク": "PDF/transformer-reactor/P006-150(LC63SE-660U28A).pdf"
     },
     {
-      "図番": "P006-151B (LC20AM-0.4M10A",
-      "型番": "",
+      "図番": "P006-151B",
+      "型番": "LC20AM-0.4M10A",
       "名称": "リアクトル",
       "定格電流": "10A",
       "ピーク電流": "14A",
       "インダクタンス": "400μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P006-151B(LC20AM-401U10A).pdf"
+      "リンク": "PDF/transformer-reactor/P006-151B(LC20AM-401U10A).pdf"
     },
     {
-      "図番": "P006-155A (LC125SE-660U37A",
-      "型番": "",
+      "図番": "P006-155A",
+      "型番": "LC125SE-660U37A",
       "名称": "リアクトル",
       "定格電流": "33.6A",
       "ピーク電流": "36.6A",
       "インダクタンス": "660μH",
       "コア材": "スーパーEXコア",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P006-155A.pdf"
+      "リンク": "PDF/transformer-reactor/P006-155A.pdf"
     },
     {
       "図番": "P006-156",
@@ -119,7 +119,7 @@ const catalogData = {
       "インダクタンス": "520μH",
       "コア材": "スーパーEXコア",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P006-156(LC20GT-560U20A).pdf"
+      "リンク": "PDF/transformer-reactor/P006-156(LC20GT-560U20A).pdf"
     },
     {
       "図番": "P006-158",
@@ -130,7 +130,7 @@ const catalogData = {
       "インダクタンス": "660μH",
       "コア材": "スーパーHFコア",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P006-158(LC81SH-660U37A).pdf"
+      "リンク": "PDF/transformer-reactor/P006-158(LC81SH-660U37A).pdf"
     },
     {
       "図番": "P007-140A",
@@ -141,7 +141,7 @@ const catalogData = {
       "インダクタンス": "5mH",
       "コア材": "フェライト",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P007-140A.pdf"
+      "リンク": "PDF/transformer-reactor/P007-140A.pdf"
     },
     {
       "図番": "P007-141A",
@@ -152,7 +152,7 @@ const catalogData = {
       "インダクタンス": "34μH",
       "コア材": "フェライト",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P007-141A(LU80M3-34U65AG).pdf"
+      "リンク": "PDF/transformer-reactor/P007-141A(LU80M3-34U65AG).pdf"
     },
     {
       "図番": "P007-142",
@@ -163,7 +163,7 @@ const catalogData = {
       "インダクタンス": "60μH",
       "コア材": "フェライト",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P007-142(LU80M3-60U47AG).pdf"
+      "リンク": "PDF/transformer-reactor/P007-142(LU80M3-60U47AG).pdf"
     },
     {
       "図番": "P007-143",
@@ -174,7 +174,7 @@ const catalogData = {
       "インダクタンス": "120μH",
       "コア材": "フェライト",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P007-143(LU80M3-120U46AG).pdf"
+      "リンク": "PDF/transformer-reactor/P007-143(LU80M3-120U46AG).pdf"
     },
     {
       "図番": "P007-147",
@@ -185,7 +185,7 @@ const catalogData = {
       "インダクタンス": "180μH",
       "コア材": "ダストコア",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P007-147(LE43D1-130U15AG).pdf"
+      "リンク": "PDF/transformer-reactor/P007-147(LE43D1-130U15AG).pdf"
     },
     {
       "図番": "P007-148",
@@ -196,7 +196,7 @@ const catalogData = {
       "インダクタンス": "220μH",
       "コア材": "ダストコア",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P007-148(LE43D2-130U15AG).pdf"
+      "リンク": "PDF/transformer-reactor/P007-148(LE43D2-130U15AG).pdf"
     },
     {
       "図番": "P007-169",
@@ -207,7 +207,7 @@ const catalogData = {
       "インダクタンス": "360μH",
       "コア材": "スーパーEXコア",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P007-169(LS17SE-360U163AG).pdf"
+      "リンク": "PDF/transformer-reactor/P007-169(LS17SE-360U163AG).pdf"
     },
     {
       "図番": "P007-221",
@@ -218,7 +218,7 @@ const catalogData = {
       "インダクタンス": "1mH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P007-221(LC63AM-1M20AG).pdf"
+      "リンク": "PDF/transformer-reactor/P007-221(LC63AM-1M20AG).pdf"
     },
     {
       "図番": "P007-222",
@@ -229,7 +229,7 @@ const catalogData = {
       "インダクタンス": "360μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P007-222(LC16AAM-50U40AG).pdf"
+      "リンク": "PDF/transformer-reactor/P007-222(LC16AAM-50U40AG).pdf"
     },
     {
       "図番": "P008-100",
@@ -240,7 +240,7 @@ const catalogData = {
       "インダクタンス": "900μH",
       "コア材": "ダストコア",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P008-100(LE54D3-900U6AH).pdf"
+      "リンク": "PDF/transformer-reactor/P008-100(LE54D3-900U6AH).pdf"
     },
     {
       "図番": "P008-101",
@@ -251,7 +251,7 @@ const catalogData = {
       "インダクタンス": "900μH",
       "コア材": "ダストコア",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P008-101(LE48D4-900U6AH).pdf"
+      "リンク": "PDF/transformer-reactor/P008-101(LE48D4-900U6AH).pdf"
     },
     {
       "図番": "P008-103A",
@@ -262,7 +262,7 @@ const catalogData = {
       "インダクタンス": "4.3mH",
       "コア材": "フェライト",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P008-103A(LQ50F4-500U15A).pdf"
+      "リンク": "PDF/transformer-reactor/P008-103A(LQ50F4-500U15A).pdf"
     },
     {
       "図番": "P008-165",
@@ -273,7 +273,7 @@ const catalogData = {
       "インダクタンス": "1mH",
       "コア材": "ファインメット",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P008-165 LC8DFM-1M99AH CS800PC2 実験用.pdf"
+      "リンク": "PDF/transformer-reactor/P008-165 LC8DFM-1M99AH CS800PC2 実験用.pdf"
     },
     {
       "図番": "P008-166",
@@ -284,7 +284,7 @@ const catalogData = {
       "インダクタンス": "1mH",
       "コア材": "ファインメット",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P008-166(LC8CFM-1M118AHCS800PC).pdf"
+      "リンク": "PDF/transformer-reactor/P008-166(LC8CFM-1M118AHCS800PC).pdf"
     },
     {
       "図番": "P008-168",
@@ -295,7 +295,7 @@ const catalogData = {
       "インダクタンス": "1mH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P008-168(LC80AM-1M20AH CS80AM).pdf"
+      "リンク": "PDF/transformer-reactor/P008-168(LC80AM-1M20AH CS80AM).pdf"
     },
     {
       "図番": "P008-179",
@@ -306,7 +306,7 @@ const catalogData = {
       "インダクタンス": "2.1mH",
       "コア材": "スーパーEXコア",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P008-179(LS2BSE-2.1M10A).pdf"
+      "リンク": "PDF/transformer-reactor/P008-179(LS2BSE-2.1M10A).pdf"
     },
     {
       "図番": "P008-230",
@@ -317,7 +317,7 @@ const catalogData = {
       "インダクタンス": "25μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P008-230(LSIHAM-25U20A).pdf"
+      "リンク": "PDF/transformer-reactor/P008-230(LSIHAM-25U20A).pdf"
     },
     {
       "図番": "P008-231",
@@ -328,7 +328,7 @@ const catalogData = {
       "インダクタンス": "50μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P008-231(LS3HAM-50U20A).pdf"
+      "リンク": "PDF/transformer-reactor/P008-231(LS3HAM-50U20A).pdf"
     },
     {
       "図番": "P008-232",
@@ -339,7 +339,7 @@ const catalogData = {
       "インダクタンス": "100μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P008-232(LS4HAM-100U20A).pdf"
+      "リンク": "PDF/transformer-reactor/P008-232(LS4HAM-100U20A).pdf"
     },
     {
       "図番": "P008-233",
@@ -350,7 +350,7 @@ const catalogData = {
       "インダクタンス": "200μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P008-233(LS8HAM-200U20A).pdf"
+      "リンク": "PDF/transformer-reactor/P008-233(LS8HAM-200U20A).pdf"
     },
     {
       "図番": "P008-234",
@@ -361,7 +361,7 @@ const catalogData = {
       "インダクタンス": "400μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P008-234(LSBHAM-400U20A).pdf"
+      "リンク": "PDF/transformer-reactor/P008-234(LSBHAM-400U20A).pdf"
     },
     {
       "図番": "P009-236",
@@ -372,7 +372,7 @@ const catalogData = {
       "インダクタンス": "100μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P009-236(LC16AM100U30A).pdf"
+      "リンク": "PDF/transformer-reactor/P009-236(LC16AM100U30A).pdf"
     },
     {
       "図番": "P009-300",
@@ -383,7 +383,7 @@ const catalogData = {
       "インダクタンス": "100μH",
       "コア材": "フェライト",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P009-300(LEC9F4-100U20A).pdf"
+      "リンク": "PDF/transformer-reactor/P009-300(LEC9F4-100U20A).pdf"
     },
     {
       "図番": "P009-302",
@@ -394,7 +394,7 @@ const catalogData = {
       "インダクタンス": "1μH",
       "コア材": "フェライト",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P009-302(LQ3BF4-1U30A).pdf"
+      "リンク": "PDF/transformer-reactor/P009-302(LQ3BF4-1U30A).pdf"
     },
     {
       "図番": "P009-303",
@@ -405,7 +405,7 @@ const catalogData = {
       "インダクタンス": "3μH",
       "コア材": "フェライト",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P009-303(LQ35F4-3U30A).pdf"
+      "リンク": "PDF/transformer-reactor/P009-303(LQ35F4-3U30A).pdf"
     },
     {
       "図番": "P009-304",
@@ -416,7 +416,7 @@ const catalogData = {
       "インダクタンス": "5μH",
       "コア材": "フェライト",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P009-304(LQ40F4-5U30A).pdf"
+      "リンク": "PDF/transformer-reactor/P009-304(LQ40F4-5U30A).pdf"
     },
     {
       "図番": "P009-306",
@@ -427,7 +427,7 @@ const catalogData = {
       "インダクタンス": "10μH",
       "コア材": "フェライト",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P009-306(LI70F4-10U30A).pdf"
+      "リンク": "PDF/transformer-reactor/P009-306(LI70F4-10U30A).pdf"
     },
     {
       "図番": "P010-317",
@@ -438,7 +438,7 @@ const catalogData = {
       "インダクタンス": "1.1mH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P010-317.pdf"
+      "リンク": "PDF/transformer-reactor/P010-317.pdf"
     },
     {
       "図番": "P011-201",
@@ -449,7 +449,7 @@ const catalogData = {
       "インダクタンス": "90μH",
       "コア材": "フェライト",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P011-201(LQ50F4-90U5A).pdf"
+      "リンク": "PDF/transformer-reactor/P011-201(LQ50F4-90U5A).pdf"
     },
     {
       "図番": "P011-202",
@@ -460,7 +460,7 @@ const catalogData = {
       "インダクタンス": "45μH",
       "コア材": "フェライト",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P011-202(LQ35F4-45U7A).pdf"
+      "リンク": "PDF/transformer-reactor/P011-202(LQ35F4-45U7A).pdf"
     },
     {
       "図番": "P011-203",
@@ -471,7 +471,7 @@ const catalogData = {
       "インダクタンス": "240μH",
       "コア材": "フェライト",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P011-203(LQ40F4-240U5A).pdf"
+      "リンク": "PDF/transformer-reactor/P011-203(LQ40F4-240U5A).pdf"
     },
     {
       "図番": "P011-204",
@@ -482,7 +482,7 @@ const catalogData = {
       "インダクタンス": "120μH",
       "コア材": "フェライト",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P011-204(LQ40F4-120U5A).pdf"
+      "リンク": "PDF/transformer-reactor/P011-204(LQ40F4-120U5A).pdf"
     },
     {
       "図番": "P011-218",
@@ -493,7 +493,7 @@ const catalogData = {
       "インダクタンス": "600μH",
       "コア材": "アモルファス",
       "形状": "カットリング",
-      "リンク": "katarogu-pdf/P011-218(TA5-601U10A).pdf"
+      "リンク": "PDF/transformer-reactor/P011-218(TA5-601U10A).pdf"
     },
     {
       "図番": "P011-320",
@@ -504,7 +504,7 @@ const catalogData = {
       "インダクタンス": "50μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P011-320(LS3HAM-500U15A).pdf"
+      "リンク": "PDF/transformer-reactor/P011-320(LS3HAM-500U15A).pdf"
     },
     {
       "図番": "P011-322",
@@ -515,7 +515,7 @@ const catalogData = {
       "インダクタンス": "2.14mH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P011-322(LSFHAM-2.14M9.2A).pdf"
+      "リンク": "PDF/transformer-reactor/P011-322(LSFHAM-2.14M9.2A).pdf"
     },
     {
       "図番": "P011-324",
@@ -526,7 +526,7 @@ const catalogData = {
       "インダクタンス": "15mH",
       "コア材": "アモルファス",
       "形状": "カットリング",
-      "リンク": "katarogu-pdf/P011-324(TA6AM-15MB4A).pdf"
+      "リンク": "PDF/transformer-reactor/P011-324(TA6AM-15MB4A).pdf"
     },
     {
       "図番": "P011-325",
@@ -537,7 +537,7 @@ const catalogData = {
       "インダクタンス": "12mH",
       "コア材": "アモルファス",
       "形状": "カットリング",
-      "リンク": "katarogu-pdf/P011-325(TA6AM-12MB5A).pdf"
+      "リンク": "PDF/transformer-reactor/P011-325(TA6AM-12MB5A).pdf"
     },
     {
       "図番": "P011-609",
@@ -548,7 +548,7 @@ const catalogData = {
       "インダクタンス": "500μH",
       "コア材": "ダストコア",
       "形状": "トロイダル",
-      "リンク": "katarogu-pdf/P011-609.pdf"
+      "リンク": "PDF/transformer-reactor/P011-609.pdf"
     },
     {
       "図番": "P012-205",
@@ -559,7 +559,7 @@ const catalogData = {
       "インダクタンス": "29μH",
       "コア材": "ダストコア",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P012-205.pdf"
+      "リンク": "PDF/transformer-reactor/P012-205.pdf"
     },
     {
       "図番": "P012-210",
@@ -570,7 +570,7 @@ const catalogData = {
       "インダクタンス": "460μH",
       "コア材": "フェライト",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P012-210.pdf"
+      "リンク": "PDF/transformer-reactor/P012-210.pdf"
     },
     {
       "図番": "P012-212",
@@ -581,7 +581,7 @@ const catalogData = {
       "インダクタンス": "1mH",
       "コア材": "フェライト",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P012-212.pdf"
+      "リンク": "PDF/transformer-reactor/P012-212.pdf"
     },
     {
       "図番": "P012-303",
@@ -592,7 +592,7 @@ const catalogData = {
       "インダクタンス": "590μH",
       "コア材": "スーパーEXコア",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P012-303(LSCHSE-591U30A).pdf"
+      "リンク": "PDF/transformer-reactor/P012-303(LSCHSE-591U30A).pdf"
     },
     {
       "図番": "P012-304",
@@ -603,7 +603,7 @@ const catalogData = {
       "インダクタンス": "590μH",
       "コア材": "スーパーEXコア",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P012-304(LSAHSE-591U30A).pdf"
+      "リンク": "PDF/transformer-reactor/P012-304(LSAHSE-591U30A).pdf"
     },
     {
       "図番": "P012-333",
@@ -614,7 +614,7 @@ const catalogData = {
       "インダクタンス": "500μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P012-333.pdf"
+      "リンク": "PDF/transformer-reactor/P012-333.pdf"
     },
     {
       "図番": "P012-334",
@@ -625,7 +625,7 @@ const catalogData = {
       "インダクタンス": "300μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P012-334.pdf"
+      "リンク": "PDF/transformer-reactor/P012-334.pdf"
     },
     {
       "図番": "P012-335",
@@ -636,7 +636,7 @@ const catalogData = {
       "インダクタンス": "300μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P012-335.pdf"
+      "リンク": "PDF/transformer-reactor/P012-335.pdf"
     },
     {
       "図番": "P012-336",
@@ -647,7 +647,7 @@ const catalogData = {
       "インダクタンス": "200μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P012-336.pdf"
+      "リンク": "PDF/transformer-reactor/P012-336.pdf"
     },
     {
       "図番": "P012-337",
@@ -658,7 +658,7 @@ const catalogData = {
       "インダクタンス": "200μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P012-337.pdf"
+      "リンク": "PDF/transformer-reactor/P012-337.pdf"
     },
     {
       "図番": "P012-338",
@@ -669,7 +669,7 @@ const catalogData = {
       "インダクタンス": "100μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P012-338(LSFHAM-101U100A).pdf"
+      "リンク": "PDF/transformer-reactor/P012-338(LSFHAM-101U100A).pdf"
     },
     {
       "図番": "P012-344",
@@ -680,7 +680,7 @@ const catalogData = {
       "インダクタンス": "700μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P012-344.pdf"
+      "リンク": "PDF/transformer-reactor/P012-344.pdf"
     },
     {
       "図番": "P012-345",
@@ -691,7 +691,7 @@ const catalogData = {
       "インダクタンス": "1.2mH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P012-345.pdf"
+      "リンク": "PDF/transformer-reactor/P012-345.pdf"
     },
     {
       "図番": "P012-351",
@@ -702,7 +702,7 @@ const catalogData = {
       "インダクタンス": "250μH",
       "コア材": "スーパーEXコア",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P012-351.pdf"
+      "リンク": "PDF/transformer-reactor/P012-351.pdf"
     },
     {
       "図番": "P012-502",
@@ -713,7 +713,7 @@ const catalogData = {
       "インダクタンス": "158μH",
       "コア材": "珪素鋼板",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P012-502(LI24Z1-151U4A).pdf"
+      "リンク": "PDF/transformer-reactor/P012-502(LI24Z1-151U4A).pdf"
     },
     {
       "図番": "P012-503",
@@ -724,7 +724,7 @@ const catalogData = {
       "インダクタンス": "1mH",
       "コア材": "珪素鋼板",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P012-503(LSQHK3-102U110A).pdf"
+      "リンク": "PDF/transformer-reactor/P012-503(LSQHK3-102U110A).pdf"
     },
     {
       "図番": "P013-309",
@@ -735,7 +735,7 @@ const catalogData = {
       "インダクタンス": "16μH",
       "コア材": "スーパーEXコア",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P013-309.pdf"
+      "リンク": "PDF/transformer-reactor/P013-309.pdf"
     },
     {
       "図番": "P013-312",
@@ -746,7 +746,7 @@ const catalogData = {
       "インダクタンス": "20μH",
       "コア材": "珪素鋼板",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P013-312.pdf"
+      "リンク": "PDF/transformer-reactor/P013-312.pdf"
     },
     {
       "図番": "P013-317",
@@ -757,7 +757,7 @@ const catalogData = {
       "インダクタンス": "500μH",
       "コア材": "スーパーEXコア",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P013-317.pdf"
+      "リンク": "PDF/transformer-reactor/P013-317.pdf"
     },
     {
       "図番": "P013-318",
@@ -768,7 +768,7 @@ const catalogData = {
       "インダクタンス": "3mH",
       "コア材": "スーパーEXコア",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P013-318.pdf"
+      "リンク": "PDF/transformer-reactor/P013-318.pdf"
     },
     {
       "図番": "P013-321",
@@ -779,7 +779,7 @@ const catalogData = {
       "インダクタンス": "2.5mH",
       "コア材": "スーパーEXコア",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P013-321.pdf"
+      "リンク": "PDF/transformer-reactor/P013-321.pdf"
     },
     {
       "図番": "P013-323X",
@@ -790,7 +790,7 @@ const catalogData = {
       "インダクタンス": "200μH",
       "コア材": "スーパーEXコア",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P013-323X.pdf"
+      "リンク": "PDF/transformer-reactor/P013-323X.pdf"
     },
     {
       "図番": "P013-326",
@@ -801,7 +801,7 @@ const catalogData = {
       "インダクタンス": "200μH",
       "コア材": "アモルファス",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P013-326.pdf"
+      "リンク": "PDF/transformer-reactor/P013-326.pdf"
     },
     {
       "図番": "P013-332X",
@@ -812,7 +812,7 @@ const catalogData = {
       "インダクタンス": "300μH",
       "コア材": "スーパーEXコア",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P013-332X.pdf"
+      "リンク": "PDF/transformer-reactor/P013-332X.pdf"
     },
     {
       "図番": "P013-401",
@@ -823,7 +823,7 @@ const catalogData = {
       "インダクタンス": "3.3mH",
       "コア材": "珪素鋼板",
       "形状": "シートコアタイプ",
-      "リンク": "katarogu-pdf/P013-401.pdf"
+      "リンク": "PDF/transformer-reactor/P013-401.pdf"
     },
     {
       "図番": "ﾉｰﾏﾙﾓｰﾄﾞﾁｮｰｸ（ﾄﾛｲﾀﾞﾙ）★★",
@@ -834,7 +834,7 @@ const catalogData = {
       "インダクタンス": "8uH〜2300uH",
       "コア材": "各種",
       "形状": "トロイダルタイプ",
-      "リンク": "ponynormaltl.pdf"
+      "リンク": "PDF/transformer-reactor/ponynormaltl2020.pdf"
     }
   ],
   "フライバックトランス": [
@@ -847,7 +847,7 @@ const catalogData = {
       "インダクタンス": "15μH",
       "コア材": "フェライト",
       "形状": "EI25",
-      "リンク": "katarogu-pdf/P011-K30009(TI25F0-C3NL).pdf"
+      "リンク": "PDF/transformer-reactor/P011-K30009(TI25F0-C3NL).pdf"
     },
     {
       "図番": "P011-K36013",
@@ -858,7 +858,7 @@ const catalogData = {
       "インダクタンス": "74μH",
       "コア材": "フェライト",
       "形状": "EPC17",
-      "リンク": "katarogu-pdf/P011-K36013(TP17F0-C3NL).pdf"
+      "リンク": "PDF/transformer-reactor/P011-K36013(TP17F0-C3NL).pdf"
     },
     {
       "図番": "P011-K36014",
@@ -869,7 +869,7 @@ const catalogData = {
       "インダクタンス": "135μH",
       "コア材": "フェライト",
       "形状": "ER14.5/6",
-      "リンク": "katarogu-pdf/P011-K36014(TR14F0-C2NL).pdf"
+      "リンク": "PDF/transformer-reactor/P011-K36014(TR14F0-C2NL).pdf"
     }
   ],
   "コモンモードチョーク": [
@@ -882,7 +882,7 @@ const catalogData = {
       "インダクタンス": "40μH",
       "コア材": "フェライト",
       "形状": "SMDタイプ",
-      "リンク": "katarogu-pdf/P006-144(LEE5F0-40U0.1A).pdf"
+      "リンク": "PDF/transformer-reactor/P006-144(LEE5F0-40U0.1A).pdf"
     },
     {
       "図番": "P006-145",
@@ -893,7 +893,7 @@ const catalogData = {
       "インダクタンス": "20μH",
       "コア材": "フェライト",
       "形状": "ボビンタイプ",
-      "リンク": "katarogu-pdf/P006-145(LEP7F0-50U0.4A).pdf"
+      "リンク": "PDF/transformer-reactor/P006-145(LEP7F0-50U0.4A).pdf"
     },
     {
       "図番": "P006-146",
@@ -904,7 +904,7 @@ const catalogData = {
       "インダクタンス": "20μH",
       "コア材": "フェライト",
       "形状": "SMDタイプ",
-      "リンク": "katarogu-pdf/P006-146(LER11F0-50U0.5A).pdf"
+      "リンク": "PDF/transformer-reactor/P006-146(LER11F0-50U0.5A).pdf"
     },
     {
       "図番": "P009-192",
@@ -915,7 +915,7 @@ const catalogData = {
       "インダクタンス": "2mH",
       "コア材": "ファインメット",
       "形状": "トロイダル",
-      "リンク": "katarogu-pdf/P009-192.pdf"
+      "リンク": "PDF/transformer-reactor/P009-192.pdf"
     },
     {
       "図番": "P009-194",
@@ -926,7 +926,7 @@ const catalogData = {
       "インダクタンス": "800μH",
       "コア材": "フェライト",
       "形状": "トロイダル",
-      "リンク": "katarogu-pdf/P009-194.pdf"
+      "リンク": "PDF/transformer-reactor/P009-194.pdf"
     },
     {
       "図番": "P010-607",
@@ -937,7 +937,7 @@ const catalogData = {
       "インダクタンス": "1mH",
       "コア材": "ファインメット",
       "形状": "トロイダル",
-      "リンク": "katarogu-pdf/P010-607.pdf"
+      "リンク": "PDF/transformer-reactor/P010-607.pdf"
     },
     {
       "図番": "P012-617",
@@ -948,7 +948,7 @@ const catalogData = {
       "インダクタンス": "4mH",
       "コア材": "ファインメット",
       "形状": "トロイダル",
-      "リンク": "katarogu-pdf/P012-617.pdf"
+      "リンク": "PDF/transformer-reactor/P012-617.pdf"
     },
     {
       "図番": "P013-616",
@@ -959,7 +959,7 @@ const catalogData = {
       "インダクタンス": "4mH",
       "コア材": "ファインメット",
       "形状": "トロイダル",
-      "リンク": "katarogu-pdf/P013-616.pdf"
+      "リンク": "PDF/transformer-reactor/P013-616.pdf"
     },
     {
       "図番": "ｺﾓﾝﾓｰﾄﾞﾁｮｰｸ（ﾄﾛｲﾀﾞﾙ）★★",
@@ -970,7 +970,7 @@ const catalogData = {
       "インダクタンス": "0.6mH〜8mH",
       "コア材": "フェライト",
       "形状": "トロイダルタイプ",
-      "リンク": "ponycomontl.pdf"
+      "リンク": "PDF/transformer-reactor/ponycomontl.pdf"
     },
     {
       "図番": "ｺﾓﾝﾓｰﾄﾞﾁｮｰｸ（ボビン）★★",
@@ -981,7 +981,7 @@ const catalogData = {
       "インダクタンス": "0.7mH〜60mH",
       "コア材": "フェライト",
       "形状": "ボビンタイプ",
-      "リンク": "ponycomonbo.pdf"
+      "リンク": "PDF/transformer-reactor/ponycomonbo.pdf"
     }
   ],
   "商用トランス・リアクトル": [
@@ -994,7 +994,7 @@ const catalogData = {
       "インダクタンス": "1.5A",
       "コア材": "珪素鋼板",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P006-113(TE130H1-C2-440V).pdf"
+      "リンク": "PDF/transformer-reactor/P006-113(TE130H1-C2-440V).pdf"
     },
     {
       "図番": "P008-141",
@@ -1005,7 +1005,7 @@ const catalogData = {
       "インダクタンス": "20A",
       "コア材": "珪素鋼板",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P008-141(TI160-C2-200VH).pdf"
+      "リンク": "PDF/transformer-reactor/P008-141(TI160-C2-200VH).pdf"
     },
     {
       "図番": "P007-104A",
@@ -1016,7 +1016,7 @@ const catalogData = {
       "インダクタンス": "7.2mH",
       "コア材": "珪素鋼板",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P007-104A.pdf"
+      "リンク": "PDF/transformer-reactor/P007-104A.pdf"
     },
     {
       "図番": "P007-105",
@@ -1027,7 +1027,7 @@ const catalogData = {
       "インダクタンス": "2.5mH",
       "コア材": "珪素鋼板",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P007-105(LI60H2-2.5M7AG).pdf"
+      "リンク": "PDF/transformer-reactor/P007-105(LI60H2-2.5M7AG).pdf"
     },
     {
       "図番": "P007-106",
@@ -1038,7 +1038,7 @@ const catalogData = {
       "インダクタンス": "2.5mH",
       "コア材": "珪素鋼板",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P007-106(LI66H2-2.5M10AG).pdf"
+      "リンク": "PDF/transformer-reactor/P007-106(LI66H2-2.5M10AG).pdf"
     },
     {
       "図番": "P007-107",
@@ -1049,7 +1049,7 @@ const catalogData = {
       "インダクタンス": "1mH",
       "コア材": "珪素鋼板",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P007-107(LC12K3-1M32AG).pdf"
+      "リンク": "PDF/transformer-reactor/P007-107.pdf"
     },
     {
       "図番": "P007-110",
@@ -1060,7 +1060,7 @@ const catalogData = {
       "インダクタンス": "15mH",
       "コア材": "珪素鋼板",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P007-110(LC80K3-15M2.5AG).pdf"
+      "リンク": "PDF/transformer-reactor/P007-110(LC80K3-15M2.5AG).pdf"
     },
     {
       "図番": "P007-111",
@@ -1071,7 +1071,7 @@ const catalogData = {
       "インダクタンス": "20mH",
       "コア材": "珪素鋼板",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P007-111(LC80K3-20M2.5AG).pdf"
+      "リンク": "PDF/transformer-reactor/P007-111(LC80K3-20M2.5AG).pdf"
     },
     {
       "図番": "P007-112",
@@ -1082,7 +1082,7 @@ const catalogData = {
       "インダクタンス": "30mH",
       "コア材": "珪素鋼板",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P007-112(LC11K3-30M2.5AG).pdf"
+      "リンク": "PDF/transformer-reactor/P007-112(LC11K3-30M2.5AG).pdf"
     },
     {
       "図番": "P007-115A",
@@ -1093,7 +1093,7 @@ const catalogData = {
       "インダクタンス": "5μH(150A)",
       "コア材": "珪素鋼板",
       "形状": "カットコアタイプ",
-      "リンク": "katarogu-pdf/P007-115A(LC30K3-5U150AG).pdf"
+      "リンク": "PDF/transformer-reactor/P007-115A(LC30K3-5U150AG).pdf"
     },
     {
       "図番": "三相変圧器",
@@ -1104,7 +1104,7 @@ const catalogData = {
       "インダクタンス": "",
       "コア材": "キリコア",
       "形状": "大型トランス",
-      "リンク": "ponyttt153-180-480.pdf"
+      "リンク": "PDF/transformer-reactor/ponyttt153-180-480.pdf"
     }
   ],
   "カレントトランス": [
@@ -1117,7 +1117,7 @@ const catalogData = {
       "インダクタンス": "3.0mΩ",
       "コア材": "2.5Ω",
       "形状": "12mH±35%",
-      "リンク": "katarogu-pdf/P009-202_E10-101_ Ver1.0.pdf"
+      "リンク": "PDF/transformer-reactor/P009-202_E10-101_ Ver1.0.pdf"
     },
     {
       "図番": "P009-203 ★★",
@@ -1128,7 +1128,7 @@ const catalogData = {
       "インダクタンス": "3.0mΩ",
       "コア材": "8.5Ω",
       "形状": "48mH±35%",
-      "リンク": "katarogu-pdf/P009-203_E10-201_ Ver1.0.pdf"
+      "リンク": "PDF/transformer-reactor/P009-203_E10-201_ Ver1.0.pdf"
     },
     {
       "図番": "P012-620 ★★",
@@ -1139,7 +1139,7 @@ const catalogData = {
       "インダクタンス": "0.5mΩ",
       "コア材": "0.36kΩ",
       "形状": "22.68H±35%",
-      "リンク": "katarogu-pdf/P012-620.pdf"
+      "リンク": "PDF/transformer-reactor/P012-620.pdf"
     },
     {
       "図番": "P013-617 ★★",
@@ -1150,7 +1150,7 @@ const catalogData = {
       "インダクタンス": "−",
       "コア材": "0.4mΩ",
       "形状": "9.6mH±35%",
-      "リンク": "katarogu-pdf/P013-617.pdf"
+      "リンク": "PDF/transformer-reactor/P013-617.pdf"
     }
   ],
   "空芯コイル": [
@@ -1163,7 +1163,7 @@ const catalogData = {
       "インダクタンス": "13〜14Ω",
       "コア材": "",
       "形状": "縦型",
-      "リンク": "katarogu-pdf/P012-621.pdf"
+      "リンク": "PDF/transformer-reactor/P012-621.pdf"
     }
   ]
 };

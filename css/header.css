@@ -90,7 +90,8 @@
     display: block;
 }
 
-/* 親メニューのボタン風見た目 */
+
+/* --- 変更前: クリック不可になっていた定義（参考用に残置） ---------
 .accordion-toggle {
     all: unset;
     cursor: pointer;
@@ -99,7 +100,24 @@
     color: white;
     font-weight: bold;
     background: transparent;
-    pointer-events: none;
+    pointer-events: none; /* ← これでクリックが無効化されていた
+}---------------------------------------------------------------- */
+
+/* 変更後: 親メニューのリンクをクリック可能に（hover展開は従来通り） */
+.accordion-toggle {
+    display: block;
+    padding: 8px 16px;
+    color: #fff;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* フォーカスや直接hoverでもサブメニューを開く（li:hoverと併用） */
+.accordion-toggle:hover + .submenu,
+.accordion-toggle:focus + .submenu {
+    display: block;
 }
 
 /* submenu内のリンク */
