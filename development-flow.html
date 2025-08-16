@@ -18,17 +18,22 @@
   <!-- 共通ヘッダー -->
   <div id="header"></div>
 
-  <!-- ページ本体はすべて .devflow-page の中に入れる（名前空間化） -->
-  <main class="devflow-page" aria-label="開発の流れ">
-    <!-- ヒーロー -->
-    <section class="df-hero">
-      <div class="df-hero__inner">
-        <h1 class="df-hero__title">開発の流れ</h1>
-        <p class="df-hero__lead">
-          一般的な開発フローをご紹介します。<br>ご要望やNDAの有無、仕様の確度に応じて柔軟にアレンジ可能です。
+  <main id="multi-page">
+    <!-- 上部：ヒーロー -->
+    <section class="multi-hero">
+      <div class="multi-hero-inner">
+        <p class="multi-badge">開発の流れ</p>
+        <h1 class="multi-title">開発の流れ</h1>
+        <p class="multi-lead">
+        一般的な開発フローをご紹介します。<br>ご要望やNDAの有無、仕様の確度に応じて柔軟にアレンジ可能です。
         </p>
       </div>
     </section>
+
+  </main>
+
+  <!-- ページ本体はすべて .devflow-page の中に入れる（名前空間化） -->
+  <main class="devflow-page" aria-label="開発の流れ">
 
     <!-- CTA（お問い合わせ） -->
     <section class="df-cta" aria-label="お問い合わせ">
@@ -156,6 +161,11 @@
         </p>
       </div>
     </section>
+
+        <p class="smallback" style="margin-top: 40px;">
+          <a href="index.html">← 戻る</a>　｜　
+          <a href="mailto:office@pony-e.jp">お問い合せ</a>
+        </p>
 
   </main>
 

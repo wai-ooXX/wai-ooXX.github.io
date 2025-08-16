@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>トランス・リアクトル｜ポニー電機</title>
+
+    <!-- 共通CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 追加：このページ専用スタイル（必ず最後に読み込む） -->
+    <!-- ★ このページ専用CSS（style.cssと干渉しない命名） -->
+    <link rel="stylesheet" href="css/powerelectronics.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!-- ヘッダー（共通） -->
+    <!-- header部分を編集するならここ -->
+    <div id="header"></div>
+
+    <!-- アコーディオンを編集するならここ -->
+
+    <!-- ページ本体 -->
+    <main class="pe-page" aria-labelledby="pe-page-title">
+        <!-- ヒーロー（画像 + オーバーレイ文字） -->
+        <section class="pe-hero" aria-label="パワーエレクトロニクス ヒーロー">
+            <!-- 画像は差し替えてOK -->
+            <img src="img/powerelectronics-hero.png" alt="パワーエレクトロニクス製品のイメージ">
+
+            <!-- テキストオーバーレイ -->
+            <div class="pe-hero-overlay">
+                <h1 id="pe-page-title" class="pe-hero-title pe-hero-title--ja">パワーエレクトロニクスの受託開発</h1>
+                <h2 class="pe-hero-title pe-hero-title--en">PowerElectronics Design &amp; Development &amp; Product</h2>
+
+                <p class="pe-hero-sub pe-sub--xl">① <span class="pe-color-yellow">博士</span> を中心に8名（ポニー電機グループ）</p>
+                <p class="pe-hero-sub pe-sub--xl">② パワエレ受託開発（極め続け <span class="pe-color-red">17年・350案件</span>）</p>
+                <p class="pe-hero-sub pe-sub--xl">③ パワエレ <span class="pe-color-blue">製品化</span> 開発（コスト・品質提案）</p>
+            </div>
+        </section>
+
+        <!-- 画像の下：リンクカードグリッド -->
+        <nav class="pe-link-grid" aria-label="関連ページ">
+            <!-- 例：必要に応じてhrefや説明を変更してください -->
+            <a class="pe-link-card" href="catalog-m-products.html">
+                <span class="pe-link-title">製品一覧</span>
+                <span class="pe-link-desc">スイッチングトランス・高周波リアクトルなど</span>
+            </a>
+
+            <a class="pe-link-card" href="technology.html">
+                <span class="pe-link-title">技術情報</span>
+                <span class="pe-link-desc">設計指針・技術資料・事例紹介</span>
+            </a>
+
+            <a class="pe-link-card" href="message.html">
+                <span class="pe-link-title">代表メッセージ</span>
+                <span class="pe-link-desc">開発方針と取り組み</span>
+            </a>
+
+            <a class="pe-link-card" href="company-overview.html">
+                <span class="pe-link-title">会社情報</span>
+                <span class="pe-link-desc">会社概要・沿革・拠点アクセス</span>
+            </a>
+
+            <a class="pe-link-card" href="contact.html">
+                <span class="pe-link-title">お問い合わせ</span>
+                <span class="pe-link-desc">試作・量産・仕様相談はこちら</span>
+            </a>
+        </nav>
+
+                <p class="smallback" style="margin-top: 40px;">
+          <a href="index.html">← 戻る</a>　｜　
+          <a href="mailto:office@pony-e.jp">お問い合せ</a>
+        </p>
+    </main>
+
+    <!-- フッター（共通） -->
+    <!-- footer部分を編集するならここ -->
+    <div id="footer"></div>
+
+    <!-- 共通JS（header/footer読み込みなど） -->
+    <!-- 共通JSの読み込み（bodyの一番最後が推奨） -->
+    <script src="js/common.js"></script>
+</body>
+
+</html>

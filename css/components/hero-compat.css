@@ -1,0 +1,82 @@
+/* css/components/hero-compat.css */
+
+/* hero-compat.css（先頭付近に追加） */
+:root{
+  --hero-grad-start: #f3f9ff; /* ほぼ白の水色 */
+  --hero-grad-end:   #ffffff; /* 白 */
+}
+
+/* 互換の背景指定は必ず変数経由で */
+:is(.fi-hero,.pi-hero,.df-hero,.gp-hero /* ← .eti-hero は含めない */){
+  background: linear-gradient(180deg, var(--hero-grad-start), var(--hero-grad-end));
+  /* そのほか padding 等はそのまま */
+}
+
+/* 1) セクション本体を c-hero に寄せる（背景や色は上で定義した変数ベースに任せる） */
+.odi-hero, .ph-hero, .pi-hero, .df-hero, .gp-hero, .pe-hero, .eti-hero, .fi-hero{
+  /* ここではグラデーションや色は指定しない（上部の :is(...) で適用） */
+  --title-fs: clamp(22px, 4vw, 40px);
+  --lead-fs:  clamp(14px, 2.2vw, 18px);
+  --hero-pad-y: clamp(48px, 8vw, 96px);
+  --hero-maxw: 1100px;
+  padding: var(--hero-pad-y) 20px;
+  text-align:center;
+}
+
+/* 2) 内側箱のクラス名の違いを吸収（inner相当） */
+.odi-hero-inner, .ph-hero-inner, .pi-hero-inner, .df-hero__inner, .gp-hero .gp-title ~ *, .pe-hero-overlay, .eti-hero-inner, .fi-hero > *{
+  max-width: var(--hero-maxw);
+  margin: 0 auto;
+}
+
+/* 3) タイトル＆リードのサイズ調整 */
+.odi-title, .ph-title, .pi-title, .df-hero__title, .gp-title, .pe-hero-title, .eti-title, .fi-title{
+  margin: .6em 0 .3em;
+  font-weight: 700;
+  font-size: var(--title-fs);
+  line-height: 1.25;
+  color: inherit;
+}
+.odi-subtitle, .ph-sub, .pi-subtitle, .df-hero__lead, .gp-subtitle, .pe-hero-sub, .eti-lead{
+  margin: 0 auto;
+  max-width: 900px;
+  font-size: var(--lead-fs);
+  line-height: 1.8;
+  opacity: .95;
+  color: inherit;
+}
+
+/* 4) “バッジ”相当（あるページだけ効けばOK） */
+.mti-badge, .eti-badge{
+  display:inline-block; padding:.35em .8em; border-radius:999px;
+  font-size:12px; letter-spacing:.08em;
+  background: var(--badge-bg); color: var(--badge-text);
+  backdrop-filter: blur(4px);
+}
+
+/* 5) 画像オーバーレイ型のページ（pe-hero）を統一感ある見た目に */
+.pe-hero{ position:relative; background:none; isolation:isolate; }
+.pe-hero::before{
+  content:""; position:absolute; inset:0;
+  background: linear-gradient(135deg,var(--hero-grad-start),var(--hero-grad-end));
+  opacity:.85; z-index:1;
+}
+.pe-hero img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; }
+.pe-hero-overlay{ position:relative; z-index:2; padding: var(--hero-pad-y) 20px; text-align:center; }
+
+
+
+/* 共通のヒーロー余白 */
+.hero-wrapper {
+  padding-top: clamp(60px, 8vw, 90px); /* デフォルト余白 */
+}
+
+/* 狭めたいページ用 */
+.hero-wrapper--tight {
+  padding-top: clamp(40px, 6vw, 60px);
+}
+
+/* 広めたいページ用 */
+.hero-wrapper--loose {
+  padding-top: clamp(80px, 9vw, 120px);
+}
