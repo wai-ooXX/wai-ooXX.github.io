@@ -65,7 +65,7 @@ nav a:hover,
 .accordion-menu a,
 .accordion-toggle {
     white-space: nowrap;
-    background: #8ac8ff;
+    background: rgb(183, 220, 248);
     color: #1b1717;
     font-size: clamp(10px, 1.4vw, 18px);
 }
@@ -79,7 +79,7 @@ nav a:hover,
     position: absolute;
     top: 100%;
     left: 0;
-    background: #8ac8ff;
+    background: rgb(183, 220, 248);
     min-width: 180px;
     /* ← 横幅を広げる */
     z-index: 100;
@@ -87,6 +87,7 @@ nav a:hover,
     margin: 0;
     list-style: none;
     color: #1b1717;
+    border-radius: 6px;/* 角が丸く表示 */
 }
 
 .accordion-menu li:hover>.submenu {

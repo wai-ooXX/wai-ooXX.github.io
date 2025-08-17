@@ -6,9 +6,49 @@
     <title>過去のニュース｜ポニー電機</title>
     <link rel="stylesheet" href="css/style.css">
 
-  <!-- 追加：このページ専用スタイル（必ず最後に読み込む） -->
+    <!-- 追加：このページ専用スタイル（必ず最後に読み込む） -->
 
 </head>
+
+
+<style>
+    .image-map {
+        position: relative;
+        width: 100%;
+        /* ブラウザ幅に合わせて拡大縮小 */
+        max-width: 960px;
+        /* 必要なら最大サイズ */
+        margin: auto;
+    }
+
+    .image-map::before {
+        content: "";
+        display: block;
+        padding-top: 50.1%;
+        /* 画像の縦横比 (481 / 960 * 100%) */
+        background: url("https://www.pony-e.jp/image/PCS.png") no-repeat center/contain;
+    }
+
+    .hotspot {
+        position: absolute;
+        display: block;
+        width: 8%;
+        /* リンクの大きさも％指定で */
+        height: 14%;
+        background: rgba(0, 123, 255, 0.15);
+        /* デバッグ用青マスク */
+        border-radius: 4px;
+    }
+
+    .hotspot:hover {
+        background: rgba(0, 123, 255, 0.7);
+    }
+</style>
+
+
+
+
+
 
 <body>
 
@@ -30,27 +70,27 @@
 
     </main>
 
-<div class="MD_top2">
+<div class="image-map">
+    <a href="https://www.pony-e.jp/catalog#Over25kHz" class="hotspot" style="top:2%; left:26.5%;"></a>
+    <a href="https://www.pony-e.jp/catalog#Until25kHz" class="hotspot" style="top:14%; left:69%;"></a>
+    <a href="https://www.pony-e.jp/catalog#Common Mode Choke" class="hotspot" style="top:14%; left:81%;"></a>
 
- <table>
- <tr>
- <th>
- <a class="MD_top2-2"><img src="https://www.pony-e.jp/image/PCS.png" width="960" height="481" /></a>
- <a href="https://www.pony-e.jp/catalog#Over25kHz" class="order3-1"><img src="https://www.pony-e.jp/image/Color_blue.png" width="80" height="70" /></a>
- <a href="https://www.pony-e.jp/catalog#Until25kHz" class="order3-2"><img src="https://www.pony-e.jp/image/Color_blue.png" width="70" height="70" /></a>
- <a href="https://www.pony-e.jp/catalog#Common Mode Choke" class="order3-3"><img src="https://www.pony-e.jp/image/Color_blue.png" width="100" height="60" /></a>
- <a href="https://www.pony-e.jp/%E5%8F%97%E8%A8%97%E9%96%8B%E7%99%BA#products" class="order3-4"><img src="https://www.pony-e.jp/image/Color_blue.png" width="120" height="100" /></a>
- <a href="https://www.pony-e.jp/catalog#Switching Transformer" class="order3-5"><img src="https://www.pony-e.jp/image/Color_blue.png" width="100" height="100" /></a>
- <a href="https://www.pony-e.jp/%E5%8F%97%E8%A8%97%E9%96%8B%E7%99%BA#products" class="order3-6"><img src="https://www.pony-e.jp/image/Color_blue.png" width="135" height="100" /></a>
- <a href="https://www.pony-e.jp/catalog#Current Transformer" class="order3-7"><img src="https://www.pony-e.jp/image/Color_blue.png" width="100" height="80" /></a>
- </th>
- </tr>
+    <a href="https://www.pony-e.jp/catalog#Switching Transformer" class="hotspot" style="top:48%; left:45%;"></a>
 
+    <a href="https://www.pony-e.jp/catalog#Current Transformer" class="hotspot" style="top:54%; left:74.5%;"></a>
+
+    <a href="https://www.pony-e.jp/%E5%8F%97%E8%A8%97%E9%96%8B%E7%99%BA#products" class="hotspot"
+        style="top:68%; left:12%;"></a>
+    <a href="https://www.pony-e.jp/%E5%8F%97%E8%A8%97%E9%96%8B%E7%99%BA#products" class="hotspot"
+        style="top:5%; left:7%;"></a>
+    <a href="https://www.pony-e.jp/%E5%8F%97%E8%A8%97%E9%96%8B%E7%99%BA#products" class="hotspot"
+        style="top:70%; left:90%;"></a>
 </div>
-</table>
 
-<dd><FONT size="4"><strong>※選択可能部分をクリックすると、推奨デバイスをご覧いただけます。</strong></FONT></dd>
-<br>
+    <dd>
+        <FONT size="4"><strong>※選択可能部分をクリックすると、推奨デバイスをご覧いただけます。</strong></FONT>
+    </dd>
+    <br>
 
 
 
@@ -64,9 +104,9 @@
 
 </body>
 
-        <p class="smallback" style="margin-top: 40px;">
-          <a href="index.html">← 戻る</a>　｜　
-          <a href="mailto:office@pony-e.jp">お問い合せ</a>
-        </p>
+<p class="smallback" style="margin-top: 40px;">
+    <a href="index.html">← 戻る</a>　｜　
+    <a href="mailto:office@pony-e.jp">お問い合せ</a>
+</p>
 
 </html>

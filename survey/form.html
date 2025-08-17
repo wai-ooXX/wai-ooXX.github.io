@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="ja"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>お客様アンケート（WEB）</title>
+
+<!-- ヘッダー/フッターの相対パスを揃えるため -->
+<base href="../">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<div id="header"></div>
+
+<main class="container" style="max-width:860px;margin:40px auto;line-height:1.8">
+  <h1>お客様アンケート（WEB）</h1>
+
+  <form action="confirm.php" method="post" autocomplete="on" novalidate>
+    <fieldset>
+      <legend>基本情報</legend>
+      <label>御社名：<input type="text" name="company" maxlength="200"></label><br>
+      <label>所属：<input type="text" name="department" maxlength="200"></label><br>
+      <label>氏名：<input type="text" name="person" maxlength="200"></label>
+    </fieldset>
+    <hr>
+
+    <!-- A -->
+    <fieldset>
+      <legend>A：以前からポニー電機をご存知でしたか？</legend>
+      <label><input type="radio" name="A_known" value="知っている"> 知っている</label>
+      <label><input type="radio" name="A_known" value="知らなかった"> 知らなかった</label>
+    </fieldset>
+
+    <!-- B（A=知っている の場合に該当） -->
+    <fieldset>
+      <legend>B：どこで知りましたか？（複数選択可）</legend>
+      <label><input type="checkbox" name="B_where[]" value="インターネット"> インターネット</label>
+      <label><input type="checkbox" name="B_where[]" value="展示会"> 展示会</label>
+      <label><input type="checkbox" name="B_where[]" value="紹介"> 紹介</label>
+      <label><input type="checkbox" name="B_where[]" value="雑誌"> 雑誌</label>
+      <input type="text" name="B_magazine" placeholder="雑誌名（任意）" maxlength="200" style="margin-left:4px">
+      <label><input type="checkbox" name="B_where[]" value="その他"> その他</label>
+      <input type="text" name="B_other" placeholder="その他（任意）" maxlength="200" style="margin-left:4px">
+    </fieldset>
+
+    <!-- C -->
+    <fieldset>
+      <legend>C：現在ポニー電機の製品をお使いですか？</legend>
+      <label><input type="radio" name="C_use" value="使っている"> 使っている</label>
+      <label><input type="radio" name="C_use" value="以前は使っていた"> 以前は使っていた</label>
+      <label><input type="radio" name="C_use" value="使ったことはない"> 現在もこれまでも使ったことはない</label>
+    </fieldset>
+
+    <!-- D & E -->
+    <fieldset>
+      <legend>D：御社製品に他社のトランス/リアクトル等を使用？</legend>
+      <label><input type="radio" name="D_other_vendor_use" value="使っている"> 使っている</label>
+      <label><input type="radio" name="D_other_vendor_use" value="使ったことはない"> 現在もこれまでも使ったことはない</label>
+      <label><input type="radio" name="D_other_vendor_use" value="その他"> その他</label>
+      <input type="text" name="D_other_text" placeholder="その他（任意）" maxlength="200" style="margin-left:4px">
+      <div style="margin-top:8px">
+        E：差し支えなければ他社メーカ名：
+        <input type="text" name="E_vendors[]" placeholder="メーカー名1" maxlength="200">
+        <input type="text" name="E_vendors[]" placeholder="メーカー名2" maxlength="200">
+        <input type="text" name="E_vendors[]" placeholder="メーカー名3" maxlength="200">
+      </div>
+    </fieldset>
+
+    <!-- E（用途） -->
+    <fieldset>
+      <legend>E：どのような製品に使われていますか？（複数選択可）</legend>
+      <label><input type="checkbox" name="E_usecase[]" value="電源機器"> 電源機器</label>
+      <label><input type="checkbox" name="E_usecase[]" value="インバータ関係"> インバータ関係</label>
+      <label><input type="checkbox" name="E_usecase[]" value="UPS"> UPS</label>
+      <label><input type="checkbox" name="E_usecase[]" value="その他"> その他</label>
+      <input type="text" name="E_usecase_other" placeholder="その他（任意）" maxlength="200" style="margin-left:4px">
+    </fieldset>
+
+    <!-- F -->
+    <fieldset>
+      <legend>F：最も重視する点は？</legend>
+      <label><input type="radio" name="F_priority" value="小型化"> 小型化</label>
+      <label><input type="radio" name="F_priority" value="低損失化"> 低損失化</label>
+      <label><input type="radio" name="F_priority" value="高品質"> 高品質</label>
+      <label><input type="radio" name="F_priority" value="低価格"> 低価格</label>
+      <label><input type="radio" name="F_priority" value="納期"> 納期</label>
+      <label><input type="radio" name="F_priority" value="その他"> その他</label>
+      <input type="text" name="F_priority_other" placeholder="その他（任意）" maxlength="200" style="margin-left:4px">
+    </fieldset>
+
+    <!-- G -->
+    <fieldset>
+      <legend>G：カスタム電源/インバータの設計・製造に興味？</legend>
+      <label><input type="radio" name="G_interest" value="興味がある"> 興味がある</label>
+      <label><input type="radio" name="G_interest" value="興味がない"> 興味がない</label>
+      <label><input type="radio" name="G_interest" value="将来的に必要になる"> 将来的に必要になる</label>
+      <label><input type="radio" name="G_interest" value="その他"> その他</label>
+      <input type="text" name="G_interest_other" placeholder="その他（任意）" maxlength="200" style="margin-left:4px">
+    </fieldset>
+
+    <!-- H -->
+    <fieldset>
+      <legend>H：ノイズフィルタに興味？</legend>
+      <label><input type="radio" name="H_filter_interest" value="興味がある"> 興味がある</label>
+      <label><input type="radio" name="H_filter_interest" value="興味がない"> 興味がない</label>
+      <label><input type="radio" name="H_filter_interest" value="将来的に必要になる"> 将来的に必要になる</label>
+      <label><input type="radio" name="H_filter_interest" value="その他"> その他</label>
+      <input type="text" name="H_filter_other" placeholder="その他（任意）" maxlength="200" style="margin-left:4px">
+    </fieldset>
+
+    <!-- I -->
+    <fieldset>
+      <legend>I：ホームページは見やすかったですか？</legend>
+      <label><input type="radio" name="I_site_easy" value="見やすい"> 見やすい</label>
+      <label><input type="radio" name="I_site_easy" value="見難い"> 見難い</label>
+      <label><input type="radio" name="I_site_easy" value="一般的"> 一般的</label>
+      <label><input type="radio" name="I_site_easy" value="その他"> その他</label>
+      <input type="text" name="I_site_other" placeholder="その他（任意）" maxlength="200" style="margin-left:4px">
+    </fieldset>
+
+    <label>（自由記述）ホームページに掲載するとよい内容があればお聞かせください。<br>
+      <textarea name="I_site_suggestion" rows="4" maxlength="2000"></textarea>
+    </label><br><br>
+
+    <!-- J -->
+    <label>J：ポニー電機へのご要望・アドバイス<br>
+      <textarea name="J_advice" rows="5" maxlength="3000"></textarea>
+    </label><br><br>
+
+    <!-- 連絡手段 -->
+    <fieldset>
+      <legend>ご連絡について（任意）</legend>
+      <label>メールアドレス：<input type="email" name="email" maxlength="200" inputmode="email"></label>
+    </fieldset>
+
+    <!-- honeypot -->
+    <div style="position:absolute;left:-9999px;top:-9999px">
+      <label>空欄にしてください<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+    </div>
+
+    <p style="margin-top:16px">
+      <button type="submit">入力内容を確認</button>
+    </p>
+  </form>
+
+  <p style="margin-top:32px;color:#666">※ご協力ありがとうございました。メールまたはFAXにて送信ください。</p>
+</main>
+
+<div id="footer"></div>
+<script src="js/common.js"></script>
+</body></html>

@@ -90,6 +90,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: clamp(12px, 2.4vw, 20px);
+  
 }
 
 .pe-link-card {
@@ -111,7 +112,7 @@
   transform: translateY(-2px);
   box-shadow: 0 12px 28px rgba(0,0,0,.16);
   outline: none;
-  border-color: rgba(14,165,233,.35); /* アクセント色の淡い枠 */
+  border-color: rgba(14, 171, 233, 0.017); /* アクセント色の淡い枠 */
 }
 
 .pe-link-title {
@@ -170,3 +171,17 @@
 .pe-color-yellow { color: #fde047; } /* amber-300 */
 .pe-color-red { color: #ef4444; } /* red-500 */
 .pe-color-blue { color: #3b82f6; } /* blue-500 */
+
+.pe-link-area {
+  background: linear-gradient(135deg, #5aa5f5, #ffffff);
+  /* background: #fff; /* ← ここで色変更（白／任意のグラデ） */
+  border-radius: 16px;
+  padding: clamp(16px, 3vw, 28px); /* ラッパーの内側余白 */
+  max-width: min(var(--pe-maxw), 92vw);
+  margin: clamp(20px, 4vh, 40px) auto 72px;
+}
+
+/* グリッド側の margin はラッパーに移したので 0 に */
+.pe-link-grid {
+  margin: 0;
+}

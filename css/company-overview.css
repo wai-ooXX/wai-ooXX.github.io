@@ -31,7 +31,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--co-img-gap) !important;
-  align-items: flex-start;
+  align-items: flex-start;     /* 縦方向の揃え */
+  justify-content: center;     /* 横方向のセンタリング */
   margin-bottom: 24px;
 }
 

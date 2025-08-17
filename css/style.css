@@ -15,54 +15,77 @@
       /* 最小 18px, 通常は3vw, 最大 36px */
     }
 
-/* すべて #mti-page 配下に限定して style.css と干渉させない */
-#multi-page {
-  --mti-bg: #ffffff;
-  --mti-fg: #1f2937;
-  --mti-accent: #0ea5e9;
-  --mti-accent-2: #0369a1;
-  --mti-muted: #6b7280;
-  --mti-border: #e5e7eb;
-  --mti-card-bg: #ffffff;
-  --mti-radius: 16px;
-  --mti-shadow: 0 6px 20px rgba(2, 6, 23, 0.08);
-  color: var(--mti-fg);
-  background: var(--mti-bg);
-  font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    /* すべて #mti-page 配下に限定して style.css と干渉させない */
+    #multi-page {
+      --mti-bg: #ffffff;
+      --mti-fg: #1f2937;
+      --mti-accent: #0ea5e9;
+      --mti-accent-2: #0369a1;
+      --mti-muted: #6b7280;
+      --mti-border: #e5e7eb;
+      --mti-card-bg: #ffffff;
+      --mti-radius: 16px;
+      --mti-shadow: 0 6px 20px rgba(2, 6, 23, 0.08);
+      color: var(--mti-fg);
+      background: var(--mti-bg);
+      font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 
-  /* 追加：左右のスペース統一 */
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;  
-}
+      /* 追加：左右のスペース統一 */
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
-/* ヒーロー */
-#multi-page .multi-hero {
-  position: relative;
-  padding: clamp(32px, 4vw, 72px) 20px; /* 最小値: 32px,推奨値: 4vw（画面幅の 4%）,	最大値: 72px */
-  /* 画面幅に応じて横は 32px〜72px の間で変動、縦は常に 20px固定 */
-  background:
-    radial-gradient(1200px 200px at 20% 0%, rgba(14,165,233,0.10), transparent 60%),
-    linear-gradient(180deg, #d4f5f0 0%, #fff 90%); /*上から下へ,上端は薄いグレー寄りの白,途中で真っ白に*/
-  border-bottom: 1px solid var(--mti-border);
-}
-#multi-page .multi-hero-inner { max-width: 1100px; margin: 0 auto; }
-#multi-page .multi-badge {
-  display: inline-block;
-  font-size: 12px;
-  letter-spacing: .08em;
-  color: var(--mti-accent-2);
-  background: rgba(14,165,233,.12);
-  border: 1px solid rgba(14,165,233,.25);
-  padding: 6px 10px;
-  border-radius: 999px;
-  margin: 0 0 10px 0;
-}
-#multi-page .multi-title { font-size: clamp(22px, 4.5vw, 36px); line-height: 1.2; margin: 0 0 8px; }
-#multi-page .multi-title-center { font-size: clamp(22px, 4.5vw, 36px); line-height: 1.2; margin: 0 0 8px; text-align: center; }
-#multi-page .multi-lead { color: var(--mti-muted); font-size: clamp(14px, 2.5vw, 16px); margin: 0; }
+    /* ヒーロー */
+    #multi-page .multi-hero {
+      position: relative;
+      padding: clamp(32px, 4vw, 72px) 20px;
+      /* 最小値: 32px,推奨値: 4vw（画面幅の 4%）,	最大値: 72px */
+      /* 画面幅に応じて横は 32px〜72px の間で変動、縦は常に 20px固定 */
+      background:
+        radial-gradient(1200px 200px at 20% 0%, rgba(14, 233, 178, 0.127), transparent 70%),
+        linear-gradient(175deg, #d4f5f0 0%, #fff 40%);
+      /*上から下へ,上端は薄いグレー寄りの白,途中で真っ白に　角度を変える*/
+      border-bottom: 1px solid var(--mti-border);
+    }
+
+    #multi-page .multi-hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    #multi-page .multi-badge {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: .08em;
+      color: var(--mti-accent-2);
+      background: rgba(14, 165, 233, .12);
+      border: 1px solid rgba(14, 165, 233, .25);
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin: 0 0 10px 0;
+    }
+
+    #multi-page .multi-title {
+      font-size: clamp(22px, 4.5vw, 36px);
+      line-height: 1.2;
+      margin: 0 0 8px;
+    }
+
+    #multi-page .multi-title-center {
+      font-size: clamp(22px, 4.5vw, 36px);
+      line-height: 1.2;
+      margin: 0 0 8px;
+      text-align: center;
+    }
+
+    #multi-page .multi-lead {
+      color: var(--mti-muted);
+      font-size: clamp(14px, 2.5vw, 16px);
+      margin: 0;
+    }
 
 
 
@@ -271,15 +294,15 @@
 
     main {
 
-        /* 追加：左右のスペース統一 */
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;  
-    /*  margin-left: 40px; */
+      /* 追加：左右のスペース統一 */
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+      /*  margin-left: 40px; */
       /*← 削除！ */
-    /*  padding: 20px; */
+      /*  padding: 20px; */
     }
 
     h1 {
